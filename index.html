@@ -5,111 +5,185 @@
     <meta name="author" content="zeenathul-Ilma-musawwir">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="style/style.css">
+
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html"><img src="Assets/home.png" width="40px">Home</a></li>
-                <li><a href="about-me.html"><img src="Assets/user.png" width="40px">About Me</a></li>
-                <li><a href="resume.html"><img src="Assets/resume.png" width="40px">Resume</a></li>
-                <li><a href="skills.html"><img src="Assets/logical-thinking.png" width="50px">Skills</a></li>
-                <li><a href="projects.html"><img src="Assets/shuttle.png" width="35px">Projects</a></li>
-                <li><a href="Assignments.html"><img src="Assets/assignment.png" width="35px">Assignments</a></li>
-                <li><a href="services.html"><img src="Assets/service.png" width="40px">Services</a></li>
-                <li><a href="contact.html"><img src="Assets/contact-book.png" width="40px">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <br>
-        <hr>
-        <br>
-        <!-- Profile Section -->
-        <section>
-            <div>
-                <div>
-                    <div>
-                        <img src="Assets/my-profile-pic.png" alt="Profile picture" width="250">
-                    </div>
-                    <div>
-                        <div>
-                            <h2>Zeenathul Ilma</h2>
-                            <h4>Full Stack Developer</h4>
-                            <div class="social">
-                                <a href="#"><i class="fab fa-linkedin"></i></a>
-                                <a href="#"><i class="fab fa-github"></i></a>
-                                <a href="#"><i class="fab fa-facebook"></i></a>
-                                <a href="#"><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                        <div class="contact-intro">
-                            <div class="row">
-                                <div class="icon">
-                                    <i class="fa fa-phone"></i>
-                                </div>
-                                <div class="content">
-                                    <span>Phone</span>
-                                    <h5>+94-750513071</h5>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="icon">
-                                    <i class="fa fa-envelope"></i>
-                                </div>
-                                <div class="content">
-                                    <span>Email</span>
-                                    <h5>seenathulilma@gmail.com</h5>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="icon">
-                                    <i class="fa fa-map-marker-alt"></i>
-                                </div>
-                                <div class="content">
-                                    <span>Location</span>
-                                    <h5>31/5z, moor Street, Kalutara South</h5>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="icon">
-                                    <i class="fa fa-calendar-alt"></i>
-                                </div>
-                                <div class="content">
-                                    <span>Birthday</span>
-                                    <h5>March 07, 2003</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="download-btn"><i class="fa fa-download"></i>Download CV</div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <br>
-        <hr>
-        <br>
-        <!-- Hero Section -->
-        <section>
-            <div>
-                <div>
-                    <img src="Assets/my-profile-pic.png" alt="Profile picture" width="500">
-                </div>
-                <div>
-                    <h1>Greetings,</h1>
-                    <h1>I'm Zeenathul Ilma</h1>
-                </div>
-                <div>
-                    <p>Where Passion Meets Precision – I Create Software That Enriches Lives and Elevates Businesses</p>
-                    <a href="contact.html"><button type="button">Get In Touch</button></a>
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer>
+<header>
+    <nav>
+        <ul>
+            <li class="list active">
+                <a href="index.html">
+                    <span class="icon">
+                        <img src="Assets/home.png" width="40px">
+                    </span>
+                    <span class="text">Home</span>
+                    <span class="circle"></span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="about-me.html">
+                    <span class="icon">
+                        <img src="Assets/user.png" width="40px">
+                    </span>
+                    <span class="text">About Me</span>
+                    <span class="circle"></span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="resume.html">
+                    <span class="icon">
+                        <img src="Assets/resume.png" width="40px">
+                    </span>
+                    <span class="text">Resume</span>
+                    <span class="circle"></span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="skills.html">
+                    <span class="icon">
+                        <img src="Assets/logical-thinkings.png" width="40px">
+                    </span>
+                    <span class="text">Skills</span>
+                    <span class="circle"></span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="projects.html">
+                    <span class="icon">
+                        <img src="Assets/layers.png" width="40px">
+                    </span>
+                    <span class="text">Projects</span>
+                    <span class="circle"></span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="Assignments.html">
+                    <span class="icon">
+                        <img src="Assets/homework.png" width="40px">
+                    </span>
+                    <span class="text">Assignments</span>
+                    <span class="circle"></span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="services.html">
+                    <span class="icon">
+                        <img src="Assets/service.png" width="40px">
+                    </span>
+                    <span class="text">Services</span>
+                    <span class="circle"></span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="contact.html">
+                    <span class="icon">
+                        <img src="Assets/telephone.png" width="40px">
+                    </span>
+                    <span class="text">Contact</span>
+                    <span class="circle"></span>
+                </a>
+            </li>
+            <div class="indicator"></div>
+        </ul>
+    </nav>
+</header>
+<main>
+    <br>
+    <hr>
+    <br>
+    <!-- Profile Section -->
+    <section>
         <div>
-            <p>Copyright &copy; 2025 by Zeenathul Ilma | All Rights Reserved.</p>
+            <div>
+                <div>
+                    <img src="Assets/my-profile-pic.png" alt="Profile picture" width="250">
+                </div>
+                <div>
+                    <div>
+                        <h2>Zeenathul Ilma</h2>
+                        <h4>Full Stack Developer</h4>
+                        <div class="social">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="contact-intro">
+                        <div class="row">
+                            <div class="icon">
+                                <i class="fa fa-phone"></i>
+                            </div>
+                            <div class="content">
+                                <span>Phone</span>
+                                <h5>+94-750513071</h5>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="icon">
+                                <i class="fa fa-envelope"></i>
+                            </div>
+                            <div class="content">
+                                <span>Email</span>
+                                <h5>seenathulilma@gmail.com</h5>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="icon">
+                                <i class="fa fa-map-marker-alt"></i>
+                            </div>
+                            <div class="content">
+                                <span>Location</span>
+                                <h5>31/5z, moor Street, Kalutara South</h5>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="icon">
+                                <i class="fa fa-calendar-alt"></i>
+                            </div>
+                            <div class="content">
+                                <span>Birthday</span>
+                                <h5>March 07, 2003</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="download-btn"><i class="fa fa-download"></i>Download CV</div>
+                </div>
+            </div>
         </div>
-    </footer>
+    </section>
+    <br>
+    <hr>
+    <br>
+    <!-- Hero Section -->
+    <section>
+        <div>
+            <div>
+                <img src="Assets/my-profile-pic.png" alt="Profile picture" width="500">
+            </div>
+            <div>
+                <h1>Greetings,</h1>
+                <h1>I'm Zeenathul Ilma</h1>
+            </div>
+            <div>
+                <p>Where Passion Meets Precision – I Create Software That Enriches Lives and Elevates Businesses</p>
+                <a href="contact.html">
+                    <button type="button">Get In Touch</button>
+                </a>
+            </div>
+        </div>
+    </section>
+</main>
+<footer>
+    <div>
+        <p>Copyright &copy; 2025 by Zeenathul Ilma | All Rights Reserved.</p>
+    </div>
+</footer>
 </body>
 </html>

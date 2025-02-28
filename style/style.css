@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: block;
+    /*display: flex;
+    justify-content: center;
+    align-items: center;*/
+    min-height: 100vh;
+    background: dimgray;
+}
+
+header {
+    top: 60px;
+    left: 800px;
+    position: sticky;
+    height: 100px;
+    width: 900px;
+    /*background: linear-gradient( 112.3deg,  rgba(252,222,28,1) 23%, rgba(202,178,22,1) 70.2% );*/
+    background: #ffb400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+header ul {
+    display: flex;
+    width: 800px;
+}
+
+header ul li {
+    padding-left: 5px;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    list-style: none;
+    z-index: 1;
+}
+
+header ul li a {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+}
+
+header ul li a .icon {
+    padding-right: 5px;
+    position: relative;
+    display: block;
+    line-height: 125px;
+    font-size: 1.5em;
+    text-align: center;
+    transition: 0.5s;
+}
+
+header ul li.active a .icon { /*header ul li:hover a .icon {*/
+    transform: translateY(-50px);
+}
+
+header ul li a .text {
+    position: absolute;
+    color: #fff;
+    font-weight: 400;
+    opacity: 0;
+    letter-spacing: 0.05em;
+    font-size: 0.85em;
+    transform: translateY(20px);
+    transition: 0.5s;
+}
+
+header ul li.active a .text { /* header ul li:hover a .text { */
+    opacity: 1;
+    transform: translateY(10px);
+}
+
+header ul li a .circle {
+    position: absolute;
+    margin-right: 5px;
+    display: block;
+    width: 75px;
+    height: 75px;
+    background: transparent;
+    border-radius: 50%;
+    border: 1.8px solid #ffffff;
+    transform: translateY(-62px) scale(0);
+}
+
+header ul li.active a .circle {
+    transition: .5s;
+    transition-delay: .5s;
+    transform: translateY(-62px) scale(1);
+}
+
+.indicator {
+    position: absolute;
+    top: -50%;
+    width: 100px;
+    height: 100px;
+    background: #ffb400;
+    border: 6px solid dimgray;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+}
+
+.indicator::before {
+    content: '';
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    background: transparent;
+    top: 50%;
+    left: -24px;
+    border-top-right-radius: 20px;
+    box-shadow: 1px -10px 0 dimgray;
+}
+
+.indicator::after {
+    content: '';
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    background: transparent;
+    top: 50%;
+    right: -24px;
+    border-top-left-radius: 20px;
+    box-shadow: -1px -10px 0 dimgray;
+}
+
+header ul li:nth-child(1).active~.indicator {
+    transform: translateX(calc(70px * 0));
+}
+
+header ul li:nth-child(2).active~.indicator {
+    transform: translateX(calc(70px * 1));
+}
+
+header ul li:nth-child(3).active~.indicator {
+    transform: translateX(calc(70px * 2));
+}
+
+header ul li:nth-child(4).active~.indicator {
+    transform: translateX(calc(70px * 3));
+}
+
+header ul li:nth-child(5).active~.indicator {
+    transform: translateX(calc(70px * 4));
+}
+
+header ul li:nth-child(6).active~.indicator {
+    transform: translateX(calc(70px * 5));
+}
+
+header ul li:nth-child(7).active~.indicator {
+    transform: translateX(calc(70px * 6));
+}
+
+header ul li:nth-child(8).active~.indicator {
+    transform: translateX(calc(70px * 7));
+}
