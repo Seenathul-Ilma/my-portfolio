@@ -27,6 +27,20 @@
 
     --paint-icon-color: crimson;
     --plus-icon-color: #adff2f;
+
+    --base-color: white;
+    --base-varient: yellow;
+    --text-color2: #111528;
+    --secondary-text: #232738;
+    --primary-color: #3a435d;
+    --accent-color: blue;
+
+    --base-dark-color: black;
+    --base-dark-varient: red;
+    --text-dark-color2: white;
+    --secondary-dark-text: grey;
+    --primary-dark-color: #fff;
+    --accent-dark-color: pink;
 }
 
 *::selection {
@@ -210,8 +224,37 @@ body > section > #edit-section {
     aspect-ratio: 1/1;
     border: 2px solid #ffb400;
     border-radius: 50%;
-    background: #ffb400;
+    background: red;
     box-shadow: inset 0px 5px 15px rgba(0,0,0,0.4), inset 0px -5px 15px rgba(255, 255, 255, 0.4);
+}
+
+body > section > #edit-section > #theme-switch {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    border-radius: 50%;
+    border-width: 0;
+    background-color: dimgrey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#theme-switch i {
+    font-size: 30px;
+    color: yellow;
+}
+
+#theme-switch i:last-child {
+    display: none;
+}
+
+#theme-switch i:first-child {
+    display: none;
+}
+
+#theme-switch i:last-child {
+    display: block;
 }
 
 body > section > #hero-section{
