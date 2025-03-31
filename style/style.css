@@ -351,6 +351,7 @@ body > section > #profile-section{
     position: absolute;
     background: #ffffff;
     box-shadow: -3px -3px 7px #ceced1, 3px 3px 5px #ceced1;
+    display: block;
 }
 
 body > section > #profile-section > #profile {
