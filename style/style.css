@@ -352,12 +352,15 @@ body > section > #profile-section{
     background: #ffffff;
     box-shadow: -3px -3px 7px #ceced1, 3px 3px 5px #ceced1;
     display: block;
+    place-content: space-between;
 }
 
 body > section > #profile-section > #profile {
     display: flex;
     flex-direction: row;
     position: relative;
+    width: 100%;
+    height: 100%;
 }
 
 .image {
