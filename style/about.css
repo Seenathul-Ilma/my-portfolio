@@ -76,3 +76,48 @@ h2 > span {
 .about-detail > div:last-child{
     font-size: 14px;
 }
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    #about-section > h2 {
+        font-size: 35px;
+        top: 20px;
+    }
+
+    .about-detail-box {
+        min-width: 90%;
+        top: 55%;
+        padding: 15px;
+    }
+    .about-icon {
+        margin: 0 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-detail-box {
+        min-width: 95%;
+        top: 60%;
+        padding: 10px;
+    }
+    .about-icon {
+        margin: 0 15px;
+    }
+    .large-background-text {
+        font-size: 60px;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-detail-box {
+        position: relative;
+        min-width: 100%;
+        top: auto;
+        transform: none;
+        margin-top: 20px;
+        padding: 10px;
+    }
+    .about-icon {
+        margin: 0 10px;
+    }
+}
