@@ -541,23 +541,9 @@ main {
     box-shadow: 0 0 10px #ffb400;
 }
 
-body > section > footer {
-    border: 2px solid purple;
-    width: 94%;
-    height: 3vh;
-    position: absolute;
-    bottom: 0.5%;
-    left: 3%;
-    right: 3%;
-    background: #ffb400;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-body > section > footer > p {
-    font-size: 11px;
-    text-align: center;
+footer {
+    grid-column: 1 / 10;
+    height: 35px;
 }
 
 /* Tablets/iPads */
