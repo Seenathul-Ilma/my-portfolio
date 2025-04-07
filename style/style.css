@@ -83,102 +83,94 @@ section {
     left: 2px;
 }
 
-/* ------- */
+/*.navbar a {
+    font-size: 16px;
+    color: var(--text-color);
+    margin-left: 32px;
+    border: 2px solid crimson;
+}
 
-body > section > #default_header > nav {
+.navbar a:hover,
+.navbar a.active {
+    color: var(--main-color);
+}*/
+
+.navbar {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
     display: flex;
-    width: 80%;
-    height: 10vh;
-    border: 2px solid red;
-    justify-content: left;
-    margin: 5px;
-}
-
-body > section > #default_header > nav > ul {
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-    align-items: center;
-    /*
-    background-color: yellowgreen;
-    */
-}
-
-.nav_link a, .customize {
-    color: var(--white-color);
-    opacity: 0.5;
-}
-
-.nav_light {
-    position: absolute;
-    background-color: var(--white-color);
-    width: 22px;
-    height: 2px;
-    border-radius: 2px;
-    top: 0;
-    left: 252px;
-
-    display: flex;
-    justify-content: center;
-}
-
-.nav_light::before {
-    content: '';
-    width: 40px;
-    height: 60px;
-    position: absolute;
-    top: 5px;
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.3) -50%, rgba(255, 255, 255, 0) 90%);
-    clip-path: polygon(30% 0, 70% 0, 100% 100%, 0% 100%);
-}
-
-body > section > .default_header > nav > ul > li a {
-    text-decoration: none;
-}
-
-body > section > #default_header > nav > ul > li {
-    position: relative;
-    width: fit-content;
-    height: fit-content;
-    list-style: none;
-    /*width: 110px;
-    height: 80px;*/
-    z-index: 1;
-    display: flex;
-    justify-content: center;
-}
-
-body > section > #default_header > nav > ul > li a, body > section > header > nav > ul:nth-child(2) > li {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-    width: 100%;
-    text-align: center;
-    font-weight: 450;
+    gap: 12px;
+    padding: 10px;
+    z-index: 99;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar a {
+    height: 35px;
+    width: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    background: var(--bg-color);
+    color: var(--text-color);
+    border-radius: 50%;
+    box-shadow: -3px -3px 7px var(--second-bg-color), 3px 3px 5px var(--bg-color);
+    transition: all 0.3s ease;
+    text-decoration: none;
+    margin: 10px 0 10px 0;
+    position: relative;
 }
 
 .nav_text, .custom_nav_text {
     position: absolute;
-    color: var(--white-color);
-    font-weight: 400;
-    font-size: 9.5px;
+    left: -10px; /* slightly overlaps initially */
+    color: var(--text-color);
+    font-weight: 600;
+    font-size: 12px;
     letter-spacing: 0.5px;
-    transition: 0.5s;
+    transition: all 0.3s ease;
     opacity: 0;
-    transform: translateY(10px);
+    transform: translateX(-10px);
+    white-space: nowrap;
+
+    width: 0;
+    height: 35px;
+    background: #00f7ff;
+    text-align: center;
+    border-radius: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 0 10px;
 }
 
 li:hover .nav_text {
+    width: 100px;
     opacity: 1;
-    transform: translateY(20px);
+    transform: translateX(-55px); /* adjust to match the expanded width */
 }
 
-li:hover .custom_nav_text {
-    opacity: 1;
-    transform: translateY(22px);
+
+/* Hover effect */
+.navbar a:hover,
+.navbar a.active {
+    background: var(--main-color);
+    color: var(--second-bg-color);
 }
+
+/* --- */
 
 body > section > #edit-section {
     position: absolute;
