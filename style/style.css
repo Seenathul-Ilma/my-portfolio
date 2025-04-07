@@ -2,8 +2,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    /*
+    scroll-behavior: smooth;
+    */
     font-family: "Poppins", sans-serif;
-    list-style: none;
 }
 
 :root {
@@ -27,101 +32,58 @@
 
     --paint-icon-color: crimson;
     --plus-icon-color: #adff2f;
-
-    --base-color: white;
-    --base-varient: yellow;
-    --text-color2: #111528;
-    --secondary-text: #232738;
-    --primary-color: #3a435d;
-    --accent-color: blue;
-
-    --base-dark-color: black;
-    --base-dark-varient: red;
-    --text-dark-color2: white;
-    --secondary-dark-text: grey;
-    --primary-dark-color: #fff;
-    --accent-dark-color: pink;
 }
 
-*::selection {
-    background: var(--main-color);
-    color: var(--bg-color);
-}
-
-
-body {
-    overflow-x: hidden;
-    overflow-y: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-width: 100vw;
-    min-height: 100vh;
-    max-width: 100vw;
-    max-height: 100vh;
-    background-color: var(--white-color);
+html {
+    font-size: 62.5%;
+    overflow: hidden;
 }
 
 li {
     list-style: none;
 }
 
-a {
-    text-decoration: none;
-    color: var(--white-color);
-    font-size: 10px;
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+    overflow: hidden; /* hides overflow */
 }
 
-li i{
-    font-size: 22px;
-}
-
-body > section{
-    max-width: 100vw;
-    max-height: 100vh;
-    min-width: 100vw;
+section {
     min-height: 100vh;
-    box-sizing: border-box;
-    border: 2px solid black;
-    position: relative;
-    display: flex;
-    justify-content: space-around;
+    padding: 100px 9% 32px;
 }
 
-body > section > #default_header {
-    top: 2%;
-    right: 10%;
-    height: 10vh;
-    width: 65%;
-    left: 25%;
-    border: 2px solid yellowgreen;
-    position: absolute;
-    background-color: var(--tab-color);
-    display: flex;
-    justify-content: right;
-    align-items: center;
-    border-radius: 20px;
-    flex-direction: row;
-    padding: 10px;
-    gap: 20px;
-}
-
-.logo {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    width: 20%;
-    height: 10vh;
-    border: 1px solid red;
-}
-
-.logo > img {
-    overflow: hidden;
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    aspect-ratio: 1/1;
-    transform: scale(0.85);
-    border: 1px solid yellow;
+    padding: 32px 6%;
+    background: var(--bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
 }
+
+.logo > p{
+    font-size: 40px;
+    color: var(--text-color);
+    font-weight: 600;
+    cursor: default;
+    letter-spacing: -1.6px;
+}
+
+.logo-A {
+    font-size: 31px;
+    line-height: 1.5;
+    position: relative;
+    top: -3px; /* Adjust the value to move it up or down */
+    left: 2px;
+}
+
+/* ------- */
 
 body > section > #default_header > nav {
     display: flex;
