@@ -86,49 +86,23 @@ li i{
     background: var(--main-color);
     color: var(--bg-color);
 }
-
-li {
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
-    color: var(--white-color);
-    font-size: 10px;
-}
-
-li i{
-    font-size: 22px;
-}
-
-body > section{
-    max-width: 100vw;
-    max-height: 100vh;
-    min-width: 100vw;
-    min-height: 100vh;
-    box-sizing: border-box;
-    border: 2px solid black;
-    position: relative;
-    display: flex;
-    justify-content: space-around;
-}
-
-body > section > #default_header {
-    top: 2%;
-    right: 10%;
-    height: 10vh;
-    width: 65%;
-    left: 25%;
-    border: 2px solid yellowgreen;
-    position: absolute;
-    background-color: var(--tab-color);
-    display: flex;
-    justify-content: right;
-    align-items: center;
-    border-radius: 20px;
-    flex-direction: row;
+/*.container header,*/
+.container aside,
+main,
+footer {
+    border: 2px solid green;
+    border-radius: 0;
     padding: 10px;
-    gap: 20px;
+}
+
+header {
+    grid-column: 3 / 10;
+    min-height: 70px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid green;
 }
 
 .logo {
@@ -136,7 +110,7 @@ body > section > #default_header {
     display: flex;
     justify-content: center;
     width: 20%;
-    height: 10vh;
+    height: 70px;
     border: 1px solid red;
 }
 
@@ -148,23 +122,23 @@ body > section > #default_header {
     border: 1px solid yellow;
 }
 
-body > section > #default_header > nav {
+/*#default_header > nav {
     display: flex;
     width: 80%;
-    height: 10vh;
+    height: 70px;
     border: 2px solid red;
     justify-content: left;
-    margin: 5px;
+    margin: 0;
 }
 
-body > section > #default_header > nav > ul {
+#default_header > nav > ul {
     display: flex;
     width: 100%;
     justify-content: space-around;
     align-items: center;
-    /*
+    !*
     background-color: yellowgreen;
-    */
+    *!
 }
 
 .nav_link a, .customize {
@@ -195,23 +169,23 @@ body > section > #default_header > nav > ul {
     clip-path: polygon(30% 0, 70% 0, 100% 100%, 0% 100%);
 }
 
-body > section > .default_header > nav > ul > li a {
+#default_header > nav > ul > li a {
     text-decoration: none;
 }
 
-body > section > #default_header > nav > ul > li {
+#default_header > nav > ul > li {
     position: relative;
     width: fit-content;
     height: fit-content;
     list-style: none;
-    /*width: 110px;
-    height: 80px;*/
+    !*width: 110px;
+    height: 80px;*!
     z-index: 1;
     display: flex;
     justify-content: center;
 }
 
-body > section > #default_header > nav > ul > li a, body > section > header > nav > ul:nth-child(2) > li {
+#default_header > nav > ul > li a, header > nav > ul:nth-child(2) > li {
     position: relative;
     display: flex;
     justify-content: center;
@@ -241,7 +215,7 @@ li:hover .nav_text {
 li:hover .custom_nav_text {
     opacity: 1;
     transform: translateY(22px);
-}
+}*/
 
 body > section > #edit-section {
     position: absolute;
