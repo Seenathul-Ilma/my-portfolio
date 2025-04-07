@@ -546,81 +546,13 @@ footer {
     height: 35px;
 }
 
-/* Tablets/iPads */
-@media all and (max-width: 768px) {
-    /* Styles for tablets/iPads */
-
-    li i{
-        font-size: 20px;
-    }
-
-    body > section > #profile-section{
-        visibility: hidden;
-    }
-
-    /*
-    body > section > header {
-    */
-    body > section > #default_header {
-        width: 88%;
-        left: 3%;
-        right: 5%;
-    }
-
-    body > section > #edit-section {
-        right: 2.5%;
-        top: 3.5%;
-        width: 6%;
-        aspect-ratio: 1/1;
-    }
-
-    body > section > #edit-section > #theme-switch i {
-        font-size: 20px;
-    }
-
-    .nav_text, .custom_nav_text {
-        font-weight: 350;
-        font-size: 7.5px;
-        transform: translateY(9px);
-    }
-
-    li:hover .nav_text {
-        transform: translateY(18px);
-    }
-
-    li:hover .custom_nav_text {
-        opacity: 1;
-        transform: translateY(23px);
-    }
-
-    .nav_light {
-        width: 18px;
-        height: 2px;
-
-        border-radius: 2px;
-        left: 179px;
-    }
-
-    .nav_light::before {
-        width: 34px;
-        height: 50px;
-    }
-
-    .logo {
-        margin-right: 4px;
-        padding-right: 3px;
-    }
-
-    body > section > #hero-section{
-        /*align-self: center;*/
-        border: 2px solid red;
-        width: 94%;
-        height: 78vh;
-        left: 3%;
-        right: 3%;
+/* Responsive Layout */
+/* Laptop Screen */
+@media all and (max-width: 1440px){
+    main {
+        min-height: 445px;
     }
 }
-
 
 /* Laptops/Small Screens */
 @media all and (min-width: 769px) and (max-width: 1024px) {
