@@ -573,111 +573,39 @@ footer {
     }
 }
 
-/* Desktops/Large Screens */
-@media all and (min-width: 1025px) and (max-width: 1440px) {
-    /* Styles for desktops/large screens */
-
-    .nav_light {
-        left: 206.5px;
+/* Tablet Screens */
+@media all and (max-width: 768px) {
+    body {
+        overflow-y: scroll;
     }
 
-    body > section > #default_header {
-        left: 26%;
-        right: 9%;
-        width: 66%;
+    .container {
+        grid-template-columns: 1fr;
     }
 
-    body > section > #default_header > nav {
-        width: 82%;
+    header,
+    aside,
+    main,
+    footer {
+        grid-column: 1 / 2 !important;
     }
 
-    body > section > #edit-section {
-        right: 3%;
-        top: 3%;
-        width: 4%;
+    aside {
+        display: none;
     }
 
-    body > section > #hero-section{
-        /*align-self: center;*/
-        right: 2%;
-        left: 26%;
-        height: 80%;
+    /*aside {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
-    body > section > #hero-section > .profile-pic {
-        width: 350px;
-        height: 350px;
-
-        /*
-        transform: scale(0.8);
-        */
-    }
-
-    body > section > #hero-section > .profile-pic > img {
-        width: 350px;
-    }
-
-    body > section > #profile-section {
-        width: 22%;
-        left: 2%;
-        height: 92.5vh;
-    }
-
-    .image {
-        width: 82%;
-        height: 150px;
-    }
-
-    .occupation {
-        left: 26px;
-        top: 180px;
-        display: flex;
-    }
-
-    .social-media {
-        top: 215px;
-        height: 35px;
-    }
-
-    .social-media a {
-        height: 25px;
-        width: 25px;
-    }
-
-    .social-media a i {
-        line-height: 25px;
-    }
-
-    .details {
-        top: 265px;
-        height: 250px;
-    }
-
-    .detail-box {
-        height: 92%;
-        justify-content: space-between;
-    }
-
-    .sub-detail-box {
-        width: 93%;
-        height: 20%;
-        font-size: 12px;
-    }
-
-    .content-detail > .detail-p {
-        font-size: 10px;
-    }
-
-    .download-cv {
-        top: 520px;
-        border-radius: 8px;
-    }
-
-    body > section > footer {
-        width: 96%;
-        left: 2%;
-    }
+    aside > div {
+        width: 45%;
+        min-width: 120px;
+    }*/
 }
+
 
 @media all and (min-width: 1441px) {
 
