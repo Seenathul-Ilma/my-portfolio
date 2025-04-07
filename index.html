@@ -25,15 +25,14 @@
 </head>
 <body>
 
-<div class="container">
+<section>
 
     <!-- Header Section -->
-    <header id="default_header" class="grid1">
-        <!--<nav></nav>-->
+    <header id="default_header">
         <div class="logo">
             <img src="Assets/Images/logoCropped.png" alt="Logo">
         </div>
-        <!--<nav>
+        <nav>
             <ul class="nav_list">
                 <li class="nav_link">
                     <a href="#">
@@ -93,14 +92,37 @@
                 </li>
                 <div class="nav_light"></div>
             </ul>
-        </nav>-->
+        </nav>
     </header>
 
+    <!-- Edit Section -->
+    <section id="edit-section">
+        <button id="theme-switch">
+            <i class="ti ti-sun"></i>
+            <i class="ti ti-moon"></i>
+        </button>
+    </section>
+
+    <!-- Hero Section -->
+    <section id="hero-section" class="home">
+        <div class="home-content">
+            <h3>Hello, It's Me</h3>
+            <h1>Zeenathul Ilma</h1>
+            <h3>And I'm a <span class="hero-about">Full Stack Developer</span></h3>
+            <p>Where Passion Meets Precision – I Create Software That Enriches Lives and Elevates Businesses</p>
+            <a href="contact.html"><button type="button">Get In Touch</button></a>
+        </div>
+        <div class="profile-pic">
+            <img src="Assets/Images/my-profile-pic.png" alt="Profile picture">
+        </div>
+    </section>
+
     <!-- Side Profile Section -->
-    <aside class="grid2">
-        <section class="container-aside">
+    <section id="profile-section">
+        <div id="profile">
+            <!--<div class="occupation">Full Stack Developer</div>-->
             <div class="image">
-                <img src="Assets/Images/my-profile-pic.png">
+                <img src="Assets/Images/my-profile-pic.png" alt="Profile picture">
             </div>
             <div class="occupation">Full Stack Developer</div>
             <div class="social-media">
@@ -109,7 +131,7 @@
                 <a href="#" class="insta"><i class="fa-brands fa-instagram"></i></a>
                 <a href="#" class="linkedIn"><i class="fa-brands fa-linkedin"></i></a>
             </div>
-            <div class="profile-detail-box">
+            <div class="details">
                 <div class="detail-box">
                     <div class="sub-detail-box">
                         <div class="icon-detail-box">
@@ -150,49 +172,17 @@
                 </div>
             </div>
             <div class="download-cv">
-                <!--<a href="/Assets/CV_Zeenathul_Ilma.pdf"><i class="fa-solid fa-download"></i></a>
-                <a href="/Assets/CV_Zeenathul_Ilma.pdf" download>Download CV</a>-->
-                <a href="/Assets/pdf/CV_Zeenathul_Ilma.pdf" download>
-                    <i class="fa-solid fa-download"></i> Download CV
-                </a>
+                <a href="/Assets/pdf/CV_Zeenathul_Ilma.pdf"><i class="fa-solid fa-download"></i></a>
+                <a href="/Assets/pdf/CV_Zeenathul_Ilma.pdf" download>Download CV</a>
             </div>
-        </section>
-    </aside>
-
-    <!-- Edit Section -->
-    <!--<section id="edit-section">
-        <button id="theme-switch">
-            <i class="ti ti-sun"></i>
-            <i class="ti ti-moon"></i>
-        </button>
-    </section>-->
-
-    <!-- Main Section -->
-    <main class="grid3">
-        <!--<section>
-            <h2>Welcome to My Portfolio</h2>
-            <p>Responsive layout using your original grid structure.</p>
-        </section>-->
-        <!-- Hero Section -->
-        <section id="hero-section" class="home">
-            <div class="home-content">
-                <h3>Hello, It's Me</h3>
-                <h1>Zeenathul Ilma</h1>
-                <h3>And I'm a <span class="hero-about">Full Stack Developer</span></h3>
-                <p>Where Passion Meets Precision – I Create Software That Enriches Lives and Elevates Businesses</p>
-                <a href="contact.html"><button type="button">Get In Touch</button></a>
-            </div>
-            <div class="profile-pic">
-                <img src="Assets/Images/my-profile-pic.png" alt="Profile picture">
-            </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
     <!-- Footer Section -->
-    <footer class="grid4">
+    <footer>
         <p>Copyright &copy; 2025 by Zeenathul Ilma | All Rights Reserved.</p>
     </footer>
-</div>
+</section>
 
 <script src="Assets/lib/tabler/tabler.js"></script>
 </body>
