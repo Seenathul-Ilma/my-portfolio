@@ -319,195 +319,35 @@ span {
 .more-about-btn:hover {
     box-shadow: none;
 }
+/* Extra small devices (phones) */
+@media all and (max-width: 480px) {
 
-/* Tablets/iPads */
+}
+
+@media all and (max-width: 600px) {
+
+}
+
 @media all and (max-width: 768px) {
-    /* Styles for tablets/iPads */
-
-    li i{
-        font-size: 20px;
-    }
-
-    body > section > #profile-section{
-        visibility: hidden;
-    }
-
-    /*
-    body > section > header {
-    */
-    body > section > #default_header {
-        width: 88%;
-        left: 3%;
-        right: 5%;
-    }
-
-    body > section > #edit-section {
-        right: 2.5%;
-        top: 3.5%;
-        width: 6%;
-        aspect-ratio: 1/1;
-    }
-
-    body > section > #edit-section > #theme-switch i {
-        font-size: 20px;
-    }
-
-    .nav_text, .custom_nav_text {
-        font-weight: 350;
-        font-size: 7.5px;
-        transform: translateY(9px);
-    }
-
-    li:hover .nav_text {
-        transform: translateY(18px);
-    }
-
-    li:hover .custom_nav_text {
-        opacity: 1;
-        transform: translateY(23px);
-    }
-
-    .nav_light {
-        width: 18px;
-        height: 2px;
-
-        border-radius: 2px;
-        left: 179px;
-    }
-
-    .nav_light::before {
-        width: 34px;
-        height: 50px;
-    }
-
-    .logo {
-        margin-right: 4px;
-        padding-right: 3px;
-    }
-
-    body > section > #hero-section{
-        /*align-self: center;*/
-        border: 2px solid red;
-        width: 94%;
-        height: 78vh;
-        left: 3%;
-        right: 3%;
-    }
-}
-
-
-/* Laptops/Small Screens */
-@media all and (min-width: 769px) and (max-width: 1024px) {
-    /* Styles for laptops/small screens */
-}
-
-/* Desktops/Large Screens */
-@media all and (min-width: 1025px) and (max-width: 1440px) {
-    /* Styles for desktops/large screens */
-
-    .nav_light {
-        left: 206.5px;
-    }
-
-    body > section > #default_header {
-        left: 26%;
-        right: 9%;
-        width: 66%;
-    }
-
-    body > section > #default_header > nav {
-        width: 82%;
-    }
-
-    body > section > #edit-section {
-        right: 3%;
-        top: 3%;
-        width: 4%;
-    }
-
-    body > section > #hero-section{
-        /*align-self: center;*/
-        right: 2%;
-        left: 26%;
-        height: 80%;
-    }
-
-    body > section > #hero-section > .profile-pic {
-        width: 350px;
-        height: 350px;
-
-        /*
-        transform: scale(0.8);
-        */
-    }
-
-    body > section > #hero-section > .profile-pic > img {
-        width: 350px;
-    }
-
-    body > section > #profile-section {
-        width: 22%;
-        left: 2%;
-        height: 92.5vh;
-    }
-
-    .image {
-        width: 82%;
-        height: 150px;
-    }
-
-    .occupation {
-        left: 26px;
-        top: 180px;
-        display: flex;
-    }
-
-    .social-media {
-        top: 215px;
-        height: 35px;
-    }
-
-    .social-media a {
-        height: 25px;
-        width: 25px;
-    }
-
-    .social-media a i {
-        line-height: 25px;
-    }
-
-    .details {
-        top: 265px;
-        height: 250px;
-    }
-
-    .detail-box {
-        height: 92%;
-        justify-content: space-between;
-    }
-
-    .sub-detail-box {
-        width: 93%;
-        height: 20%;
-        font-size: 12px;
-    }
-
-    .content-detail > .detail-p {
-        font-size: 10px;
-    }
-
-    .download-cv {
-        top: 520px;
-        border-radius: 8px;
-    }
-
-    body > section > footer {
-        width: 96%;
-        left: 2%;
-    }
-}
-
-@media all and (min-width: 1441px) {
 
 }
 
+@media all and (max-width: 1024px){
+    section {
+        padding: 80px 7% 32px;
+    }
+}
+
+@media all and (max-width: 1280px) {
+    section {
+        padding: 100px 7% 32px;
+    }
+}
+
+@media all and (max-width: 1440px) {
+
+}
+
+@media all and (min-width: 1600px) {
+
+}
