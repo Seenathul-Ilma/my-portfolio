@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
     list-style: none;
+    overflow: hidden;
 }
 
 :root {
@@ -43,23 +44,47 @@
     --accent-dark-color: pink;
 }
 
+@font-face {
+    font-family: 'Stanley';
+    src: url('Assets/lib/font/Stanley.otf') format('opentype');
+}
+
+body {
+    background-color: black;
+    color: aliceblue;
+    text-align: center;
+    font-family: 'Arial Narrow Bold', sans-serif;
+    padding-top: 10px;
+    margin: 0;
+    overflow: hidden;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--white-color);
+    font-size: 10px;
+}
+
+li i{
+    font-size: 22px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: auto 530px auto; /* Adjust row heights */
+    grid-auto-rows: auto;
+    gap: 15px;
+    padding: 10px;
+}
+
 *::selection {
     background: var(--main-color);
     color: var(--bg-color);
-}
-
-
-body {
-    overflow-x: hidden;
-    overflow-y: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-width: 100vw;
-    min-height: 100vh;
-    max-width: 100vw;
-    max-height: 100vh;
-    background-color: var(--white-color);
 }
 
 li {
