@@ -139,3 +139,42 @@
 .btn-cv:hover {
     background: #e5a100;
 }
+
+.stats {
+    flex: 1;
+    min-width: 300px;
+    max-width: 600px;          /* Optional: keeps it from stretching too wide */
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: center;   /* Ensures items inside stay centered */
+}
+
+.stat-box {
+    width: 100%;
+    max-width: 250px;
+    height: fit-content;
+    background-color: #1c1c1c;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: left;
+    /*
+    text-align: justify;
+    */
+    text-wrap: auto;
+    color: white;
+    border: 1px solid #2e2e2e;
+}
+
+.stat-box span {
+    font-size: 50px;
+    color: #ffb400;
+    font-weight: 900;
+}
+.stat-box p {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #ccc;
+}
