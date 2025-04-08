@@ -178,11 +178,30 @@
 }
 
 /* Adding styles for skill section */
+
+.divider {
+    position: relative;
+    width: 350px;
+    height: 0.01px;
+    border-bottom: 0.005px solid grey;
+    margin: 0 auto 30px auto; /* Center and add space below */
+}
+
+.sub-section-title {
+    position: relative;
+    font-size: 35px;
+    text-align: center;
+    font-weight: 700;
+    color: var(--main-color);
+    margin: 40px 0; /* Add top and bottom space */
+    /*z-index: 1;*/
+}
+
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Two columns layout */
     gap: 50px; /* Gap between columns and rows */
-    margin: 0 auto;
+    margin: 40px 0; /* Add top and bottom space */
 }
 
 .skill-box {
@@ -190,6 +209,7 @@
     padding: 10px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /*border: 1px solid red;*/
     display: flex;
     flex-direction: column;
     justify-content: center;
