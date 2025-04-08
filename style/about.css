@@ -1,13 +1,42 @@
-#about-section > h2 {
-    text-align: center;
-    font-size: 44px;
-    font-weight: bold;
-    position: absolute;
-    top: 20px;
+.about-section {
+    background: #111;
+    color: white;
+    padding: 80px 20px;
+    scroll-behavior: smooth;
 }
 
-h2 > span {
-    color: var(--base-varient);
+.section-title {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-title span {
+    color: #ffb400; /* Accent color */
+}
+
+.section-title {
+    position: relative;
+    font-size: 60px;
+    text-align: center;
+    font-weight: 900;
+    color: white;
+    z-index: 1;
+}
+
+.section-title .bg-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 120px;
+    color: var(--text-color); /* super light for watermark look */
+    opacity: 0.03;
+    font-weight: 900;
+    z-index: 0;
+    white-space: nowrap;
+    pointer-events: none;
+    user-select: none;
 }
 
 .about-paragraph {
