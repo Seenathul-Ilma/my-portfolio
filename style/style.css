@@ -276,6 +276,8 @@ span {
     height: 100%;
     line-height: 35px;
     font-size: 18px;
+
+    transition: transform 0.5s ease;
 }
 
 .social-media a.fb i {
@@ -297,6 +299,8 @@ span {
 .social-media a:hover {
     background: var(--main-color);
     color: var(--second-bg-color);
+    transform: rotate(360deg);
+    transition-duration: 0.5s;
     /*
     box-shadow: 0 0 16px var(--main-color);
     */
