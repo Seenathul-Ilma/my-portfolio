@@ -129,6 +129,8 @@ section {
     text-decoration: none;
     margin: 10px 0 10px 0;
     position: relative;
+
+    opacity: 0.5;
 }
 
 .nav_text, .custom_nav_text {
@@ -168,6 +170,7 @@ li:hover .nav_text {
 .navbar a.active {
     background: var(--main-color);
     color: var(--second-bg-color);
+    opacity: 1;
 }
 
 #menu-icon {
