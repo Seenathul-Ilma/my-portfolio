@@ -182,8 +182,8 @@
 .divider {
     position: relative;
     width: 350px;
-    height: 0.01px;
-    border-bottom: 0.005px solid grey;
+    height: 0.1px;
+    border-bottom: 0.01px solid grey;
     margin: 0 auto 30px auto; /* Center and add space below */
 }
 
