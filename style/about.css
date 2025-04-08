@@ -176,3 +176,65 @@
     font-weight: 400;
     color: black;
 }
+
+/* Adding styles for skill section */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns layout */
+    gap: 50px; /* Gap between columns and rows */
+    margin: 0 auto;
+}
+
+.skill-box {
+    background-color: transparent;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.skill-box p {
+    font-size: 12px;
+    margin-bottom: 10px;
+    text-wrap: balance;
+    text-align: justify;
+    display: flex;
+    align-items: flex-start;
+}
+
+.skill-icons {
+    list-style-type: none;
+    padding-right: 10px;
+    display: flex;
+    justify-content: flex-end; /* Align icons to the right */
+    flex-wrap: wrap; /* Ensure icons wrap in a responsive manner */
+    align-items: flex-end;
+}
+
+.skill-icons li {
+    display: flex;
+    flex-direction: column;
+    padding-right: 10px;
+    text-align: center;
+    width: 70px;
+    height: 80px;
+    border: 1px solid crimson;
+    align-items: center;
+    justify-content: center;
+    background: #1a3d5a;
+    border-radius: 10px;
+}
+
+.skill-icons img {
+    max-width: 40px;
+    margin-bottom: 5px;
+}
+
+.skill-icons span {
+    display: block;
+    font-size: 10px;
+    font-weight: 200;
+    color: whitesmoke;
+}
