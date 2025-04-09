@@ -178,7 +178,6 @@
 }
 
 /* Adding styles for skill section */
-
 .divider {
     position: relative;
     width: 350px;
@@ -257,6 +256,37 @@
     font-size: 10px;
     font-weight: 200;
     color: whitesmoke;
+}
+
+/* Styles for timeline - Resume */
+.resume-section {
+    position: relative;
+    background: #111;
+}
+
+.timeline {
+    padding: 10px 50px;
+    position: relative;
+    width: 50%;
+    background: rgba(0, 0, 0, 0.3);
+    box-shadow: 3px 3px 3px black;
+}
+
+.text-box {
+    padding: 20px 30px;
+    background: #fff;
+    position: relative;
+    border-radius: 6px;
+    font-size: 15px;
+    color: black;
+}
+
+.left-container {
+    left: 0;
+}
+
+.right-container {
+    left: 50%;
 }
 
 /* Responsive layout for screens less than 768px */
