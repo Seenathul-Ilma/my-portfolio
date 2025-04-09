@@ -409,6 +409,45 @@
     left: -14px;
 }
 
+/* Responsive layout for screens less than 600px */
+@media all and (max-width: 600px){
+    .timeline {
+        margin: 50px auto;
+    }
+
+    .timeline::after {
+        left: 31px;
+    }
+
+    .timeline-container {
+        width: 100%;
+        padding-left: 80px;
+        padding-right: 25px;
+    }
+
+    .text-box {
+        font-size: 13px;
+    }
+
+    .text-box h4 {
+        margin-bottom: 10px;
+    }
+
+    .right-container {
+        left: 0;
+    }
+
+    .left-container i, .right-container i{
+        left: 10px;
+    }
+
+    .left-container-arrow, .right-container-arrow {
+        border-right: 15px solid #fff;
+        border-left: 0;
+        left: -14px;
+    }
+}
+
 /* Responsive layout for screens less than 768px */
 @media (max-width: 768px) {
     .section-title {
