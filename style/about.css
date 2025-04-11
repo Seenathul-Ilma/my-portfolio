@@ -8,35 +8,6 @@
     overflow-x: hidden;
 }
 
-.section-title span {
-    color: #ffb400; /* Accent color */
-}
-
-.section-title {
-    position: relative;
-    font-size: 60px;
-    margin-bottom: 60px;
-    text-align: center;
-    font-weight: 900;
-    color: white;
-    z-index: 1;
-}
-
-.section-title .bg-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 120px;
-    color: var(--text-color); /* super light for watermark look */
-    opacity: 0.03;
-    font-weight: 900;
-    z-index: 0;
-    white-space: nowrap;
-    pointer-events: none;
-    user-select: none;
-}
-
 .about-content {
     display: flex;
     flex-wrap: wrap;
