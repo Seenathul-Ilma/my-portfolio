@@ -3,94 +3,79 @@
 <head>
   <meta charset="UTF-8">
   <meta name="author" content="zeenathul-Ilma-musawwir">
-  <title>My Projects</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="Assets/lib/normalize.css">
+  <link rel="stylesheet" href="Assets/lib/fontawesome/css/all.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+  <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/core@1.1.1/dist/css/tabler.min.css" />-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
   <!-- box icons -->
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style/style.css">
+
 </head>
 <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="index.html"><img src="Assets/Images/home.png" width="40px">Home</a></li>
-          <li><a href="about-me.html"><img src="Assets/Images/user.png" width="40px">About Me</a></li>
-          <li><a href="resume.html"><img src="Assets/Images/resume.png" width="40px">Resume</a></li>
-          <li><a href="skills.html"><img src="Assets/Images/logical-thinking.png" width="50px">Skills</a></li>
-          <li><a href="projects.html"><img src="Assets/Images/shuttle.png" width="35px">Projects</a></li>
-          <li><a href="Assignments.html"><img src="Assets/Images/assignment.png" width="35px">Assignments</a></li>
-          <li><a href="services.html"><img src="Assets/Images/service.png" width="40px">Services</a></li>
-          <li><a href="contact.html"><img src="Assets/Images/contact-book.png" width="40px">Contact</a></li>
+    <!-- Projects Section -->
+    <section id="about" class="about-section">
+      <nav class="navbar">
+        <ul class="wrapper">
+          <li class="nav-item active">
+            <a href="index.html">
+              <span class="nav_text">Home</span>
+              <div class="nav-icon"><i class="ti ti-home"></i></div>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#about">
+              <span class="nav_text">About</span>
+              <i class="ti ti-user"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#">
+              <span class="nav_text">Projects</span>
+              <i class="ti ti-stack-2"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#">
+              <span class="nav_text">Services</span>
+              <i class="ri-service-line"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#">
+              <span class="nav_text">Contact</span>
+              <i class="ti ti-phone"></i>
+            </a>
+          </li>
+          <!--<a href="#">Resume</a>
+              <a href="#">Skills</a>-->
+          <!--<a href="#">Assignments</a>-->
         </ul>
       </nav>
-    </header>
-    <main>
-      <br>
-      <hr>
-      <br>
-      <!-- Profile Section -->
-      <section>
-        <div>
-          <div>
-            <div>
-              <img src="Assets/Images/my-profile-pic.png" alt="Profile picture" width="250">
-            </div>
-            <div>
-              <div>
-                <h2>Zeenathul Ilma</h2>
-                <h4>Full Stack Developer</h4>
-                <div class="social">
-                  <a href="#"><i class="fab fa-linkedin"></i></a>
-                  <a href="#"><i class="fab fa-github"></i></a>
-                  <a href="#"><i class="fab fa-facebook"></i></a>
-                  <a href="#"><i class="fab fa-instagram"></i></a>
-                </div>
-              </div>
-              <div class="contact-intro">
-                <div class="row">
-                  <div class="icon">
-                    <i class="fa fa-phone"></i>
-                  </div>
-                  <div class="content">
-                    <span>Phone</span>
-                    <h5>+94-750513071</h5>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="icon">
-                    <i class="fa fa-envelope"></i>
-                  </div>
-                  <div class="content">
-                    <span>Email</span>
-                    <h5>seenathulilma@gmail.com</h5>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="icon">
-                    <i class="fa fa-map-marker-alt"></i>
-                  </div>
-                  <div class="content">
-                    <span>Location</span>
-                    <h5>31/5z, moor Street, Kalutara South</h5>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="icon">
-                    <i class="fa fa-calendar-alt"></i>
-                  </div>
-                  <div class="content">
-                    <span>Birthday</span>
-                    <h5>March 07, 2003</h5>
-                  </div>
-                </div>
-              </div>
-              <div class="download-btn"><i class="fa fa-download"></i>Download CV</div>
-            </div>
+
+      <div class="container">
+          <h2 class="section-title">
+            MY<span> PROJECTS</span>
+            <span class="bg-text">WORKS</span>
+          </h2>
+
+          <div class="project-content">
           </div>
-        </div>
-      </section>
-      <!-- Projects/Portfolio Section -->
-      <section>
-          <!-- h2>Latest <span>Projects</span></h2 -->
+      </div>
+    </section>
+
+      <!--<section>
+          &lt;!&ndash; h2>Latest <span>Projects</span></h2 &ndash;&gt;
         <div>
           <div>
             <img src="Assets/Images/mobile-store.jpg" alt="Mobile Zone Project Thumbnail" width="250px" height="180px">
@@ -120,12 +105,6 @@
           </div>
 
         </div>
-      </section>
-    </main>
-    <footer>
-      <div>
-        <p>Copyright &copy; 2025 by Zeenathul Ilma | All Rights Reserved.</p>
-      </div>
-    </footer>
+      </section>-->
 </body>
 </html>
