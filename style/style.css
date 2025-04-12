@@ -359,6 +359,16 @@ span {
 .more-about-btn:hover {
     box-shadow: none;
 }
+
+.divider {
+    position: relative;
+    width: 50%;
+    height: 0.1px;
+    border-bottom: 0.01px solid grey;
+    margin: 0 auto 30px auto; /* Center and add space below */
+    opacity: 0.5;
+}
+
 /* Extra small devices (phones) */
 @media all and (max-width: 480px) {
 

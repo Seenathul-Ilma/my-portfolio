@@ -155,13 +155,6 @@
 }
 
 /* Adding styles for skill section */
-.divider {
-    position: relative;
-    width: 50%;
-    height: 0.1px;
-    border-bottom: 0.01px solid grey;
-    margin: 0 auto 30px auto; /* Center and add space below */
-}
 
 .skills-section {
     background: #1a3d5a;
