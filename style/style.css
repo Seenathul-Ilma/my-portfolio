@@ -60,7 +60,8 @@ section {
 
 .section-title {
     position: relative;
-    font-size: 60px;
+   /* font-size: 60px;*/
+    font-size: clamp(25px, 10vw, 60px);
     margin-bottom: 60px;
     text-align: center;
     font-weight: 900;
@@ -73,7 +74,8 @@ section {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 120px;
+    /*font-size: 120px;*/
+    font-size: clamp(40px, 17vw, 120px);
     color: var(--text-color); /* super light for watermark look */
     opacity: 0.03;
     font-weight: 900;
