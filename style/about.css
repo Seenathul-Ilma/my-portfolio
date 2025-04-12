@@ -11,13 +11,15 @@
 .about-content {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     gap: 40px;
 }
 
 .personal-info {
     padding: 20px;
     font-family: Arial, sans-serif;
+
+    margin-left: auto;
 }
 
 .personal-info > p {
@@ -449,6 +451,10 @@
         width: 100%;
     }
 
+    .personal-info {
+        margin-left: 0;
+    }
+
     .personal-info > p {
         margin-left: 0;
         text-align: center;
@@ -488,6 +494,10 @@
 
     .about-content {
         flex-direction: column;
+    }
+
+    .personal-info {
+        margin-left: 0;
     }
 
     .about-detail {
@@ -531,6 +541,10 @@
 
     .about-icon {
         font-size: 20px;
+    }
+
+    .personal-info {
+        margin-left: 0;
     }
 
     .stats {
