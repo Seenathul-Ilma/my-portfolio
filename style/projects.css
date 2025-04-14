@@ -27,6 +27,11 @@
 
 .project-box img {
     width: 100%;
+    transition: 0.5s ease;
+}
+
+.project-box:hover img {
+    transform: scale(1.1);
 }
 
 .project-box .project-layer {
@@ -42,9 +47,35 @@
     flex-direction: column;
     text-align: center;
     padding: 0 64px;
+    transform: translateY(100%);
+    transition: 0.5s ease;
+}
+
+.project-box:hover .project-layer {
+    transform: translateY(0);
 }
 
 .project-layer h4 {
-    font-size: 23px;
+    font-size: 22px;
+}
+
+.project-layer p {
+    font-size: 15px;
+    margin: 5px 0 16px;
+}
+
+.project-layer a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 36px;
+    height: 36px;
+    background: var(--text-color);
+    border-radius: 50%;
+}
+
+.project-layer a i {
+    font-size: 15px;
+    color: var(--second-bg-color);
 }
 
