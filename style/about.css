@@ -160,15 +160,15 @@
     background: #1a3d5a;
 }
 
-.sub-section-title {
+/*.sub-section-title {
     position: relative;
     font-size: 35px;
     text-align: center;
     font-weight: 700;
     color: var(--main-color);
-    margin: 40px 0; /* Add top and bottom space */
-    /*z-index: 1;*/
-}
+    margin: 40px 0; !* Add top and bottom space *!
+    !*z-index: 1;*!
+}*/
 
 .skills-grid {
     display: grid;
