@@ -371,18 +371,26 @@ span {
     opacity: 0.5;
 }
 
-/* Extra small devices (phones) */
-@media all and (max-width: 480px) {
-
+.about-small {
+    display: none;
 }
 
-@media all and (max-width: 600px) {
-
-}
-
+/* Mobile and tablet: allow scroll and smooth behavior */
 @media all and (max-width: 768px) {
+    body {
+        overflow-y: auto !important;
+        scroll-behavior: smooth;
+    }
 
+    .about-small {
+        display: block;
+    }
+
+    .navbar, .social-media {
+        display: none;
+    }
 }
+
 
 @media all and (max-width: 1024px){
     section {
@@ -394,12 +402,4 @@ span {
     section {
         padding: 100px 7% 32px;
     }
-}
-
-@media all and (max-width: 1440px) {
-
-}
-
-@media all and (min-width: 1600px) {
-
 }
