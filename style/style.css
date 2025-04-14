@@ -375,6 +375,38 @@ span {
     display: none;
 }
 
+.overlay {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    pointer-events: none;
+    z-index: 1000;
+}
+
+.overlay.show {
+    pointer-events: auto;
+}
+
+.overlay .bar {
+    position: absolute;
+    width: 10vw;
+    top: 0;
+    bottom: 0;
+    background: var(--main-color);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s ease-in-out;
+}
+
+.overlay.show .bar {
+    transform: scaleX(1);
+}
+
+.overlay .bar:nth-child(1) { left: 20vw; transition-delay: 0.05s; }
+.overlay .bar:nth-child(2) { left: 40vw; transition-delay: 0.1s; }
+.overlay .bar:nth-child(3) { left: 40vw; transition-delay: 0.15s; }
+.overlay .bar:nth-child(4) { left: 60vw; transition-delay: 0.2s; }
+.overlay .bar:nth-child(5) { left: 40vw; transition-delay: 0.25s; }
+
 /* Mobile and tablet: allow scroll and smooth behavior */
 @media all and (max-width: 768px) {
     body {
