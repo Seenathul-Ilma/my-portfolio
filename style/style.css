@@ -375,37 +375,37 @@ span {
     display: none;
 }
 
-.overlay {
+.overlay-transition {
     position: fixed;
-    top: 0; left: 0; right: 0; bottom: 0;
-    pointer-events: none;
-    z-index: 1000;
-}
-
-.overlay.show {
-    pointer-events: auto;
-}
-
-.overlay .bar {
-    position: absolute;
-    width: 10vw;
     top: 0;
+    right: 0;
     bottom: 0;
-    background: var(--main-color);
-    transform: scaleX(0);
-    transform-origin: left;
+    left: 0;
+    pointer-events: none;
+    z-index: 9999;
+}
+
+.overlay-transition .bar {
+    position: absolute;
+    background: var(--main-color, #3498db);
     transition: transform 0.5s ease-in-out;
 }
 
-.overlay.show .bar {
-    transform: scaleX(1);
+.overlay-transition.top-to-bottom .bar {
+    height: 20vh;
+    width: 100%;
+    left: 0;
+    transform: scaleY(0);
+    transform-origin: top;
 }
-
-.overlay .bar:nth-child(1) { left: 20vw; transition-delay: 0.05s; }
-.overlay .bar:nth-child(2) { left: 40vw; transition-delay: 0.1s; }
-.overlay .bar:nth-child(3) { left: 40vw; transition-delay: 0.15s; }
-.overlay .bar:nth-child(4) { left: 60vw; transition-delay: 0.2s; }
-.overlay .bar:nth-child(5) { left: 40vw; transition-delay: 0.25s; }
+.overlay-transition.top-to-bottom.show .bar {
+    transform: scaleY(1);
+}
+.overlay-transition.top-to-bottom .bar:nth-of-type(1) { top: 0; transition-delay: 0.1s; }
+.overlay-transition.top-to-bottom .bar:nth-of-type(2) { top: 20vh; transition-delay: 0.2s; }
+.overlay-transition.top-to-bottom .bar:nth-of-type(3) { top: 40vh; transition-delay: 0.3s; }
+.overlay-transition.top-to-bottom .bar:nth-of-type(4) { top: 60vh; transition-delay: 0.4s; }
+.overlay-transition.top-to-bottom .bar:nth-of-type(5) { top: 80vh; transition-delay: 0.5s; }
 
 /* Mobile and tablet: allow scroll and smooth behavior */
 @media all and (max-width: 768px) {
