@@ -142,3 +142,122 @@
     color: white;
 }
 
+.popup-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.popup-content .outer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup-content .card {
+    background: #fff;
+    width: 450px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    justify-content: space-between;
+    border-radius: 100px 20px 20px 100px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+
+    animation: animate-assignment-card 30s linear infinite;
+    animation-delay: calc(3s * var(--delay));
+}
+
+.outer:hover .card {
+    animation-play-state: paused;
+}
+
+@keyframes animate-assignment-card {
+    0% {
+        opacity: 0;
+        pointer-events: none;
+        transform: translateY(100%) scale(0.5);
+    }
+    5%, 10% {
+        opacity: 0.4;
+        pointer-events: none;
+        transform: translateY(100%) scale(0.7);
+    }
+    15%, 20% {
+        opacity: 1;
+        pointer-events: auto;
+        transform: translateY(0%) scale(1);
+    }
+    25%, 30% {
+        opacity: 0.4;
+        pointer-events: none;
+        transform: translateY(-100%) scale(0.7);
+    }
+    35%, 100% {
+        opacity: 0;
+        pointer-events: none;
+        transform: translateY(-100%) scale(0.5);
+    }
+}
+
+.card .assignment-card-content {
+    display: flex;
+    align-items: center;
+}
+
+.popup-content .card .assignment-img {
+    height: 70px;
+    width: 70px;
+    position: absolute;
+    left: -5px;
+    background: #fff;
+    border-radius: 50%;
+    padding: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+.card .assignment-img img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.popup-content .card .assignment-number {
+    color: black;
+    margin-left: 80px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.card a {
+    text-decoration: none;
+    padding: 7px 18px;
+    border-radius: 25px;
+    color: var(--second-bg-color);
+    font-weight: 500;
+    font-size: 12px;
+    background: linear-gradient(to bottom, #bea2e7 0%, #86b7e7 100%);
+    transition: all 0.3s ease;
+}
+
+.card a:hover {
+    transform: scale(0.94);
+}
+
+.overlay-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background: rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    pointer-events: none;
+}
+
