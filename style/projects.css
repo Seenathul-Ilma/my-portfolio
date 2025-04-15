@@ -19,7 +19,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(237px, 1fr));
     gap: 40px;
-    padding: 20px 50px;
+    padding: 20px 70px;
     align-items: center;
 }
 
@@ -109,7 +109,7 @@
     /*width: 100%;
     max-width: 800px;
     height: 60px;*/
-    width: clamp(300px, 80%, 800px);  /* Responsive width */
+    width: clamp(240px, 80%, 800px);  /* Responsive width */
     height: clamp(50px, 8vw, 60px);  /* Responsive height */
     margin: 0 auto;
 
@@ -149,11 +149,12 @@
 
 .module-box p {
     position: absolute;
-    font-size: 20px;
-    text-wrap: balance;
+    font-size: clamp(12px, 2vw, 20px);
+    text-wrap: wrap;
     text-align: center;
     align-items: center;
     margin: 0; /* remove default margin */
+    padding: 0 65px;
     align-self: center;
     color: white;
 
