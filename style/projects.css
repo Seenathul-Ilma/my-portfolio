@@ -1,7 +1,7 @@
 .project-section {
     background: var(--second-bg-color);
     color: white;
-    padding: 80px 20px;
+    padding: 60px 20px;
     min-height: 100vh;
     justify-content: center;
     overflow-y: auto;  /* Allow scrolling in the Y-axis */
@@ -9,12 +9,18 @@
 }
 
 .project-container {
-    display: grid;
+    /*display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
     gap: 40px;
-   /* margin: 50px;*/
-   padding: 50px;
+   !* margin: 50px;*!
+   padding: 50px;*/
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(237px, 1fr));
+    gap: 40px;
+    padding: 20px 50px;
+    align-items: center;
 }
 
 .project-container .project-box {
@@ -89,8 +95,8 @@
 
 .module-box {
     position: relative;
-    width: 800px;
-    height: 60px;
+    /*width: 800px;
+    height: 60px;*/
     background-color: greenyellow;
     border-radius: 50px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -100,6 +106,13 @@
     align-items: center;
     justify-content: center;
 
+    /*width: 100%;
+    max-width: 800px;
+    height: 60px;*/
+    width: clamp(300px, 80%, 800px);  /* Responsive width */
+    height: clamp(50px, 8vw, 60px);  /* Responsive height */
+    margin: 0 auto;
+
     transition: background-color 0.5s ease-out; /* Same as image */
 }
 
@@ -108,8 +121,8 @@
 }
 
 .img{
-    height: 60px;
-    width: 60px;
+    height: clamp(50px, 8vw, 60px);
+    width: clamp(50px, 8vw, 60px);
     position: absolute;
     background: #fff;
     border-radius: 50%;
@@ -117,11 +130,14 @@
     box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
     left: 0%;
 
-    transition: transform 0.5s ease-out;
+    transition: left 0.5s ease-out;
 }
 
 .module-box:hover .img {
+    /*
     transform: translateX(740px);
+    */
+    left: calc(100% - clamp(50px, 8vw, 60px));
 }
 
 .img img{
@@ -140,6 +156,7 @@
     margin: 0; /* remove default margin */
     align-self: center;
     color: white;
+
 }
 
 .popup-content {
@@ -334,5 +351,15 @@ body.modal-open .popup-content:hover:has(.card:hover) .card {
     opacity: 0.6;
     width: 100%;
     margin-top: 2px;
+}
+
+@media all and (max-width: 450px) {
+    .section-title {
+        margin-bottom: 30px;
+    }
+
+    .project-container {
+        padding: 20px;
+    }
 }
 
