@@ -174,7 +174,10 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Two columns layout */
     gap: 50px; /* Gap between columns and rows */
-    margin: 40px 0; /* Add top and bottom space */
+    /*
+    margin: 40px 0; !* Add top and bottom space *!
+    */
+    margin: 40px 15px; /* Add top and bottom space */
 }
 
 .skill-box {
