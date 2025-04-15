@@ -91,10 +91,7 @@
     position: relative;
     width: 800px;
     height: 60px;
-    background-color: burlywood;
-    /*
-    padding: 10px;
-    */
+    background-color: greenyellow;
     border-radius: 50px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     /*border: 1px solid red;*/
@@ -102,13 +99,13 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
+
+    transition: background-color 0.5s ease-out; /* Same as image */
 }
 
-/*.module-box img {
-    place-self: flex-start;
-    width: 60px;
-    height: 60px;
-}*/
+.module-box:hover {
+    background-color: var(--main-color2);
+}
 
 .img{
     height: 60px;
@@ -119,6 +116,12 @@
     padding: 5px;
     box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
     left: 0%;
+
+    transition: transform 0.5s ease-out;
+}
+
+.module-box:hover .img {
+    transform: translateX(740px);
 }
 
 .img img{
@@ -136,5 +139,6 @@
     align-items: center;
     margin: 0; /* remove default margin */
     align-self: center;
+    color: white;
 }
 
