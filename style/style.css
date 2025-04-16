@@ -816,10 +816,6 @@ span {
     .menu-mobile {
         display: inline-block;
     }
-
-    .dropdown_menu {
-        display: block;
-    }
 }
 
 @media all and (max-width: 576px){
