@@ -224,12 +224,6 @@ li:hover .nav_text {
     opacity: 1;
 }
 
-#menu-icon {
-    font-size: 35px;
-    color: var(--text-color);
-    display: none;
-}
-
 .home {
     display: flex;
     max-width: 100vw;
@@ -458,6 +452,81 @@ span {
 
 .overlay-transition.top-to-bottom .bar:nth-of-type(5) {
     top: 80vh; transition-delay: 0.5s;
+}
+
+/* Mobile Header */
+.menu-mobile, .menu-close-mobile {
+    width: 40px;
+    height: 40px;
+    background: #7c889a;
+    text-align: center;
+    align-content: center;
+    border-radius: 5px;
+    display: none;
+}
+
+#menu-icon, #menu-close-icon {
+    font-size: 35px;
+    color: white;
+}
+
+.dropdown_menu {
+    position: absolute;
+    right: 40px;
+    top: 60px;
+    width: 300px;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    display: none;
+}
+
+.dropdown_menu li{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown_menu a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.dropdown_menu li:hover a:not(.start_btn) {
+    /*
+    font-size: 15px;
+    */
+    color: var(--main-color2);
+    transform: scale(1.1);
+}
+
+.menu-mobile:hover {
+    transform: scale(1.1);
+}
+
+.start_btn {
+    background: var(--main-color2);
+    color: #1f242d;
+    padding: 8px 16px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: ease;
+}
+
+.start_btn:hover {
+    background: #fff;
+    color: var(--main-color2);
+}
+
+.dropdown_menu .start_btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 @media screen and (max-width: 1060px) {
@@ -739,8 +808,26 @@ span {
     .service-small {
         display: block;
     }
+
+    .menu-close-mobile {
+        display: none;
+    }
+
+    .menu-mobile {
+        display: inline-block;
+    }
+
+    .dropdown_menu {
+        display: block;
+    }
 }
 
+@media all and (max-width: 576px){
+    .dropdown_menu {
+        left: 30px;
+        width: unset;
+    }
+}
 
 /*
 
