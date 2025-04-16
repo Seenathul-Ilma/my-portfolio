@@ -1,5 +1,5 @@
 .about-section {
-    background: #111;
+    background: var(--bg-color);
     color: white;
     padding: 80px 20px;
     min-height: 100vh;
@@ -44,7 +44,7 @@
 .about-icon {
     font-size: 24px;
     margin-right: 10px;
-    color: var(--main-color); /* Change to your desired icon color */
+    color: var(--main-color);
 }
 
 .about-detail {
@@ -67,7 +67,7 @@
     width: 250px;
     height: 32px;
     border-radius: 8px; /* Rounded corners for a smoother look */
-    background-color: #2e2e2e; /* Slightly darker background */
+    background-color: var(--box-color); /* Slightly darker background */
     display: flex;
     justify-content: start;
     align-items: center;     /* Vertically centers the text */
@@ -76,13 +76,13 @@
     font-weight: 200;
 
     /* Neumorphism effect */
-    box-shadow: 3px 3px 3px black;
+    box-shadow: 3px 3px 3px var(--btn-shadow-3);
     transition: all 0.3s ease; /* Smooth transition for hover effects */
 }
 
 /* Optional: Hover effect to enhance the neumorphism */
 .about-detail div:last-child:hover {
-    background-color: #333; /* Slightly change background on hover */
+    background-color: var(--bg-color); /* Slightly change background on hover */
     transform: translateX(10px);
 }
 
@@ -94,13 +94,14 @@
 
 .btn-cv {
     display: inline-block;
-    background-color: #4CAF50;
-    color: white;
+    background-color: var(--box-color);
+    color: var(--text-color);
     padding: 10px 20px;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 8px;
     text-align: center;
     margin-top: 20px;
+    box-shadow: 3px 3px 3px var(--btn-shadow-3);
 }
 
 .btn-cv i {
@@ -129,10 +130,11 @@
     max-width: 250px;*/
     max-width: 100%;
     height: fit-content;
-    background-color: #1c1c1c;
+    background-color: var(--box-color-2);
     padding: 30px;
     border-radius: 10px;
     text-align: left;
+
     /*
     text-align: justify;
     */
@@ -143,7 +145,7 @@
 
 .stat-box span {
     font-size: 50px;
-    color: #ffb400;
+    color: var(--main-color);
     font-weight: 900;
 }
 
@@ -151,13 +153,13 @@
     margin-top: 10px;
     font-size: 20px;
     font-weight: 400;
-    color: black;
+    color: var(--text-color);
 }
 
 /* Adding styles for skill section */
 
 .skills-section {
-    background: #1a3d5a;
+    background: var(--bg-color);
 }
 
 /*.sub-section-title {
@@ -177,14 +179,14 @@
     /*
     margin: 40px 0; !* Add top and bottom space *!
     */
-    margin: 40px 15px; /* Add top and bottom space */
+    margin: 40px 30px; /* Add top and bottom space */
 }
 
 .skill-box {
-    background-color: transparent;
-    padding: 10px;
+    background-color: var(--box-color-2);
+    padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 3px 3px 3px var(--btn-shadow-1);
     /*border: 1px solid red;*/
     display: flex;
     flex-direction: column;
@@ -192,7 +194,7 @@
 }
 
 .skill-box p {
-    font-size: 12px;
+    font-size: 15px;
     margin-bottom: 10px;
     text-wrap: balance;
     text-align: justify;
@@ -216,11 +218,13 @@
     text-align: center;
     width: 70px;
     height: 80px;
-    border: 1px solid crimson;
     align-items: center;
     justify-content: center;
-    background: #1a3d5a;
     border-radius: 10px;
+}
+
+.skill-icons li:hover img{
+    transform: scale(1.2);
 }
 
 .skill-icons img {
@@ -232,13 +236,14 @@
     display: block;
     font-size: 10px;
     font-weight: 200;
-    color: whitesmoke;
+    color: var(--text-color);
+    opacity: 0.5;
 }
 
 /* Styles for timeline - Resume */
 .resume-section {
     position: relative;
-    background: #111;
+    background: var(--bg-color);
 }
 
 .timeline-container {
@@ -286,11 +291,21 @@
 
 .text-box {
     padding: 20px 30px;
-    background: #fff;
+    background: #84817a;
     position: relative;
     border-radius: 6px;
     font-size: 15px;
-    color: black;
+    color: var(--btn-shadow-3);
+}
+
+.timeline-span {
+    color: #eb3b5a;
+    font-size: 19px;
+    font-weight: 600;
+}
+
+.text-box h4 {
+    color: #eb3b5a;
 }
 
 .left-container {
