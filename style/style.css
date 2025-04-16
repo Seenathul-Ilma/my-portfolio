@@ -106,14 +106,18 @@ section {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 32px 6%;
-    background: var(--bg-color);
+    padding: 15px 6%;
+    background: pink;
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
 }
 
+.logo {
+    display: flex;
+    align-items: center; /* ensures logo contents are also vertically centered */
+}
 
 .logo > p, .logo span{
     font-family: Stanley, serif;
@@ -122,6 +126,7 @@ section {
     font-weight: 600;
     cursor: default;
     letter-spacing: 3.5px;
+    text-align: center;
 }
 
 .logo span {
