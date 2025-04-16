@@ -5,8 +5,7 @@
     padding: 30px;
 }
 
-.service-box,
-.service-container > div {
+.service-box {
     background-color: var(--second-bg-color);
     border-radius: 10px;
     padding: 32px;
@@ -15,30 +14,26 @@
     text-align: center;
 }
 
-.service-box:hover,
-.service-container > div:hover {
+.service-box:hover {
     transform: translateY(-5px);
     box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
 }
 
-.service-box i,
-.service-container > div i {
+.service-box i {
     font-size: 40px;
-    color: #007bff;
+    color: var(--main-color2);
     margin-bottom: 16px;
 }
 
-.service-box h3,
-.service-container > div h3 {
+.service-box h3 {
     font-size: 20px;
-    margin-bottom: 12px;
-    color: #222;
+    margin: 10px 0 12px 0;
+    color: #fff;
 }
 
-.service-box p,
-.service-container > div p {
+.service-box p {
     font-size: 16px;
-    color: #555;
+    color: #fff;
     margin-bottom: 16px;
 }
 
