@@ -413,14 +413,14 @@ span {
 .more-about-btn:hover {
     background-color: var(--main-color);
     color: var(--bg-color);
-    box-shadow: none;
+    box-shadow: -3px -3px 7px var(--btn-shadow-1), 3px 3px 5px var(--btn-shadow-2);
 }
 
 .divider {
     position: relative;
-    width: 50%;
+    width: 30%;
     height: 0.1px;
-    border-bottom: 0.01px solid grey;
+    border-bottom: 0.5px solid var(--box-color);
     margin: 0 auto 30px auto; /* Center and add space below */
     opacity: 0.5;
 }

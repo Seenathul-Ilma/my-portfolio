@@ -1,6 +1,6 @@
 .project-section {
-    background: var(--second-bg-color);
-    color: var(--bg-color);
+    background: var(--bg-color);
+    color: var(--btn-shadow-3);
     padding: 60px 20px;
     min-height: 100vh;
     justify-content: center;
@@ -26,7 +26,7 @@
 .project-container .project-box {
     position: relative;
     border-radius: 32px;
-    box-shadow: 0 0 16px var(--bg-color);
+    box-shadow: -3px -3px 7px var(--btn-shadow-2), 3px 3px 5px var(--btn-shadow-1);
     overflow: hidden;
     display: flex;
 }
@@ -97,9 +97,9 @@
     position: relative;
     /*width: 800px;
     height: 60px;*/
-    background-color: greenyellow;
+    background: var(--bg-color);
     border-radius: 50px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: inset 4px 4px 10px #1d1d1d, inset -4px -4px 10px #151515;
     /*border: 1px solid red;*/
     display: flex;
     flex-direction: row;
@@ -118,6 +118,7 @@
 
 .module-box:hover {
     background-color: var(--main-color);
+    box-shadow: inset 4px 4px 5px #f7b731, inset -4px -4px 5px #ff9f1a;
 }
 
 .img{
@@ -156,7 +157,7 @@
     margin: 0; /* remove default margin */
     padding: 0 65px;
     align-self: center;
-    color: white;
+    color: var(--text-color);
 
 }
 
@@ -192,6 +193,8 @@
 
     width: clamp(250px, 90%, 450px);
     height: clamp(60px, 10vh, 70px);
+
+    min-height: clamp(60px, 10vw, 70px);
 
     display: flex;
     align-items: center;
@@ -256,8 +259,8 @@ body.modal-open .popup-content:hover:has(.card:hover) .card {
 }
 
 .popup-content .card .assignment-img {
-    height: 70px;
-    width: 70px;
+    height: clamp(60px, 10vw, 70px);
+    width: clamp(60px, 10vw, 70px);
 
     position: absolute;
     left: -5px;
@@ -337,7 +340,7 @@ font-size: clamp(10px, 2vw, 12px);*/
 }*/
 
 .pop-up {
-    background-color: #7c889a;
+    background-color: var(--box-color);
     padding: 10px;
     border-radius: 20px;
     position: relative;
@@ -350,10 +353,11 @@ font-size: clamp(10px, 2vw, 12px);*/
 
 .pop-close {
     position: absolute;
-    top: 10px;
-    right: 15px;
+    top: 7px;
+    right: 19px;
     font-size: 28px;
-    color: #444;
+    color: #8174A0;
+    font-weight: 400;
     cursor: pointer;
 }
 
@@ -365,9 +369,11 @@ font-size: clamp(10px, 2vw, 12px);*/
     background-color: #fff;
 }
 
-.pop-up header span {
+.popup-span {
     font-size: 20px;
     font-weight: 500;
+    color: #8174A0;
+    padding: 2%;
 }
 
 .popup-divider {
