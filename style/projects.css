@@ -52,7 +52,7 @@
     align-items: center;
     flex-direction: column;
     text-align: center;
-    padding: 0 64px;
+    padding: 0 clamp(12px, 5vw, 32px);
     transform: translateY(100%);
     transition: 0.5s ease;
 }
@@ -62,11 +62,11 @@
 }
 
 .project-layer h4 {
-    font-size: 22px;
+    font-size: clamp(16px, 4.5vw, 22px);
 }
 
 .project-layer p {
-    font-size: 15px;
+    font-size: clamp(12px, 3.5vw, 15px);
     margin: 5px 0 16px;
 }
 
@@ -385,12 +385,15 @@ font-size: clamp(10px, 2vw, 12px);*/
 }
 
 @media all and (max-width: 450px) {
-    .section-title {
-        margin-bottom: 30px;
-    }
+    @media all and (max-width: 450px) {
+        .section-title {
+            margin-bottom: clamp(20px, 6vw, 30px);
+        }
 
-    .project-container {
-        padding: 20px;
+        .project-container {
+            padding: clamp(10px, 5vw, 20px);
+        }
     }
 }
+
 

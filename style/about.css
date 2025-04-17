@@ -466,7 +466,7 @@
     }
 
     .left-container-arrow, .right-container-arrow {
-        border-right: 15px solid #fff;
+        border-right: 15px solid var(--btn-shadow-3);
         border-left: 0;
         left: -14px;
     }
