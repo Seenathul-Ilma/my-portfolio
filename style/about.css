@@ -134,13 +134,24 @@
     padding: 30px;
     border-radius: 10px;
     text-align: left;
-
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.7),
+    -6px -6px 10px -1px rgba(67, 64, 64, 0.1); /* Softer for dark mode */
     /*
     text-align: justify;
     */
     text-wrap: auto;
     color: white;
     border: 1px solid #2e2e2e;
+}
+
+.stat-box:hover {
+    box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.6),
+    inset -4px -4px 6px -1px rgba(255,255,255,0.1),
+    -0.5px -0.5px 0px rgba(255,255,255,0.05),
+    0.5px 0.5px 0px rgba(0,0,0,0.2),
+    0px 12px 10px -10px rgba(0,0,0,0.3);
+    border: 1px solid rgba(255,255,255,0.1);
+    transform: translateY(0.5px);
 }
 
 .stat-box span {
