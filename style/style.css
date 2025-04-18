@@ -109,7 +109,7 @@ section {
     font-size: 35px;
     */
     font-size: clamp(25px, 12vw, 35px);
-    text-align: left;
+    text-align: center;
     font-weight: 700;
     color: var(--main-color);
     margin: 40px 0; /* Add top and bottom space */
@@ -778,7 +778,7 @@ span {
         justify-content: flex-start;
         text-align: center;
         padding: 30px 20px;
-        max-height: unset;
+        max-height: fit-content;
         overflow: visible;
     }
 
