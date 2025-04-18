@@ -109,7 +109,10 @@
     /*width: 100%;
     max-width: 800px;
     height: 60px;*/
-    width: clamp(240px, 80%, 800px);  /* Responsive width */
+    /*
+    width: clamp(240px, 80%, 800px);  !* Responsive width *!
+    */
+    width: clamp(240px, 80vw, 800px);  /* Responsive width */
    /* height: clamp(50px, 8vh, 60px);   Responsive height */
     height: clamp(50px, 8vw, 60px);  /* Responsive height */
     margin: 0 auto;
@@ -192,7 +195,10 @@
     /*width: 450px;
     height: 70px;*/
 
+    /*
     width: clamp(250px, 90%, 450px);
+    */
+    width: clamp(250px, 90vw, 450px);
     /*
     height: clamp(60px, 10vh, 70px);
     */
