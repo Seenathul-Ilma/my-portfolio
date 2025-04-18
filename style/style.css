@@ -112,7 +112,7 @@ section {
     text-align: center;
     font-weight: 700;
     color: var(--main-color);
-    margin: 40px 0; /* Add top and bottom space */
+    margin: 5px 0 22px 0;
     /*z-index: 1;*/
 }
 
@@ -429,7 +429,7 @@ span {
     width: 30%;
     height: 0.1px;
     border-bottom: 0.5px solid var(--box-color);
-    margin: 30px auto 30px auto; /* Center and add space below */
+    margin: 20px auto 20px auto; /* Center and add space below */
     opacity: 0.5;
 }
 
@@ -778,7 +778,8 @@ span {
         justify-content: flex-start;
         text-align: center;
         padding: 30px 20px;
-        max-height: fit-content;
+        max-height: unset;
+        height: auto;
         overflow: visible;
     }
 
