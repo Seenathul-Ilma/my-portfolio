@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
+
     const links = document.querySelectorAll('a.transition-btn');
     const overlay = document.querySelector('.overlay-transition');
 
@@ -13,4 +14,5 @@ document.addEventListener('DOMContentLoaded', function() {
             }, 1000); // Assuming your CSS transition is 0.5s (500ms)
         });
     });
+
 });
