@@ -846,6 +846,16 @@ span {
         display: block;
     }
 
+    .about-small section,
+    .skill-small section,
+    .resume-small section,
+    .projects-small section,
+    .module-small section,
+    .service-small section {
+        margin: 0;
+        padding: 0;
+    }
+
     .menu-close-mobile {
         display: none;
     }
