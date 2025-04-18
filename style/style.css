@@ -856,6 +856,7 @@ span {
     .service-small section {
         margin: 0;
         padding: 0;
+        min-height: fit-content;
     }
 
     .menu-close-mobile {
