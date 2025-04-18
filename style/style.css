@@ -29,6 +29,7 @@
 
 :root {
     --bg-color: #222222;
+    --moblie-bg-color: #1E201E;
     --second-bg-color: #323946;
     --text-color: #fff;
     --main-color1234: #0ef;
@@ -108,7 +109,7 @@ section {
     font-size: 35px;
     */
     font-size: clamp(25px, 12vw, 35px);
-    text-align: center;
+    text-align: left;
     font-weight: 700;
     color: var(--main-color);
     margin: 40px 0; /* Add top and bottom space */
@@ -423,24 +424,16 @@ span {
     box-shadow: -3px -3px 7px var(--btn-shadow-1), 3px 3px 5px var(--btn-shadow-2);
 }
 
-.divider {
+.mobile-divider {
     position: relative;
     width: 30%;
     height: 0.1px;
     border-bottom: 0.5px solid var(--box-color);
-    margin: 0 auto 30px auto; /* Center and add space below */
+    margin: 30px auto 30px auto; /* Center and add space below */
     opacity: 0.5;
 }
 
-.about-small {
-    display: none;
-}
-
-.projects-small {
-    display: none;
-}
-
-.service-small {
+.mobile-sections, .mobile-divider {
     display: none;
 }
 
@@ -845,8 +838,11 @@ span {
     }
 
     .about-small,
+    .skill-small,
+    .resume-small,
     .projects-small,
-    .service-small {
+    .module-small,
+    .service-small, .mobile-divider {
         display: block;
     }
 
