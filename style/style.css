@@ -778,6 +778,7 @@ span {
         justify-content: flex-start;
         text-align: center;
         padding: 30px 20px 0 20px;
+        min-height: fit-content;
         max-height: unset;
         overflow: visible;
         margin-bottom: 0;
