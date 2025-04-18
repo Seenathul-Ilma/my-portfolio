@@ -117,7 +117,8 @@
     width: 90%;
     /*min-width: 300px;*/
     max-width: 600px;          /* Optional: keeps it from stretching too wide */
-    margin: 0 auto;
+    /*margin: 0 auto;*/
+    margin: 0 auto 10px auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
