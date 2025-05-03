@@ -85,6 +85,14 @@
     color: var(--second-bg-color);
 }
 
+.project-layer a:hover {
+    background: var(--bg-color);
+}
+
+.project-layer a:hover i{
+    color: var(--text-color);
+}
+
 .module-grid {
     display: grid;
     grid-template-columns: 1fr; /* Two columns layout */
