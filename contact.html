@@ -102,18 +102,28 @@
                 </div>
                 <div class="right-side-detail">
                     <p class="contact-text">Got an idea? Let's build it! Whether it’s a website, app, or innovative solution, I’m excited to chat. Let’s connect and make something awesome!</p>
-                    <form action="#">
+                    <form action="https://api.web3forms.com/submit" method="POST">
+
+                        <!-- Required Web3Forms access key -->
+                        <input type="hidden" name="access_key" value="4445bec1-bcbe-448a-8164-d0e3e3ba8c3e">
+
+                        <!-- Optional hidden fields -->
+                        <input type="hidden" name="subject" value="New Contact Message From Portfolio">
+                        <input type="hidden" name="from_name" value="Zeenathul Ilma | Portfolio">
+                        <input type="hidden" name="redirect" value="https://web3forms.com/success">
+                        <input type="checkbox" name="botcheck" style="display: none;">
+
                         <div class="input-box">
-                            <input type="text" placeholder="Name">
+                            <input type="text" name="name" placeholder="Name" required>
                         </div>
                         <div class="input-box">
-                            <input type="text" placeholder="Email Address">
+                            <input type="email" name="email" placeholder="Email Address" required>
                         </div>
                         <div class="input-box">
-                            <input type="text" placeholder="Subject">
+                            <input type="text" name="user_subject" placeholder="Subject" required>
                         </div>
                         <div class="input-box message-box">
-                            <textarea placeholder="Message"></textarea>
+                            <textarea name="message" placeholder="Message" required></textarea>
                         </div>
                         <div class="send-message-button">
                             <input type="submit" value="Send Now" >

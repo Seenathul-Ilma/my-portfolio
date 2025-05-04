@@ -72,7 +72,7 @@
     height: 100%;
     width: 100%;
     border: none;
-    font-size: clamp(14px, 1.2vw, 18px);
+    font-size: clamp(12px, 1.1vw, 15px);
     font-weight: 500;
     border-radius: 10px;
     background: #b3b3b3;
@@ -114,7 +114,6 @@
 
 footer {
     width: 100%;
-    min-height: 25px;
     font-size: clamp(14px, 8vw, 15px);
     background: var(--main-color);
     text-align: center;
