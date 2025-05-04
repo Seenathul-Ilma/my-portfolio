@@ -267,7 +267,11 @@ body.modal-open .popup-content:hover:has(.card:hover) .card {
 }
 
 .card .assignment-card-content {
+    /*display: flex;
+    align-items: center;*/
+    display: -webkit-flex; /* Older WebKit versions */
     display: flex;
+    -webkit-align-items: center;
     align-items: center;
 }
 
