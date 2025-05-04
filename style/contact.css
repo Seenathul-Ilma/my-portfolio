@@ -1,0 +1,23 @@
+.contact-section {
+    padding: 60px 20px;
+}
+
+.container .contact-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container .contact-container .left-side-detail {
+    width: 25%;
+    height: 100%;
+}
+
+.contact-container .left-side-detail .contact-detail {
+    margin: 14px;
+    text-align: center;
+}
+
+.container .contact-container .right-side-detail {
+    width: 75%;
+}

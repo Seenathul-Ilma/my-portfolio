@@ -28,181 +28,103 @@
 
     <link rel="preload" href="Assets/lib/font/Stanley.otf" as="font" type="font/otf" crossorigin="anonymous">
 
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/contact.css">
+
+
 </head>
 <body>
+
     <header>
-        <nav>
-            <ul>
-                <li><a href="index.html"><img src="Assets/Images/home.png" width="40px">Home</a></li>
-                <li><a href="about-me.html"><img src="Assets/Images/user.png" width="40px">About Me</a></li>
-                <li><a href="resume.html"><img src="Assets/Images/resume.png" width="40px">Resume</a></li>
-                <li><a href="skills.html"><img src="Assets/Images/logical-thinking.png" width="50px">Skills</a></li>
-                <li><a href="projects.html"><img src="Assets/Images/shuttle.png" width="35px">Projects</a></li>
-                <li><a href="Assignments.html"><img src="Assets/Images/assignment.png" width="35px">Assignments</a></li>
-                <li><a href="services.html"><img src="Assets/Images/service.png" width="40px">Services</a></li>
-                <li><a href="contact.html"><img src="Assets/Images/contact-book.png" width="40px">Contact</a></li>
+        <nav class="navbar">
+            <ul class="wrapper">
+                <li class="nav-item active">
+                    <a href="index.html">
+                        <span class="nav_text">Home</span>
+                        <div class="nav-icon"><i class="ti ti-home"></i></div>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="about-me.html">
+                        <span class="nav_text">About</span>
+                        <i class="ti ti-user"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="projects.html">
+                        <span class="nav_text">Projects</span>
+                        <i class="ti ti-stack-2"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="services.html">
+                        <span class="nav_text">Services</span>
+                        <i class="ri-service-line"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#">
+                        <span class="nav_text">Contact</span>
+                        <i class="ti ti-phone"></i>
+                    </a>
+                </li>
+                <!--<a href="#">Resume</a>
+                    <a href="#">Skills</a>-->
+                <!--<a href="#">Assignments</a>-->
             </ul>
         </nav>
     </header>
 
-    <main>
-        <br>
-        <hr>
-        <br>
-        <!-- Profile Section -->
-        <section>
-            <div>
-                <div>
-                    <div>
-                        <img src="Assets/Images/my-profile-pic.png" alt="Profile picture" width="250">
+    <section id="contact" class="contact-section">
+        <h2 class="section-title">
+            GET IN<span> TOUCH</span>
+            <span class="bg-text">CONTACT</span>
+        </h2>
+
+        <div class="container">
+            <div class="contact-container">
+                <div class="left-side-detail">
+                    <div class="address contact-detail">
+                        <span><i class="ti ti-map-pin"></i></span>
+                        <div class="contact-detail-topic">Address</div>
+                        <div class="contact-detail-text">31/5z, Moor Street, Kalutara South</div>
                     </div>
-                    <div>
-                        <div>
-                            <h2>Zeenathul Ilma</h2>
-                            <h4>Full Stack Developer</h4>
-                            <div class="social">
-                                <a href="#"><i class="fab fa-linkedin"></i></a>
-                                <a href="#"><i class="fab fa-github"></i></a>
-                                <a href="#"><i class="fab fa-facebook"></i></a>
-                                <a href="#"><i class="fab fa-instagram"></i></a>
-                            </div>
+                    <div class="phone contact-detail">
+                        <span><i class="ti ti-phone"></i></span>
+                        <div class="contact-detail-topic">Phone</div>
+                        <div class="contact-detail-text">+94750513071</div>
+                    </div>
+                    <div class="email contact-detail">
+                        <span><i class="ti ti-mail"></i></span>
+                        <div class="contact-detail-topic">Email</div>
+                        <div class="contact-detail-text">seenathulilma121243@gmail.com</div>
+                    </div>
+                </div>
+                <div class="right-side-detail">
+                    <p class="contact-text">Got an idea? Let's build it! Whether it’s a website, app, or innovative solution, I’m excited to chat. Let’s connect and make something awesome!</p>
+                    <form action="#">
+                        <div class="input-box">
+                            <input type="text" placeholder="Enter your name..">
                         </div>
-                        <div class="contact-intro">
-                            <div class="row">
-                                <div class="icon">
-                                    <i class="fa fa-phone"></i>
-                                </div>
-                                <div class="content">
-                                    <span>Phone</span>
-                                    <h5>+94-750513071</h5>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="icon">
-                                    <i class="fa fa-envelope"></i>
-                                </div>
-                                <div class="content">
-                                    <span>Email</span>
-                                    <h5>seenathulilma@gmail.com</h5>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="icon">
-                                    <i class="fa fa-map-marker-alt"></i>
-                                </div>
-                                <div class="content">
-                                    <span>Location</span>
-                                    <h5>31/5z, moor Street, Kalutara South</h5>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="icon">
-                                    <i class="fa fa-calendar-alt"></i>
-                                </div>
-                                <div class="content">
-                                    <span>Birthday</span>
-                                    <h5>March 07, 2003</h5>
-                                </div>
-                            </div>
+                        <div class="input-box">
+                            <input type="text" placeholder="Enter your email..">
                         </div>
-                        <div class="download-btn"><i class="fa fa-download"></i>Download CV</div>
-                    </div>
+                        <div class="input-box message-box">
+                            <textarea></textarea>
+                        </div>
+                        <div class="send-message-button">
+                            <input type="button" value="Send Now" >
+                        </div>
+                    </form>
                 </div>
             </div>
-        </section>
-        <br>
-        <hr>
-        <br>
-
-        <!-- Contact Me Section -->
-        <section>
-            <div>
-                <h2>Let's Connect Over Coffee and Ideas! </h2>
-                <div>
-                    <div class="icon">
-                        <i class="fa fa-envelope"></i>
-                    </div>
-                    <div class="content">
-                        <span>Email</span>
-                        <h5>seenathulilma@gmail.com</h5>
-                    </div>
-                </div>
-
-                <div>
-                    <div class="icon">
-                        <i class="fa fa-phone"></i>
-                    </div>
-                    <div class="content">
-                        <span>Phone</span>
-                        <h5>+94-750513071</h5>
-                    </div>
-                </div>
-            </div>
-
-            <form action="http://localhost:8080/form" method="post">
-                <div>
-                    <label for="name">Name</label> <br>
-                    <input
-                            type="text"
-                            id="name"
-                            placeholder="Enter your name"
-                            name="name"
-                    >
-                </div>
-
-                <br>
-
-                <div>
-                    <label for="email">Email</label> <br>
-                    <input
-                            type="text"
-                            id="email"
-                            placeholder="Enter your Email"
-                            name="name"
-                    >
-                </div>
-
-                <br>
-
-                <div>
-                    <label for="message">Message</label> <br>
-                    <textarea
-                            id="message"
-                            placeholder="Type here.."
-                            rows="5"
-                            cols="30"
-                            name="message"
-                    ></textarea>
-                </div>
-
-                <div>
-                    <button type="submit">Submit</button>
-                    <button type="reset">Reset</button>
-                </div>
-            </form>
-            <br>
-            <hr>
-            <br>
-            <div>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63417.50513165989!2d79.9415534695811!3d6.572805328425357!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae236d753209249%3A0xeadba5178e65d8c3!2sMoor%20Street%2C%20Kalutara!5e0!3m2!1sen!2slk!4v1738948951935!5m2!1sen!2slk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                <!-- iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63417.50513165989!2d79.9415534695811!3d6.572805328425357!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae236d753209249%3A0xeadba5178e65d8c3!2sMoor%20Street%2C%20Kalutara!5e0!3m2!1sen!2slk!4v1738948662772!5m2!1sen!2slk" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe -->
-            </div>
-        </section>
-
-        <div class="overlay-transition top-to-bottom">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
         </div>
-        <script src="javascript/pageTransition.js"></script>
 
-    </main>
-    <footer>
-        <div>
-            <p>Copyright &copy; 2025 by Zeenathul Ilma | All Rights Reserved.</p>
-        </div>
-    </footer>
+        <footer>
+            <div>
+                <p>Copyright &copy; 2025 by Zeenathul Ilma | All Rights Reserved.</p>
+            </div>
+        </footer>
+    </section>
 </body>
 </html>
