@@ -12,7 +12,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: clamp(300px, 75%, 1100px);
+    width: clamp(300px, 90%, 1100px);
 }
 
 .container .contact-container .left-side-detail {
@@ -128,7 +128,7 @@ footer {
 @media screen and (max-width: 768px) {
     .container .contact-container {
         flex-direction: column-reverse;
-        padding: 20px;
+        /*padding: 20px;*/
         gap: 30px;
     }
 

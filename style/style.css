@@ -863,7 +863,9 @@ span {
     .resume-small,
     .projects-small,
     .module-small,
-    .service-small, .mobile-divider {
+    .service-small,
+    .contact-small,
+    .mobile-divider {
         display: block;
     }
 
@@ -872,7 +874,8 @@ span {
     .resume-small section,
     .projects-small section,
     .module-small section,
-    .service-small section {
+    .service-small section,
+    .contact-small section{
         margin: 0;
         padding: 0;
         min-height: fit-content;
