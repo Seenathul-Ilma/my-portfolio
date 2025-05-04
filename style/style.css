@@ -432,6 +432,7 @@ span {
 
 .more-about-btn:hover .more-arrow {
     transform: rotate(45deg);
+    border: 0.5px solid var(--main-color);
 }
 
 .more-about-btn:hover {
