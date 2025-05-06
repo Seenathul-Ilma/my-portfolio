@@ -57,17 +57,17 @@
     height: 40px;
     border: 1px solid crimson;
     display: flex;
-    justify-content: center; !* Horizontally centers the text *!
-    align-items: center;     !* Vertically centers the text *!
-    padding: 0 10px;         !* Optional: Adds some space around the text *!
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
     font-size: 15px;
 }*/
 
 .about-detail div:last-child {
     width: 250px;
     height: 32px;
-    border-radius: 8px; /* Rounded corners for a smoother look */
-    background-color: var(--box-color); /* Slightly darker background */
+    border-radius: 8px;
+    background-color: var(--box-color);
     display: flex;
     justify-content: start;
     align-items: center;     /* Vertically centers the text */
@@ -77,15 +77,15 @@
 
     /* Neumorphism effect */
     box-shadow: 3px 3px 3px var(--btn-shadow-3);
-    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    transition: all 0.3s ease;
 }
 
-/* Optional: Hover effect to enhance the neumorphism */
 .about-detail div:last-child:hover {
-    background-color: var(--bg-color); /* Slightly change background on hover */
+    background-color: var(--bg-color);
     transform: translateX(10px);
 }
 
+/*Created by Zeenathul Ilma - https://github.com/Seenathul-Ilma*/
 
 .about-detail div:first-child {
     font-weight: 400;
@@ -125,6 +125,8 @@
     justify-content: center;   /* Ensures items inside stay centered */
 }
 
+/*Created by Zeenathul Ilma - https://github.com/Seenathul-Ilma*/
+
 .stat-box {
     /*
     width: 100%;
@@ -160,6 +162,8 @@
     color: var(--main-color);
     font-weight: 900;
 }
+
+/*Created by Zeenathul Ilma - https://github.com/Seenathul-Ilma*/
 
 .stat-box p {
     margin-top: 10px;
@@ -227,6 +231,8 @@
     align-items: flex-end;
 }
 
+/*Created by Zeenathul Ilma - https://github.com/Seenathul-Ilma*/
+
 .skill-icons li {
     display: flex;
     flex-direction: column;
@@ -257,6 +263,8 @@
     max-width: 40px;
     margin-bottom: 5px;
 }
+
+/*Created by Zeenathul Ilma - https://github.com/Seenathul-Ilma*/
 
 .skill-icons span {
     display: block;
@@ -294,6 +302,8 @@
         transform: translateY(0px);
     }
 }
+
+/*Created by Zeenathul Ilma - https://github.com/Seenathul-Ilma*/
 
 .timeline-container:nth-child(1){
     animation-delay: 0s;
@@ -355,6 +365,7 @@
     left: 50%;
 }
 
+/*Created by Zeenathul Ilma - https://github.com/Seenathul-Ilma*/
 .timeline-container i {
     position: absolute;
     width: 40px;
@@ -395,6 +406,7 @@
     animation: move-line 5s linear forwards;
 }
 
+/*Created by Zeenathul Ilma - https://github.com/Seenathul-Ilma*/
 @keyframes move-line {
     0% {
         height: 0;
@@ -534,8 +546,13 @@
     .skills-grid {
         grid-template-columns: 1fr; /* Switch to one column */
     }
+
+    .btn-cv {
+        color: var(--main-color);
+    }
 }
 
+/*Created by Zeenathul Ilma - https://github.com/Seenathul-Ilma*/
 /* Responsive layout for screens less than 768px */
 @media (min-width: 601px) and (max-width: 768px) {
     /*.section-title {
@@ -577,6 +594,10 @@
 
     .skills-grid {
         grid-template-columns: 1fr; /* Switch to one column */
+    }
+
+    .btn-cv {
+        color: var(--main-color);
     }
 }
 
@@ -623,5 +644,12 @@
     .btn-cv {
         padding: 8px 16px;
         font-size: 14px;
+        grid-column: span 2;
+    }
+}
+
+@media all and (min-width: 1025px){
+    .btn-cv {
+        grid-column: span 2;
     }
 }
