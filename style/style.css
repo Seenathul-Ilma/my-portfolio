@@ -613,8 +613,8 @@ span {
     margin-left: 5px;
     border: 1px solid transparent;
     border-radius: 50%;
-    background: var(--bg-color);
-    box-shadow: -3px -3px 7px var(--btn-shadow-2), 3px 3px 5px var(--btn-shadow-1);
+    background: var(--box-color);
+    box-shadow: -3px -4px 5px var(--main-color), 3px 3px 3px var(--btn-shadow-1);
 }
 
 .social-media-mobile a i {
@@ -648,6 +648,56 @@ span {
     font-weight: 600;
 }
 
+.return-to-top-arrow {
+    position: fixed;
+    right: 10%;
+    bottom: 10%;
+    transform: translate(-50%, -50%) rotate(180deg);
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.return-to-top-arrow span {
+    display: block;
+    width: clamp(15px, 1.5vw, 25px);
+    height: clamp(15px, 1.5vw, 25px);
+    border-bottom: 2px solid var(--main-color);
+    border-right: 2px solid var(--main-color);
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: animate 2s infinite;
+}
+
+.return-to-top-arrow span:nth-child(2) {
+    animation-delay: -0.2s;
+}
+
+.return-to-top-arrow span:nth-child(3) {
+    animation-delay: -0.4s;
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+        transform: rotate(45deg) translate(-15px, -15px);
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: rotate(45deg) translate(15px, 15px);
+    }
+}
+
+.return-to-top-arrow.hidden {
+    display: none;
+}
+
+
+.return-to-top-arrow.show {
+    display: block;
+}
 
 @media all and (max-width: 1060px) {
     .home-content h3 {
