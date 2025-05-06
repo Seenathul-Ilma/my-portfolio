@@ -137,6 +137,10 @@ footer {
         gap: 30px;
     }
 
+    .container .contact-container .left-side-detail {
+        padding-bottom: 25px;
+    }
+
     .container .contact-container .left-side-detail,
     .container .contact-container .right-side-detail {
         width: 100%;
