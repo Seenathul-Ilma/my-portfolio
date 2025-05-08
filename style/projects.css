@@ -219,8 +219,13 @@
     border-radius: 100px 20px 20px 100px;
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
 
+    transform: translateY(0%) scale(1);
+
+
     animation: animate-assignment-card 30s linear infinite;
     animation-delay: calc(3s * var(--delay));
+
+    animation-fill-mode: both;
 }
 
 /*.outer:hover .card {
