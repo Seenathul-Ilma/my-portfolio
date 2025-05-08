@@ -62,7 +62,6 @@
 
 body.loading {
     overflow: hidden;
-    border: 5px solid red; /* Just for testing */
 }
 
 #preloader {
