@@ -96,7 +96,7 @@
 /*Created by Zeenathul Ilma - https://github.com/Seenathul-Ilma*/
 
 .right-side-detail .send-message-button input[type="submit"] {
-    color: var(--text-color);
+    color: var(--bg-color);
     background: var(--main-color);
     font-size: clamp(14px, 1.5vw, 18px);
     outline: none;
