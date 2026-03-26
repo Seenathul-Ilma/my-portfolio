@@ -1,5 +1,9 @@
 .service-section {
     padding: 60px 20px;
+    min-height: 100vh;
+    justify-content: center;
+    overflow-y: auto;  /* Allow scrolling in the Y-axis */
+    overflow-x: hidden;
 }
 
 .service-container {
@@ -44,15 +48,18 @@
 }
 
 .service-box h3 {
-    font-size: 20px;
+    /* font-size: 20px; */
+    font-size: clamp(16px, 4.5vw, 22px);
     margin: 10px 0 12px 0;
     color: #fff;
 }
 
 .service-box p {
-    font-size: 16px;
+    /* font-size: 16px; */
+    font-size: clamp(12px, 3.5vw, 15px);
     color: #fff;
-    margin-bottom: 16px;
+    /* margin-bottom: 16px; */
+    margin: 5px 0 16px;
 }
 
 /*.more-about-btn {
