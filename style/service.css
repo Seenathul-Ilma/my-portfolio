@@ -4,13 +4,15 @@
 
 .service-container {
     display: grid;
-    /*grid-template-columns: repeat(auto-fit, minmax(250px, 2fr)); */            /* Responsive */
-    grid-template-columns: repeat(3, 1fr);
+    /*1. grid-template-columns: repeat(auto-fit, minmax(250px, 2fr)); */            /* Responsive */
+    /*2. grid-template-columns: repeat(3, 1fr); */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     /* gap: 16px; */
     gap: 40px;
     /* padding: 10px; */
-    padding: 20px 90px;
+    padding: 20px 70px;
     justify-content: center;
+    align-items: center;
 }
 
 .service-box {
