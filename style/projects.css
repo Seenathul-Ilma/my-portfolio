@@ -4,7 +4,8 @@
     padding: 60px 20px;
     min-height: 100vh;
     justify-content: center;
-    overflow-y: auto;  /* Allow scrolling in the Y-axis */
+    overflow-y: auto;
+    /* Allow scrolling in the Y-axis */
     overflow-x: hidden;
 }
 
@@ -89,15 +90,18 @@
     background: var(--bg-color);
 }
 
-.project-layer a:hover i{
+.project-layer a:hover i {
     color: var(--text-color);
 }
 
 .module-grid {
     display: grid;
-    grid-template-columns: 1fr; /* Two columns layout */
-    gap: 50px; /* Gap between columns and rows */
-    margin: 40px 0; /* Add top and bottom space */
+    grid-template-columns: 1fr;
+    /* Two columns layout */
+    gap: 50px;
+    /* Gap between columns and rows */
+    margin: 40px 0;
+    /* Add top and bottom space */
     justify-items: center;
 }
 
@@ -117,12 +121,15 @@
     /*width: 100%;
     max-width: 800px;
     height: 60px;*/
-    width: clamp(240px, 80%, 800px);  /* Responsive width */
-   /* height: clamp(50px, 8vh, 60px);   Responsive height */
-    height: clamp(50px, 8vw, 60px);  /* Responsive height */
+    width: clamp(240px, 80%, 800px);
+    /* Responsive width */
+    /* height: clamp(50px, 8vh, 60px);   Responsive height */
+    height: clamp(50px, 8vw, 60px);
+    /* Responsive height */
     margin: 0 auto;
 
-    transition: background-color 0.5s ease-out; /* Same as image */
+    transition: background-color 0.5s ease-out;
+    /* Same as image */
 }
 
 .module-box:hover {
@@ -130,14 +137,14 @@
     box-shadow: inset 4px 4px 5px #f7b731, inset -4px -4px 5px #ff9f1a;
 }
 
-.img{
+.img {
     height: clamp(50px, 8vw, 60px);
     width: clamp(50px, 8vw, 60px);
     position: absolute;
     background: var(--text-color);
     border-radius: 50%;
     padding: 5px;
-    box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
     left: 0%;
 
     transition: left 0.5s ease-out;
@@ -150,7 +157,7 @@
     left: calc(100% - clamp(50px, 8vw, 60px));
 }
 
-.img img{
+.img img {
     height: 100%;
     width: 100%;
     border-radius: 50%;
@@ -163,7 +170,8 @@
     text-wrap: wrap;
     text-align: center;
     align-items: center;
-    margin: 0; /* remove default margin */
+    margin: 0;
+    /* remove default margin */
     padding: 0 65px;
     align-self: center;
     color: var(--text-color);
@@ -191,7 +199,7 @@
     position: relative;
 
     display: flex;
-    align-items: center!important;
+    align-items: center !important;
     justify-content: center;
 }
 
@@ -249,22 +257,30 @@ body.modal-open .popup-content:hover:has(.card:hover) .card {
         pointer-events: none;
         transform: translateY(100%) scale(0.5);
     }
-    5%, 10% {
+
+    5%,
+    10% {
         opacity: 0.4;
         pointer-events: none;
         transform: translateY(100%) scale(0.7);
     }
-    15%, 20% {
+
+    15%,
+    20% {
         opacity: 1;
         pointer-events: auto;
         transform: translateY(0%) scale(1);
     }
-    25%, 30% {
+
+    25%,
+    30% {
         opacity: 0.4;
         pointer-events: none;
         transform: translateY(-100%) scale(0.7);
     }
-    35%, 100% {
+
+    35%,
+    100% {
         opacity: 0;
         pointer-events: none;
         transform: translateY(-100%) scale(0.5);
@@ -274,7 +290,8 @@ body.modal-open .popup-content:hover:has(.card:hover) .card {
 .card .assignment-card-content {
     /*display: flex;
     align-items: center;*/
-    display: -webkit-flex; /* Older WebKit versions */
+    display: -webkit-flex;
+    /* Older WebKit versions */
     display: flex;
     -webkit-align-items: center;
     align-items: center;
@@ -294,7 +311,7 @@ body.modal-open .popup-content:hover:has(.card:hover) .card {
     background: #fff;
     border-radius: 50%;
     padding: 5px;
-    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
 .card .assignment-img img {
@@ -388,7 +405,7 @@ font-size: clamp(10px, 2vw, 12px);*/
     cursor: pointer;
 }
 
-.popup header{
+.popup header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -422,5 +439,3 @@ font-size: clamp(10px, 2vw, 12px);*/
         }
     }
 }
-
-

@@ -2,13 +2,15 @@
     padding: 60px 20px;
     min-height: 100vh;
     justify-content: center;
-    overflow-y: auto;  /* Allow scrolling in the Y-axis */
+    overflow-y: auto;
+    /* Allow scrolling in the Y-axis */
     overflow-x: hidden;
 }
 
 .service-container {
     display: grid;
-    /*1. grid-template-columns: repeat(auto-fit, minmax(250px, 2fr)); */            /* Responsive */
+    /*1. grid-template-columns: repeat(auto-fit, minmax(250px, 2fr)); */
+    /* Responsive */
     /*2. grid-template-columns: repeat(3, 1fr); */
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     /* gap: 16px; */
@@ -23,8 +25,9 @@
     background-color: var(--box-color);
     border-radius: 10px;
     padding: 32px;
-    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.7),
-    -6px -6px 10px -1px rgba(67, 64, 64, 0.1); /* Softer for dark mode */
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.7),
+        -6px -6px 10px -1px rgba(67, 64, 64, 0.1);
+    /* Softer for dark mode */
     transition: box-shadow 0.3s ease;
     text-align: center;
 }
@@ -32,12 +35,12 @@
 .service-box:hover {
     /*animation: danceSide 0.5s ease-in-out;
     box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);*/
-    box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.6),
-    inset -4px -4px 6px -1px rgba(255,255,255,0.1),
-    -0.5px -0.5px 0px rgba(255,255,255,0.05),
-    0.5px 0.5px 0px rgba(0,0,0,0.2),
-    0px 12px 10px -10px rgba(0,0,0,0.3);
-    border: 1px solid rgba(255,255,255,0.1);
+    box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.6),
+        inset -4px -4px 6px -1px rgba(255, 255, 255, 0.1),
+        -0.5px -0.5px 0px rgba(255, 255, 255, 0.05),
+        0.5px 0.5px 0px rgba(0, 0, 0, 0.2),
+        0px 12px 10px -10px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.1);
     transform: translateY(0.5px);
 }
 
@@ -116,7 +119,8 @@
 }
 
 .service-ul {
-    font-size: clamp(13px, 1.3vw, 15px); /* min ~14px, max ~16px */
+    font-size: clamp(13px, 1.3vw, 15px);
+    /* min ~14px, max ~16px */
     text-align: left;
     color: var(--box-color-2);
     padding: 20px;
@@ -135,7 +139,21 @@
     gap: 10px;
 }
 
-.service-popup-btn-connect, .service-popup-btn-close {
+.service-popup-btn-connect,
+.service-popup-btn-close {
     font-size: clamp(12px, 1vw, 14px);
     font-weight: 500;
+}
+
+
+@media all and (max-width: 450px) {
+    @media all and (max-width: 450px) {
+        .section-title {
+            margin-bottom: clamp(20px, 6vw, 30px);
+        }
+
+        .service-container {
+            padding: clamp(10px, 5vw, 20px);
+        }
+    }
 }
