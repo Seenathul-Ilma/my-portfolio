@@ -1,386 +1,778 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="author" content="zeenathul-ilma-musawwir">
-    <meta name="description" content="I’m a Full-stack developer from Sri Lanka, currently pursuing a BSc (Hons) in Computer Science. Passionate about building seamless, efficient, and scalable web and desktop applications using Java, Hibernate, JavaFX, HTML, CSS, and JavaScript. Explore my portfolio, skills, and projects, showcasing my dedication to creating dynamic and high-performing applications.">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="zeenathul-ilma-musawwir" />
+    <meta
+      name="description"
+      content="I’m a Full-stack developer from Sri Lanka, currently pursuing a BSc (Hons) in Computer Science. Passionate about building seamless, efficient, and scalable web and desktop applications using Java, Hibernate, JavaFX, HTML, CSS, and JavaScript. Explore my portfolio, skills, and projects, showcasing my dedication to creating dynamic and high-performing applications."
+    />
     <!-- Created by Zeenathul Ilma - https://github.com/Seenathul-Ilma -->
-    <link rel="icon" type="image/ico" href="Assets/Images/favicon/portfolio-rounded-favicon.png">
-    <title>Zeenathul Ilma | Full-Stack Developer & Software Engineer | Portfolio</title>
+    <link
+      rel="icon"
+      type="image/ico"
+      href="Assets/Images/favicon/portfolio-rounded-favicon.png"
+    />
+    <title>
+      Zeenathul Ilma | Full-Stack Developer & Software Engineer | Portfolio
+    </title>
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-W60Q4LYL4K"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-W60Q4LYL4K"
+    ></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-        gtag('config', 'G-W60Q4LYL4K');
+      gtag("config", "G-W60Q4LYL4K");
     </script>
     <meta name="author" content="Zeenathul Ilma" />
-    <meta name="keywords" content="Zeenathul Ilma, Seenathul Ilma, Ilma Musawwir, I'm Ilma, Full-Stack Developer, Software Developer, Web Development, Frontend Developer, Backend Developer, Mobile App Development, UI/UX Design, Portfolio, Programmer, Software Engineer, Freelancer, IT Professional, HTML, CSS, JavaScript, Java, C, C++, C#, Python, React, Angular, Vue.js, Node.js, API Development, Database Management, SQL, NoSQL, Git, GitHub, DevOps, AWS, Cloud Computing, AI, Machine Learning, Data Science, Cybersecurity, Open Source" />
+    <meta
+      name="keywords"
+      content="Zeenathul Ilma, Seenathul Ilma, Ilma Musawwir, I'm Ilma, Full-Stack Developer, Software Developer, Web Development, Frontend Developer, Backend Developer, Mobile App Development, UI/UX Design, Portfolio, Programmer, Software Engineer, Freelancer, IT Professional, HTML, CSS, JavaScript, Java, C, C++, C#, Python, React, Angular, Vue.js, Node.js, API Development, Database Management, SQL, NoSQL, Git, GitHub, DevOps, AWS, Cloud Computing, AI, Machine Learning, Data Science, Cybersecurity, Open Source"
+    />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- Created by Zeenathul Ilma - https://github.com/Seenathul-Ilma -->
-    <link rel="stylesheet" href="Assets/lib/normalize.css">
-    <link rel="stylesheet" href="Assets/lib/fontawesome/css/all.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-          rel="stylesheet">
+    <link rel="stylesheet" href="Assets/lib/normalize.css" />
+    <link rel="stylesheet" href="Assets/lib/fontawesome/css/all.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <!-- Created by Zeenathul Ilma - https://github.com/Seenathul-Ilma -->
     <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/core@1.1.1/dist/css/tabler.min.css" />-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
 
-<!--
+    <!--
     <link rel="preload" href="Assets/lib/font/Stanley-p7VOO.woff" as="font" type="font/woff" crossorigin="anonymous">
 -->
 
-    <link href="https://fonts.cdnfonts.com/css/stanley" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/stanley" rel="stylesheet" />
 
     <!--
         <link rel="stylesheet" href="Assets/lib/tabler/tabler.css">
     -->
 
-    <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" href="style/about.css">
-    <link rel="stylesheet" href="style/projects.css">
-    <link rel="stylesheet" href="style/service.css">
-    <link rel="stylesheet" href="style/contact.css">
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/about.css" />
+    <link rel="stylesheet" href="style/projects.css" />
+    <link rel="stylesheet" href="style/service.css" />
+    <link rel="stylesheet" href="style/contact.css" />
     <!-- Created by Zeenathul Ilma - https://github.com/Seenathul-Ilma -->
-
-
-</head>
-<body class="loading">
-
-
+  </head>
+  <body class="loading">
     <div id="preloader">
-        <div class="loader loader-1">
-            <div class="loader-outer"></div>
-            <div class="loader-inner"></div>
-        </div>
+      <div class="loader loader-1">
+        <div class="loader-outer"></div>
+        <div class="loader-inner"></div>
+      </div>
     </div>
 
     <!-- Header Section -->
     <!-- Created by Zeenathul Ilma - https://github.com/Seenathul-Ilma -->
     <header class="header">
-        <a href="#home" class="logo"><p>ZEEN<span class="logo-A">A</span>TH<span>.</span></p></a>
+      <a href="#home" class="logo"
+        ><p>ZEEN<span class="logo-A">A</span>TH<span>.</span></p></a
+      >
 
-        <nav class="navbar">
-            <ul class="wrapper">
-                <li class="nav-item active">
-                    <a href="index.html" class="transition-btn">
-                        <span class="nav_text">Home</span>
-                        <div class="nav-icon"><i class="ti ti-home"></i></div>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="about-me.html" class="transition-btn">
-                        <span class="nav_text">About</span>
-                        <i class="ti ti-user"></i>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="projects.html" class="transition-btn">
-                        <span class="nav_text">Projects</span>
-                        <i class="ti ti-stack-2"></i>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="services.html" class="transition-btn">
-                        <span class="nav_text">Services</span>
-                        <i class="ri-service-line"></i>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="contact.html" class="transition-btn">
-                        <span class="nav_text">Contact</span>
-                        <i class="ti ti-phone"></i>
-                    </a>
-                </li>
-                <!--<a href="#">Resume</a>
+      <nav class="navbar">
+        <ul class="wrapper">
+          <li class="nav-item active">
+            <a href="index.html" class="transition-btn">
+              <span class="nav_text">Home</span>
+              <div class="nav-icon"><i class="ti ti-home"></i></div>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="about-me.html" class="transition-btn">
+              <span class="nav_text">About</span>
+              <i class="ti ti-user"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="projects.html" class="transition-btn">
+              <span class="nav_text">Projects</span>
+              <i class="ti ti-stack-2"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="services.html" class="transition-btn">
+              <span class="nav_text">Services</span>
+              <i class="ri-service-line"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="transition-btn">
+              <span class="nav_text">Contact</span>
+              <i class="ti ti-phone"></i>
+            </a>
+          </li>
+          <!--<a href="#">Resume</a>
                     <a href="#">Skills</a>-->
-                <!--<a href="#">Assignments</a>-->
-            </ul>
-        </nav>
+          <!--<a href="#">Assignments</a>-->
+        </ul>
+      </nav>
 
-
-        <div class="menu-mobile"><i class="ti ti-menu-2" id="menu-icon"></i></div>
-        <div class="menu-close-mobile"><i class="ti ti-x" id="menu-close-icon"></i></div>
-        <div class="dropdown_menu">
-            <li class="mobile_nav_link"><a href="#home">Home</a></li>
-            <li class="mobile_nav_link"><a href="#about">About Me</a></li>
-            <li class="mobile_nav_link"><a href="#project">Projects</a></li>
-            <li class="mobile_nav_link"><a href="#services">Services</a></li>
-            <li class="mobile_nav_link"><a href="#contact">Contact Me</a></li>
-            <li><a href="#home" class="start_btn">Get Started</a></li>
-        </div>
+      <div class="menu-mobile"><i class="ti ti-menu-2" id="menu-icon"></i></div>
+      <div class="menu-close-mobile">
+        <i class="ti ti-x" id="menu-close-icon"></i>
+      </div>
+      <div class="dropdown_menu">
+        <li class="mobile_nav_link"><a href="#home">Home</a></li>
+        <li class="mobile_nav_link"><a href="#about">About Me</a></li>
+        <li class="mobile_nav_link"><a href="#project">Projects</a></li>
+        <li class="mobile_nav_link"><a href="#services">Services</a></li>
+        <li class="mobile_nav_link"><a href="#contact">Contact Me</a></li>
+        <li><a href="#home" class="start_btn">Get Started</a></li>
+      </div>
     </header>
 
     <!-- Home Design Section -->
     <!-- Hero Section -->
     <!-- Created by Zeenathul Ilma - https://github.com/Seenathul-Ilma -->
     <section class="home" id="home">
-        <div class="social-media">
-            <a href="https://www.facebook.com/share/1BrnQz8aZo/" class="fb" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="https://github.com/Seenathul-Ilma" class="github" target="_blank"><i class="fa-brands fa-github"></i></a>
-            <a href="https://www.instagram.com/mmz_ilma" class="insta" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://www.linkedin.com/in/zeenathul-ilma-musawwir-6547682a3/" class="linkedIn" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-        </div>
-        <div class="home-image">
-            <img src="Assets/Images/my-profile-pic.png" alt="profile-picture">
-        </div>
-        <div class="home-content">
-            <h3>Hello, It's Me</h3>
-            <h1>Zeenathul Ilma</h1>
-            <h3>And I'm a <span class="my-occupation"></span></h3>
-            <p>Passionate about building sleek, smart solutions for real-world problems. Curious by nature and creative at heart, I turn code into meaningful user experiences.</p>
-            <!--<div class="social-media">
+      <div class="social-media">
+        <a
+          href="https://www.facebook.com/share/1BrnQz8aZo/"
+          class="fb"
+          target="_blank"
+          ><i class="fa-brands fa-facebook-f"></i
+        ></a>
+        <a
+          href="https://github.com/Seenathul-Ilma"
+          class="github"
+          target="_blank"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+        <a
+          href="https://www.instagram.com/mmz_ilma"
+          class="insta"
+          target="_blank"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/zeenathul-ilma-musawwir-6547682a3/"
+          class="linkedIn"
+          target="_blank"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+      </div>
+      <div class="home-image">
+        <img src="Assets/Images/my-profile-pic.png" alt="profile-picture" />
+      </div>
+      <div class="home-content">
+        <h3>Hello, It's Me</h3>
+        <h1>Zeenathul Ilma</h1>
+        <h3>And I'm a <span class="my-occupation"></span></h3>
+        <p>
+          Passionate about building sleek, smart solutions for real-world
+          problems. Curious by nature and creative at heart, I turn code into
+          meaningful user experiences.
+        </p>
+        <!--<div class="social-media">
                 <a href="#" class="fb"><i class="fa-brands fa-facebook-f"></i></a>
                 <a href="#" class="github"><i class="fa-brands fa-github"></i></a>
                 <a href="#" class="insta"><i class="fa-brands fa-instagram"></i></a>
                 <a href="#" class="linkedIn"><i class="fa-brands fa-linkedin"></i></a>
             </div>-->
-            <a href="about-me.html" class="more-about-btn">More About Me <div class="more-arrow"><i class="ti ti-arrow-right"></i></div></a>
-        </div>
-        <div class="home-content-small">
-            <h1>I'm Zeenathul Ilma</h1>
-            <h3><span class="my-occupation-mobile"></span></h3>
-            <p>Passionate about building sleek, smart solutions for real-world problems. Curious by nature and creative at heart, I turn code into meaningful user experiences.</p>
-            <a href="#about" class="more-about-btn">More About Me <div class="more-arrow"><i class="ti ti-arrow-right"></i></div></a>
-        </div>
+        <a href="about-me.html" class="more-about-btn"
+          >More About Me
+          <div class="more-arrow"><i class="ti ti-arrow-right"></i></div
+        ></a>
+      </div>
+      <div class="home-content-small">
+        <h1>I'm Zeenathul Ilma</h1>
+        <h3><span class="my-occupation-mobile"></span></h3>
+        <p>
+          Passionate about building sleek, smart solutions for real-world
+          problems. Curious by nature and creative at heart, I turn code into
+          meaningful user experiences.
+        </p>
+        <a href="#about" class="more-about-btn"
+          >More About Me
+          <div class="more-arrow"><i class="ti ti-arrow-right"></i></div
+        ></a>
+      </div>
     </section>
     <div class="mobile-divider"></div>
 
     <!-- About Me Section -->
     <!-- Created by Zeenathul Ilma - https://github.com/Seenathul-Ilma -->
     <div class="about-small mobile-sections">
-        <section id="about" class="about-section">
+      <section id="about" class="about-section">
+        <div class="container">
+          <p class="sub-section-title">ABOUT ME</p>
 
-            <div class="container">
-                <p class="sub-section-title">ABOUT ME</p>
-
-                <div class="about-content">
-                    <!-- Personal Info -->
-                    <div class="personal-info">
-                        <p>PERSONAL INFO</p>
-                        <div class="about-detail-box">
-                            <div class="about-sub-detail">
-                                <div class="about-detail">
-                                    <div>Name</div>
-                                    <div>Zeenathul Ilma</div>
-                                </div>
-                            </div>
-                            <div class="about-sub-detail">
-                                <div class="about-detail">
-                                    <div>Nationality</div>
-                                    <div>Sri Lankan</div>
-                                </div>
-                            </div>
-                            <!--<div class="about-sub-detail">
+          <div class="about-content">
+            <!-- Personal Info -->
+            <div class="personal-info">
+              <p>PERSONAL INFO</p>
+              <div class="about-detail-box">
+                <div class="about-sub-detail">
+                  <div class="about-detail">
+                    <div>Name</div>
+                    <div>Zeenathul Ilma</div>
+                  </div>
+                </div>
+                <div class="about-sub-detail">
+                  <div class="about-detail">
+                    <div>Nationality</div>
+                    <div>Sri Lankan</div>
+                  </div>
+                </div>
+                <!--<div class="about-sub-detail">
                                 <div class="about-detail">
                                     <div>Phone</div>
                                     <div>+94700000000</div>
                                 </div>
                             </div>-->
-                            <div class="about-sub-detail">
-                                <div class="about-detail">
-                                    <div>Email</div>
-                                    <div>seenathulilma121243@gmail.com</div>
-                                </div>
-                            </div>
-                            <div class="about-sub-detail">
-                                <div class="about-detail">
-                                    <div>Experience</div>
-                                    <div>06 Months</div>
-                                </div>
-                            </div>
-                            <div class="about-sub-detail">
-                                <div class="about-detail">
-                                    <div>Freelance</div>
-                                    <div>Available</div>
-                                </div>
-                            </div>
-                            <div class="about-sub-detail">
-                                <div class="about-detail">
-                                    <div>Language</div>
-                                    <div>English, Sinhala, Tamil</div>
-                                </div>
-                            </div>
-                            <a href="Assets/pdf/CV-Zeenathul-Ilma.pdf" class="btn-cv" download>Download CV <i class="fa fa-download"></i></a>
-                        </div>
-                        <!--<a href="#" class="btn-cv">Download CV <i class="fa fa-download"></i></a>-->
-                    </div>
-
-
-                    <!-- Stats -->
-                    <div class="stats">
-                        <div class="stat-box"><span>6+</span><p>── MONTHS OF EXPERIENCES</p></div>
-                        <div class="stat-box"><span>40+</span><p>── COMPLETED PROJECTS</p></div>
-                        <div class="stat-box"><span>30+</span><p>── HAPPY CUSTOMERS</p></div>
-                        <div class="stat-box"><span>5+</span><p>── AWARDS WON</p></div>
-                    </div>
+                <div class="about-sub-detail">
+                  <div class="about-detail">
+                    <div>Email</div>
+                    <div>seenathulilma121243@gmail.com</div>
+                  </div>
                 </div>
+                <div class="about-sub-detail">
+                  <div class="about-detail">
+                    <div>Experience</div>
+                    <div>06 Months</div>
+                  </div>
+                </div>
+                <div class="about-sub-detail">
+                  <div class="about-detail">
+                    <div>Freelance</div>
+                    <div>Available</div>
+                  </div>
+                </div>
+                <div class="about-sub-detail">
+                  <div class="about-detail">
+                    <div>Language</div>
+                    <div>English, Sinhala, Tamil</div>
+                  </div>
+                </div>
+                <a
+                  href="Assets/pdf/CV-Zeenathul-Ilma.pdf"
+                  class="btn-cv"
+                  download
+                  >Download CV <i class="fa fa-download"></i
+                ></a>
+              </div>
+              <!--<a href="#" class="btn-cv">Download CV <i class="fa fa-download"></i></a>-->
             </div>
-        </section>
+
+            <!-- Stats -->
+            <div class="stats">
+              <div class="stat-box">
+                <span>6+</span>
+                <p>── MONTHS OF EXPERIENCES</p>
+              </div>
+              <div class="stat-box">
+                <span>40+</span>
+                <p>── COMPLETED PROJECTS</p>
+              </div>
+              <div class="stat-box">
+                <span>30+</span>
+                <p>── HAPPY CUSTOMERS</p>
+              </div>
+              <div class="stat-box">
+                <span>5+</span>
+                <p>── AWARDS WON</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
     <div class="mobile-divider"></div>
 
     <!-- Skills Section -->
     <!-- Created by Zeenathul Ilma - https://github.com/Seenathul-Ilma -->
     <div class="skill-small mobile-sections">
-        <section class="skills-section">
+      <section class="skills-section">
+        <!--<h2 class="skills-title">My Skills<span> Different Sectors</span></h2>-->
+        <p class="sub-section-title">MY SKILLS</p>
 
-            <!--<h2 class="skills-title">My Skills<span> Different Sectors</span></h2>-->
-            <p class="sub-section-title">MY SKILLS</p>
+        <div class="skills-grid">
+          <!-- Web Development -->
+          <article class="skill-box">
+            <p>Web Development</p>
+            <ul class="skill-icons">
+              <li>
+                <img
+                  src="Assets/Images/skill-icon/icons8-html-96.png"
+                  title="HTML"
+                  alt="html"
+                /><span>HTML</span>
+              </li>
+              <li>
+                <img
+                  src="Assets/Images/skill-icon/icons8-css-96.png"
+                  title="CSS"
+                  alt="css"
+                /><span>CSS</span>
+              </li>
+              <li>
+                <img
+                  src="Assets/Images/skill-icon/icons8-javascript-96.png"
+                  title="JavaScript"
+                  alt="js"
+                /><span>JavaScript</span>
+              </li>
+              <li>
+                <img
+                  src="Assets/Images/skill-icon/icons8-typescript-96.png"
+                  title="TypeScript"
+                  alt="ts"
+                /><span>TypeScript</span>
+              </li>
+              <li>
+                <img
+                  src="Assets/Images/skill-icon/icons8-bootstrap-96.png"
+                  title="Bootstrap"
+                  alt="bootstrap"
+                /><span>Bootstrap</span>
+              </li>
+              <li>
+                <img
+                  src="Assets/Images/skill-icon/icons8-tailwind-css-96.png"
+                  title="Tailwind"
+                  alt="tailwind"
+                /><span>TailwindCSS</span>
+              </li>
+              <li>
+                <img
+                  src="Assets/Images/skill-icon/icons8-react-80.png"
+                  title="React"
+                  alt="react"
+                /><span>React</span>
+              </li>
+              <li>
+                <img
+                  src="Assets/Images/skill-icon/icons8-next.js-100.png"
+                  title="NextJS"
+                  alt="nextjs"
+                /><span>NextJS</span>
+              </li>
+            </ul>
+          </article>
 
-            <div class="skills-grid">
-                <!-- Web Development -->
-                <article class="skill-box">
-                    <p>Web Development</p>
-                    <ul class="skill-icons">
-                        <li><img src="Assets/Images/skill-icon/icons8-html-96.png" title="HTML" alt="html"><span>HTML</span></li>
-                        <li><img src="Assets/Images/skill-icon/icons8-css-96.png" title="CSS" alt="css"><span>CSS</span></li>
-                        <li><img src="Assets/Images/skill-icon/icons8-javascript-96.png" title="JavaScript" alt="js"><span>JavaScript</span></li>
-                        <li><img src="Assets/Images/skill-icon/icons8-bootstrap-96.png" title="Bootstrap" alt="bootstrap"><span>Bootstrap</span></li>
-                        <li><img src="Assets/Images/skill-icon/icons8-react-80.png" title="React" alt="react"><span>React</span></li>
-                    </ul>
-                </article>
+          <!-- Mobile App Development -->
+          <article class="skill-box">
+            <p>Mobile App Development</p>
+            <ul class="skill-icons">
+              <li>
+                <img
+                  src="Assets/Images/skill-icon/icons8-flutter-96.png"
+                  title="Flutter"
+                  alt="flutter"
+                /><span>Flutter</span>
+              </li>
+              <li>
+                <img
+                  src="Assets/Images/skill-icon/icons8-java-96.png"
+                  title="Java"
+                  alt="java"
+                /><span>Java</span>
+              </li>
+              <li>
+                <img
+                  src="Assets/Images/skill-icon/icons8-python-96.png"
+                  title="Python"
+                  alt="python"
+                /><span>Python</span>
+              </li>
+              <li>
+                <img
+                  src="Assets/Images/skill-icon/icons8-kotlin-96.png"
+                  title="Kotlin"
+                  alt="kotlin"
+                /><span>Kotlin</span>
+              </li>
+              <li>
+                <img
+                  src="Assets/Images/skill-icon/icons8-expo-96.png"
+                  title="Expo"
+                  alt="expo"
+                /><span>Expo</span>
+              </li>
+              <li>
+                <img
+                  src="Assets/Images/skill-icon/native-wind.png"
+                  title="NativeWind"
+                  alt="nativewind"
+                /><span>NativeWind</span>
+              </li>
+              <li>
+                <img
+                  src="Assets/Images/skill-icon/icons8-react-80.png"
+                  title="React Native"
+                  alt="react native"
+                /><span>React Native</span>
+              </li>
+            </ul>
+          </article>
 
-                <!-- Mobile App Development -->
-                <article class="skill-box">
-                    <p>Mobile App Development</p>
-                    <ul class="skill-icons">
-                        <li><img src="Assets/Images/skill-icon/icons8-flutter-96.png" title="Flutter" alt="flutter"><span>Flutter</span></li>
-                        <li><img src="Assets/Images/skill-icon/icons8-java-96.png" title="Java" alt="java"><span>Java</span></li>
-                        <li><img src="Assets/Images/skill-icon/icons8-python-96.png" title="Python" alt="python"><span>Python</span></li>
-                        <li><img src="Assets/Images/skill-icon/icons8-kotlin-96.png" title="Kotlin" alt="kotlin"><span>Kotlin</span></li>
-                        <li><img src="Assets/Images/skill-icon/icons8-react-80.png" title="React Native" alt="react native"><span>React Native</span></li>
-                    </ul>
-                </article>
+          <!-- AI & Automation Skills -->
+          <article class="skill-box">
+            <p>AI & Automation</p>
+            <ul class="skill-icons">
+              <li>
+                <img
+                  src="Assets/Images/skill-icon/icons8-artificial-intelligence-96.png"
+                  title="AiModels"
+                  alt="aimodels"
+                /><span>AI Models</span>
+              </li>
+              <li>
+                <img
+                  src="Assets/Images/skill-icon/makedotcom.png"
+                  title="MakeDotCom"
+                  alt="makedotcom"
+                /><span>Make.com</span>
+              </li>
+              <li>
+                <img
+                  src="Assets/Images/skill-icon/n8n.png"
+                  title="N8N"
+                  alt="n8n"
+                /><span>n8n</span>
+              </li>
+              <li>
+                <img
+                  src="Assets/Images/skill-icon/icons8-zapier-96.png"
+                  title="Zapier"
+                  alt="zapier"
+                /><span>Zapier</span>
+              </li>
+              <li>
+                <img
+                  src="Assets/Images/skill-icon/icons8-workflow-96.png"
+                  title="Workflow"
+                  alt="workflow"
+                /><span>Workflows</span>
+              </li>
+              <li>
+                <img
+                  src="Assets/Images/skill-icon/icons8-automation-96.png"
+                  title="Automation"
+                  alt="automation"
+                /><span>Automation</span>
+              </li>
+            </ul>
+          </article>
 
-                <!-- Programming Languages -->
-                <article class="skill-box">
-                    <p>Programming Languages</p>
-                    <ul class="skill-icons">
-                        <li><img src="Assets/Images/skill-icon/icons8-java-96.png" title="Java" alt="java"><span>Java</span></li>
-                        <li><img src="Assets/Images/skill-icon/icons8-python-96.png" title="Python" alt="python"><span>Python</span></li>
-                        <li><img src="Assets/Images/skill-icon/icons8-c++-96.png" title="C++" alt="c++"><span>C++</span></li>
-                        <li><img src="Assets/Images/skill-icon/icons8-c-sharp-logo-2-96.png" title="C#" alt="c#"><span>C#</span></li>
-                        <li><img src="Assets/Images/skill-icon/icons8-javascript-96.png" title="JavaScript" alt="js"><span>JavaScript</span></li>
-                    </ul>
-                </article>
+          <!-- Programming Languages -->
+          <article class="skill-box">
+            <p>Programming Languages</p>
+            <ul class="skill-icons">
+              <li>
+                <img
+                  src="Assets/Images/skill-icon/icons8-java-96.png"
+                  title="Java"
+                  alt="java"
+                /><span>Java</span>
+              </li>
+              <li>
+                <img
+                  src="Assets/Images/skill-icon/icons8-python-96.png"
+                  title="Python"
+                  alt="python"
+                /><span>Python</span>
+              </li>
+              <li>
+                <img
+                  src="Assets/Images/skill-icon/icons8-c++-96.png"
+                  title="C++"
+                  alt="c++"
+                /><span>C++</span>
+              </li>
+              <li>
+                <img
+                  src="Assets/Images/skill-icon/icons8-c-sharp-logo-2-96.png"
+                  title="C#"
+                  alt="c#"
+                /><span>C#</span>
+              </li>
+              <li>
+                <img
+                  src="Assets/Images/skill-icon/icons8-javascript-96.png"
+                  title="JavaScript"
+                  alt="js"
+                /><span>JavaScript</span>
+              </li>
+              <li>
+                <img
+                  src="Assets/Images/skill-icon/icons8-typescript-96.png"
+                  title="TypeScript"
+                  alt="ts"
+                /><span>TypeScript</span>
+              </li>
+            </ul>
+          </article>
 
-                <!-- Database & Backend -->
-                <article class="skill-box">
-                    <p>Database & Backend</p>
-                    <ul class="skill-icons">
-                        <li><img src="Assets/Images/skill-icon/icons8-sql-96.png" title="MySQL" alt="mysql"><span>MySQL</span></li>
-                        <li><img src="Assets/Images/skill-icon/icons8-firebase-96.png" title="Firebase" alt="firebase"><span>Firebase</span></li>
-                        <li><img src="Assets/Images/skill-icon/icons8-mongo-db-96.png" title="MongoDB" alt="mongodb"><span>MongoDB</span></li>
-                        <li><img src="Assets/Images/skill-icon/icons8-nodejs-96.png" title="Node.js" alt="node.js"><span>Node.js</span></li>
-                        <li><img src="Assets/Images/skill-icon/icons8-express-js-80.png" title="Express.js" alt="express.js"><span>Express.js</span></li>
-                    </ul>
-                </article>
+          <!-- Database & Backend -->
+          <article class="skill-box">
+            <p>Database & Backend</p>
+            <ul class="skill-icons">
+              <li>
+                <img
+                  src="Assets/Images/skill-icon/icons8-sql-96.png"
+                  title="MySQL"
+                  alt="mysql"
+                /><span>MySQL</span>
+              </li>
+              <li>
+                <img
+                  src="Assets/Images/skill-icon/icons8-firebase-96.png"
+                  title="Firebase"
+                  alt="firebase"
+                /><span>Firebase</span>
+              </li>
+              <li>
+                <img
+                  src="Assets/Images/skill-icon/icons8-mongo-db-96.png"
+                  title="MongoDB"
+                  alt="mongodb"
+                /><span>MongoDB</span>
+              </li>
+              <li>
+                <img
+                  src="Assets/Images/skill-icon/icons8-spring-boot-96.png"
+                  title="SpringBoot"
+                  alt="springboot"
+                /><span>SpringBoot</span>
+              </li>
+              <li>
+                <img
+                  src="Assets/Images/skill-icon/icons8-nodejs-96.png"
+                  title="Node.js"
+                  alt="node.js"
+                /><span>Node.js</span>
+              </li>
+              <li>
+                <img
+                  src="Assets/Images/skill-icon/icons8-express-js-80.png"
+                  title="Express.js"
+                  alt="express.js"
+                /><span>Express.js</span>
+              </li>
+            </ul>
+          </article>
 
-                <!-- UI/UX & Designing -->
-                <article class="skill-box">
-                    <p>UI / UX & Designing</p>
-                    <ul class="skill-icons">
-                        <li><img src="Assets/Images/skill-icon/icons8-figma-96.png" title="Figma" alt="figma"><span>Figma</span></li>
-                        <li><img src="Assets/Images/skill-icon/icons8-adobe-xd-96.png" title="Adobe XD" alt="adobeXD"><span>Adobe XD</span></li>
-                        <li><img src="Assets/Images/skill-icon/icons8-canva-96.png" title="Canva" alt="canva"><span>Canva</span></li>
-                        <li><img src="Assets/Images/skill-icon/icons8-adobe-photoshop-96.png" title="Photoshop" alt="photoshop"><span>Photoshop</span></li>
-                        <li><img src="Assets/Images/skill-icon/icons8-wireframe-96.png" title="Wireframe" alt="wireframe"><span>Wireframe</span></li>
-                        <li><img src="Assets/Images/skill-icon/scene-builder.png" title="Scene Builder" alt="scene builder"><span>Scene Builder</span></li>
-                    </ul>
-                </article>
+          <!-- UI/UX & Designing -->
+          <article class="skill-box">
+            <p>UI / UX & Designing</p>
+            <ul class="skill-icons">
+              <li>
+                <img
+                  src="Assets/Images/skill-icon/icons8-figma-96.png"
+                  title="Figma"
+                  alt="figma"
+                /><span>Figma</span>
+              </li>
+              <li>
+                <img
+                  src="Assets/Images/skill-icon/icons8-adobe-xd-96.png"
+                  title="Adobe XD"
+                  alt="adobeXD"
+                /><span>Adobe XD</span>
+              </li>
+              <li>
+                <img
+                  src="Assets/Images/skill-icon/icons8-canva-96.png"
+                  title="Canva"
+                  alt="canva"
+                /><span>Canva</span>
+              </li>
+              <li>
+                <img
+                  src="Assets/Images/skill-icon/icons8-adobe-photoshop-96.png"
+                  title="Photoshop"
+                  alt="photoshop"
+                /><span>Photoshop</span>
+              </li>
+              <li>
+                <img
+                  src="Assets/Images/skill-icon/icons8-wireframe-96.png"
+                  title="Wireframe"
+                  alt="wireframe"
+                /><span>Wireframe</span>
+              </li>
+              <li>
+                <img
+                  src="Assets/Images/skill-icon/scene-builder.png"
+                  title="Scene Builder"
+                  alt="scene builder"
+                /><span>Scene Builder</span>
+              </li>
+            </ul>
+          </article>
 
-                <!-- Tools & Other Skills -->
-                <article class="skill-box">
-                    <p>Tools & Other Skills</p>
-                    <ul class="skill-icons">
-                        <li><img src="Assets/Images/skill-icon/icons8-git-96.png" title="Git" alt="git"><span>Git</span></li>
-                        <li><img src="Assets/Images/skill-icon/icons8-github-100.png" title="Github" alt="github"><span>Github</span></li>
-                        <li><img src="Assets/Images/skill-icon/icons8-filezilla-96.png" title="FileZilla" alt="filezilla"><span>FIleZilla</span></li>
-                        <li><img src="Assets/Images/skill-icon/icons8-intellij-idea-96.png" title="IntelliJ" alt="intelliJ"><span>IntelliJ</span></li>
-                        <li><img src="Assets/Images/skill-icon/icons8-vs-code-96.png" title="VS Code" alt="vs code"><span>VS Code</span></li>
-                    </ul>
-                </article>
-            </div>
-        </section>
+          <!-- Tools & Other Skills -->
+          <article class="skill-box">
+            <p>Tools & Other Skills</p>
+            <ul class="skill-icons">
+              <li>
+                <img
+                  src="Assets/Images/skill-icon/icons8-git-96.png"
+                  title="Git"
+                  alt="git"
+                /><span>Git</span>
+              </li>
+              <li>
+                <img
+                  src="Assets/Images/skill-icon/icons8-github-100.png"
+                  title="Github"
+                  alt="github"
+                /><span>Github</span>
+              </li>
+              <li>
+                <img
+                  src="Assets/Images/skill-icon/icons8-filezilla-96.png"
+                  title="FileZilla"
+                  alt="filezilla"
+                /><span>FileZilla</span>
+              </li>
+              <li>
+                <img
+                  src="Assets/Images/skill-icon/icons8-intellij-idea-96.png"
+                  title="IntelliJ"
+                  alt="intelliJ"
+                /><span>IntelliJ</span>
+              </li>
+              <li>
+                <img
+                  src="Assets/Images/skill-icon/icons8-vs-code-96.png"
+                  title="VS Code"
+                  alt="vs code"
+                /><span>VS Code</span>
+              </li>
+            </ul>
+          </article>
+        </div>
+      </section>
     </div>
     <div class="mobile-divider"></div>
 
     <!-- Resume Section -->
     <!-- Created by Zeenathul Ilma - https://github.com/Seenathul-Ilma -->
     <div class="resume-small mobile-sections">
-        <section class="resume-section">
-
-            <!-- Experience part -->
-            <p class="sub-section-title">EXPERIENCES & EDUCATION</p>
-            <div class="timeline">
-                <div class="timeline-container left-container">
-                    <i class="fa-solid fa-briefcase"></i>
-                    <div class="text-box">
-                        <h2>WEB DESIGNER<span class="timeline-span"> - FIVERR</span></h2>
-                        <h4>2025 - Present</h4>
-                        <p>I’ve been freelancing as a web designer on Fiverr since 2025, specializing in creating custom, responsive websites. I work closely with clients to deliver visually appealing, user-friendly designs tailored to their business needs, ensuring optimal functionality across all devices.</p>
-                        <span class="left-container-arrow"></span>
-                    </div>
-                </div>
-
-                <div class="timeline-container right-container">
-                    <i class="fa-solid fa-briefcase"></i>
-                    <div class="text-box">
-                        <h2>GRAPHIC DESIGNER<span class="timeline-span"> - FREELANCE</span></h2>
-                        <h4>2025 - Present</h4>
-                        <p>As a freelance graphic designer since 2025, I craft eye-catching designs that bring brands to life. From logos to marketing materials, I help businesses create a lasting visual impact with unique and professional designs tailored to their needs.</p>
-                        <span class="right-container-arrow"></span>
-                    </div>
-                </div>
-
-                <div class="timeline-container left-container">
-                    <i class="fa-solid fa-graduation-cap"></i>
-                    <div class="text-box">
-                        <h2>HND In Software Engineering<span class="timeline-span"> - IJSE</span></h2>
-                        <h4>2024 - Present</h4>
-                        <p>Since 2024, I’ve been pursuing an HND in Software Engineering at IJSE, where I’m sharpening my expertise in software development, coding, and system design to craft innovative, future-ready solutions.</p>
-                        <span class="left-container-arrow"></span>
-                    </div>
-                </div>
-
-                <div class="timeline-container right-container">
-                    <i class="fa-solid fa-graduation-cap"></i>
-                    <div class="text-box">
-                        <h2>Diploma In English<span class="timeline-span"> - ESOFT</span></h2>
-                        <h4>2024</h4>
-                        <p>In 2024, I earned a Diploma in English from ESOFT Metro Campus, refining my language skills to communicate effectively and confidently in both professional and everyday situations.</p>
-                        <span class="right-container-arrow"></span>
-                    </div>
-                </div>
-
-                <div class="timeline-container left-container">
-                    <i class="fa-solid fa-graduation-cap"></i>
-                    <div class="text-box">
-                        <h2>High School<span class="timeline-span"> - Kalutara School</span></h2>
-                        <h4>2023</h4>
-                        <p>I completed my education at Kalutara Muslim Balika Maha Vidyalaya, where I developed a strong academic foundation that shaped my journey towards higher learning and professional success.</p>
-                        <span class="left-container-arrow"></span>
-                    </div>
-                </div>
+      <section class="resume-section">
+        <!-- Experience part -->
+        <p class="sub-section-title">EXPERIENCES & EDUCATION</p>
+        <div class="timeline">
+          <div class="timeline-container left-container">
+            <i class="fa-solid fa-briefcase"></i>
+            <div class="text-box">
+              <h2>WEB DESIGNER<span class="timeline-span"> - FIVERR</span></h2>
+              <h4>2025 - Present</h4>
+              <p>
+                I’ve been freelancing as a web designer on Fiverr since 2025,
+                specializing in creating custom, responsive websites. I work
+                closely with clients to deliver visually appealing,
+                user-friendly designs tailored to their business needs, ensuring
+                optimal functionality across all devices.
+              </p>
+              <span class="left-container-arrow"></span>
             </div>
+          </div>
 
-        </section>
+          <div class="timeline-container right-container">
+            <i class="fa-solid fa-briefcase"></i>
+            <div class="text-box">
+              <h2>
+                GRAPHIC DESIGNER<span class="timeline-span"> - FREELANCE</span>
+              </h2>
+              <h4>2025 - Present</h4>
+              <p>
+                As a freelance graphic designer since 2025, I craft eye-catching
+                designs that bring brands to life. From logos to marketing
+                materials, I help businesses create a lasting visual impact with
+                unique and professional designs tailored to their needs.
+              </p>
+              <span class="right-container-arrow"></span>
+            </div>
+          </div>
+
+          <div class="timeline-container left-container">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <div class="text-box">
+              <h2>
+                HND In Software Engineering<span class="timeline-span">
+                  - IJSE</span
+                >
+              </h2>
+              <h4>2024 - Present</h4>
+              <p>
+                Since 2024, I’ve been pursuing an HND in Software Engineering at
+                IJSE, where I’m sharpening my expertise in software development,
+                coding, and system design to craft innovative, future-ready
+                solutions.
+              </p>
+              <span class="left-container-arrow"></span>
+            </div>
+          </div>
+
+          <div class="timeline-container right-container">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <div class="text-box">
+              <h2>
+                Diploma In English<span class="timeline-span"> - ESOFT</span>
+              </h2>
+              <h4>2024</h4>
+              <p>
+                In 2024, I earned a Diploma in English from ESOFT Metro Campus,
+                refining my language skills to communicate effectively and
+                confidently in both professional and everyday situations.
+              </p>
+              <span class="right-container-arrow"></span>
+            </div>
+          </div>
+
+          <div class="timeline-container left-container">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <div class="text-box">
+              <h2>
+                High School<span class="timeline-span"> - Kalutara School</span>
+              </h2>
+              <h4>2023</h4>
+              <p>
+                I completed my education at Kalutara Muslim Balika Maha
+                Vidyalaya, where I developed a strong academic foundation that
+                shaped my journey towards higher learning and professional
+                success.
+              </p>
+              <span class="left-container-arrow"></span>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
     <div class="mobile-divider"></div>
 
     <!-- Created by Zeenathul Ilma - https://github.com/Seenathul-Ilma -->
     <div class="projects-small mobile-sections">
-        <section id="project" class="project-section">
-            <!--<nav class="navbar">
+      <section id="project" class="project-section">
+        <!--<nav class="navbar">
                 <ul class="wrapper">
                     <li class="nav-item active">
                         <a href="index.html">
@@ -418,835 +810,1362 @@
                 </ul>
             </nav>-->
 
-            <div class="container">
-                <p class="sub-section-title">PROJECTS</p>
+        <div class="container">
+          <p class="sub-section-title">PROJECTS</p>
 
-                <div class="project-container">
-
-                    <div class="project-box">
-                        <img src="Assets/Images/project-images/mobilezone-image.jpeg" alt="Mobile Store Thumbnail">
-                        <div class="project-layer">
-                            <h4>Mobile Store Management System</h4>
-                            <p>A JavaFX app for managing authentication, employees, customers, sales, and inventory with support for MySQL, JasperReports, and SendGrid.</p>
-                            <a href="https://github.com/Seenathul-Ilma/MobileZone-Converted-Layered.git" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                        </div>
-                    </div>
-
-                    <div class="project-box">
-                        <img src="Assets/Images/project-images/tictactoe.jpeg" alt="Tic Tac Toe Project Thumbnail">
-                        <div class="project-layer">
-                            <h4>Tic Tac Toe</h4>
-                            <p>A JavaFX-based Tic Tac Toe game featuring an AI player using Minimax algorithm and a human player mode for an engaging two-player experience.</p>
-                            <a href="https://github.com/Seenathul-Ilma/tictactoe.git" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                        </div>
-                    </div>
-
-                    <div class="project-box">
-                        <img src="Assets/Images/project-images/therapy-center.jpeg" alt="Therapy Center Thumbnail">
-                        <div class="project-layer">
-                            <h4>Serenity Mental Health Therapy Center</h4>
-                            <p>A JavaFX app with Hibernate ORM for managing therapists, programs, patients, and bookings, with authentication and session management.</p>
-                            <a href="https://github.com/Seenathul-Ilma/Serenity-Mental-Health-Therapy-Center-.git" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                        </div>
-                    </div>
-
-                    <div class="project-box">
-                        <img src="Assets/Images/project-images/portfolio-img.jpeg" alt="Portfolio thumbnail">
-                        <div class="project-layer">
-                            <h4>My Portfolio Website</h4>
-                            <p>A responsive HTML, CSS, and JavaScript website showcasing my skills, projects, and experience. Designed with a clean, user-friendly layout to highlight my work.</p>
-                            <a href="https://zeenathulilma.vercel.app/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                        </div>
-                    </div>
-
-                    <div class="project-box">
-                        <img src="Assets/Images/project-images/spa-img.jpeg" alt="Single Page Application Thumbnail">
-                        <div class="project-layer">
-                            <h4>Single Page Application</h4>
-                            <p>A POS system SPA using Bootstrap, jQuery, and CSS, handling orders, inventory, and real-time updates efficiently.</p>
-                            <a href="https://github.com/Seenathul-Ilma/IT-Assignment-07-SP-Application.git" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                        </div>
-                    </div>
-
-                    <div class="project-box">
-                        <img src="Assets/Images/project-images/coin-collecting.jpeg" alt="Coin Collecting Game Thumbnail">
-                        <div class="project-layer">
-                            <h4>Coin Collecting Game using Scratch</h4>
-                            <p>An interactive Scratch game where players collect coins while avoiding obstacles. Features levels and rewards to enhance user engagement.</p>
-                            <a href="https://scratch.mit.edu/projects/1066297765/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                        </div>
-                    </div>
-
-                    <div class="project-box">
-                        <img src="Assets/Images/project-images/therapy-center.jpeg" alt="Therapy Center Thumbnail">
-                        <div class="project-layer">
-                            <h4>Serenity Mental Health Therapy Center</h4>
-                            <p>A JavaFX app with Hibernate ORM for managing therapists, programs, patients, and bookings, with authentication and session management.</p>
-                            <a href="https://github.com/Seenathul-Ilma/Serenity-Mental-Health-Therapy-Center-.git" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                        </div>
-                    </div>
-
-                    <div class="project-box">
-                        <img src="Assets/Images/project-images/portfolio-img.jpeg" alt="Portfolio Thumbnail">
-                        <div class="project-layer">
-                            <h4>My Portfolio Website</h4>
-                            <p>A responsive HTML, CSS, and JavaScript website showcasing my skills, projects, and experience. Designed with a clean, user-friendly layout to highlight my work.</p>
-                            <a href="https://github.com/Seenathul-Ilma/my-portfolio.git" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                        </div>
-                    </div>
-
-                </div>
+          <div class="project-container">
+            <div class="project-box">
+              <img
+                src="Assets/Images/project-images/fitness-project.png"
+                alt="Portfolio thumbnail"
+              />
+              <div class="project-layer">
+                <h4>Fitness Sports Center</h4>
+                <p>
+                  A clean and responsive website for a fitness brand, designed
+                  to highlight services, membership plans, and trainers, with a
+                  user-friendly contact form for inquiries.
+                </p>
+                <a
+                  href="https://github.com/Seenathul-Ilma/fitness-sports-center"
+                  target="_blank"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+              </div>
             </div>
-        </section>
+
+            <div class="project-box">
+              <img
+                src="Assets/Images/project-images/dailydish-image.jpg"
+                alt="Portfolio thumbnail"
+              />
+              <div class="project-layer">
+                <h4>Smart Recipe & Meal Companion</h4>
+                <p>
+                  React Native mobile app with Firebase Auth, AI-powered recipe
+                  generation, and intelligent discovery. Features favorites,
+                  meal planning, PDF export, and social sharing.
+                </p>
+                <a
+                  href="https://github.com/Seenathul-Ilma/AMD-Course-Work-Daily-Dish"
+                  target="_blank"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+              </div>
+            </div>
+
+            <div class="project-box">
+              <img
+                src="Assets/Images/project-images/hoterra-img.png"
+                alt="Portfolio thumbnail"
+              />
+              <div class="project-layer">
+                <h4>Hotel Booking & Management Platform</h4>
+                <p>
+                  Hotel management system with smart room browsing, real-time
+                  availability, seamless booking, and role-based admin
+                  management.
+                </p>
+                <a
+                  href="https://github.com/Seenathul-Ilma/RAD_CourseWork_Hoterra_Frontend"
+                  target="_blank"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+              </div>
+            </div>
+
+            <div class="project-box">
+              <img
+                src="Assets/Images/project-images/edusphere-img.png"
+                alt="Portfolio thumbnail"
+              />
+              <div class="project-layer">
+                <h4>Classroom Management System</h4>
+                <p>
+                  Full-stack platform for admins, teachers, and students to
+                  manage classes, assignments, announcements, and chat securely.
+                </p>
+                <a
+                  href="https://github.com/Seenathul-Ilma/AAD-SecondSemester-FinalProject"
+                  target="_blank"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+              </div>
+            </div>
+
+            <div class="project-box">
+              <img
+                src="Assets/Images/project-images/portfolio-img.jpeg"
+                alt="Portfolio thumbnail"
+              />
+              <div class="project-layer">
+                <h4>My Portfolio Website</h4>
+                <p>
+                  A responsive HTML, CSS, and JavaScript website showcasing my
+                  skills, projects, and experience. Designed with a clean,
+                  user-friendly layout to highlight my work.
+                </p>
+                <a
+                  href="https://github.com/Seenathul-Ilma/my-portfolio/tree/styles"
+                  target="_blank"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+              </div>
+            </div>
+
+            <div class="project-box">
+              <img
+                src="Assets/Images/project-images/spa-img.jpeg"
+                alt="Single Page Application Thumbnail"
+              />
+              <div class="project-layer">
+                <h4>Single Page Application</h4>
+                <p>
+                  A POS system SPA using Bootstrap, jQuery, and CSS, handling
+                  orders, inventory, and real-time updates efficiently.
+                </p>
+                <a
+                  href="https://github.com/Seenathul-Ilma/IT-Assignment-07-SP-Application.git"
+                  target="_blank"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+              </div>
+            </div>
+
+            <div class="project-box">
+              <img
+                src="Assets/Images/project-images/therapy-center.jpeg"
+                alt="Therapy Center Thumbnail"
+              />
+              <div class="project-layer">
+                <h4>Serenity Mental Health Therapy Center</h4>
+                <p>
+                  A JavaFX app with Hibernate ORM for managing therapists,
+                  programs, patients, and bookings, with authentication and
+                  session management.
+                </p>
+                <a
+                  href="https://github.com/Seenathul-Ilma/Serenity-Mental-Health-Therapy-Center-.git"
+                  target="_blank"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+              </div>
+            </div>
+
+            <div class="project-box">
+              <img
+                src="Assets/Images/project-images/mobilezone-image.jpeg"
+                alt="Mobile Store Thumbnail"
+              />
+              <div class="project-layer">
+                <h4>Mobile Store Management System</h4>
+                <p>
+                  A JavaFX app for managing authentication, employees,
+                  customers, sales, and inventory with support for MySQL,
+                  JasperReports, and SendGrid.
+                </p>
+                <a
+                  href="https://github.com/Seenathul-Ilma/MobileZone-Converted-Layered.git"
+                  target="_blank"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+              </div>
+            </div>
+
+            <div class="project-box">
+              <img
+                src="Assets/Images/project-images/tictactoe.jpeg"
+                alt="Tic Tac Toe Project Thumbnail"
+              />
+              <div class="project-layer">
+                <h4>Tic Tac Toe</h4>
+                <p>
+                  A JavaFX-based Tic Tac Toe game featuring an AI player using
+                  Minimax algorithm and a human player mode for an engaging
+                  two-player experience.
+                </p>
+                <a
+                  href="https://github.com/Seenathul-Ilma/tictactoe.git"
+                  target="_blank"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+              </div>
+            </div>
+
+            <div class="project-box">
+              <img
+                src="Assets/Images/project-images/coin-collecting.jpeg"
+                alt="Coin Collecting Game Thumbnail"
+              />
+              <div class="project-layer">
+                <h4>Coin Collecting Game using Scratch</h4>
+                <p>
+                  An interactive Scratch game where players collect coins while
+                  avoiding obstacles. Features levels and rewards to enhance
+                  user engagement.
+                </p>
+                <a
+                  href="https://scratch.mit.edu/projects/1066297765/"
+                  target="_blank"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
     <div class="mobile-divider"></div>
 
     <div class="module-small mobile-sections">
-        <section class="module-section">
-
-            <p class="sub-section-title">MY TESTS</p>
-            <!-- Created by Zeenathul Ilma - https://github.com/Seenathul-Ilma -->
-
-            <div class="module-section">
-                <div class="module-grid">
-
-                    <!-- IT -->
-                    <button class="module-box openModalBtn" data-modal="modalOverlayIT">
-                        <img class="img" src="Assets/Images/modules-icon/IT.png" alt="IT">
-                        <p>Internet Technologies</p>
-                    </button>
-
-                    <!-- PRF -->
-                    <button class="module-box openModalBtn" data-modal="modalOverlayPRF">
-                        <img class="img" src="Assets/Images/modules-icon/PRF.png" alt="PRF">
-                        <p>Programming Fundamentals</p>
-                    </button>
-
-                    <!-- DBM -->
-                    <button class="module-box openModalBtn" data-modal="modalOverlayDBM">
-                        <img class="img" src="Assets/Images/modules-icon/DBM.png" alt="DBM">
-                        <p>Database Management System</p>
-                    </button>
-
-                    <!-- OOP -->
-                    <button class="module-box openModalBtn" data-modal="modalOverlayOOP">
-                        <img class="img" src="Assets/Images/modules-icon/OOP.png" alt="OOP">
-                        <p>Object Oriented Programming</p>
-                    </button>
-
-                    <!-- SE -->
-                    <button class="module-box openModalBtn" data-modal="modalOverlaySE">
-                        <img class="img" src="Assets/Images/modules-icon/SE.png" alt="SE">
-                        <p>Software Engineering</p>
-                    </button>
-
-                </div>
-            </div>
-
-
-        </section>
-
-        <!-- Modal IT -->
-        <div class="modal-overlay" id="modalOverlayIT">
-            <div class="pop-up">
-                <!-- Created by Zeenathul Ilma - https://github.com/Seenathul-Ilma -->
-                <header>
-                    <span class="popup-span">Assignments</span>
-                    <div class="popup-divider"></div>
-                    <div class="pop-close">
-                        <i class="fa-solid fa-xmark"></i>
-                    </div>
-                </header>
-                <div class="popup-content">
-                    <div class="outer">
-                        <div class="card" style="--delay: 0">
-                            <div class="assignment-card-content">
-                                <div class="assignment-img"><img src="Assets/Images/modules-icon/IT.png" alt=""></div>
-                                <p class="assignment-number">Assignment - 01</p>
-                            </div>
-                            <a href="https://github.com/Seenathul-Ilma/my-portfolio/blob/main/README.md" target="_blank">Preview</a>
-                        </div>
-
-                        <div class="card" style="--delay: 1">
-                            <div class="assignment-card-content">
-                                <div class="assignment-img"><img src="Assets/Images/modules-icon/IT.png" alt=""></div>
-                                <p class="assignment-number">Assignment - 02</p>
-                            </div>
-                            <a href="https://github.com/Seenathul-Ilma/my-portfolio.git" target="_blank">Preview</a>
-                        </div>
-
-                        <div class="card" style="--delay: 2">
-                            <div class="assignment-card-content">
-                                <div class="assignment-img"><img src="Assets/Images/modules-icon/IT.png" alt=""></div>
-                                <p class="assignment-number">Assignment - 03</p>
-                            </div>
-                            <a href="https://github.com/Seenathul-Ilma/IT_Assignment_03" target="_blank">Preview</a>
-                        </div>
-
-                        <!-- Created by Zeenathul Ilma - https://github.com/Seenathul-Ilma -->
-                        <div class="card" style="--delay: 3">
-                            <div class="assignment-card-content">
-                                <div class="assignment-img"><img src="Assets/Images/modules-icon/IT.png" alt=""></div>
-                                <p class="assignment-number">Assignment - 04</p>
-                            </div>
-                            <a href="https://github.com/Seenathul-Ilma/IT_Assignment_04.git" target="_blank">Preview</a>
-                        </div>
-
-                        <div class="card" style="--delay: 4">
-                            <div class="assignment-card-content">
-                                <div class="assignment-img"><img src="Assets/Images/modules-icon/IT.png" alt=""></div>
-                                <p class="assignment-number">Assignment - 05</p>
-                            </div>
-                            <a href="https://github.com/Seenathul-Ilma/my-portfolio.git" target="_blank">Preview</a>
-                        </div>
-
-                        <div class="card" style="--delay: 5">
-                            <div class="assignment-card-content">
-                                <div class="assignment-img"><img src="Assets/Images/modules-icon/IT.png" alt=""></div>
-                                <p class="assignment-number">Assignment - 06</p>
-                            </div>
-                            <a href="https://github.com/Seenathul-Ilma/IT-POS-System-Bootstrap/blob/master/README.md" target="_blank">Preview</a>
-                        </div>
-
-                        <div class="card" style="--delay: 6">
-                            <div class="assignment-card-content">
-                                <div class="assignment-img"><img src="Assets/Images/modules-icon/IT.png" alt=""></div>
-                                <p class="assignment-number">Assignment - 07</p>
-                            </div>
-                            <a href="https://github.com/Seenathul-Ilma/IT-Assignment-07-SP-Application.git" target="_blank">Preview</a>
-                        </div>
-
-                        <div class="card" style="--delay: 7">
-                            <div class="assignment-card-content">
-                                <div class="assignment-img"><img src="Assets/Images/modules-icon/IT.png" alt=""></div>
-                                <p class="assignment-number">Assignment - 08</p>
-                            </div>
-                            <a href="https://github.com/Seenathul-Ilma/IT_Assignment_08.git" target="_blank">Preview</a>
-                        </div>
-
-                        <!-- Created by Zeenathul Ilma - https://github.com/Seenathul-Ilma -->
-                        <div class="card" style="--delay: 8">
-                            <div class="assignment-card-content">
-                                <div class="assignment-img"><img src="Assets/Images/modules-icon/IT.png" alt=""></div>
-                                <p class="assignment-number">Assignment - 09</p>
-                            </div>
-                            <a href="https://github.com/Seenathul-Ilma/IT_Assignment_09.git" target="_blank">Preview</a>
-                        </div>
-
-                        <div class="card" style="--delay: 9">
-                            <div class="assignment-card-content">
-                                <div class="assignment-img"><img src="Assets/Images/modules-icon/IT.png" alt=""></div>
-                                <p class="assignment-number">Assignment - 10</p>
-                            </div>
-                            <a href="https://github.com/Seenathul-Ilma/IT-SPA-POS-IN-MVC" target="_blank">Preview</a>
-                        </div>
-                    </div>
-                    <!-- Created by Zeenathul Ilma - https://github.com/Seenathul-Ilma -->
-                </div>
-            </div>
-        </div>
-
-        <!-- Modal PRF-->
-        <div class="modal-overlay" id="modalOverlayPRF">
-            <div class="pop-up">
-                <header>
-                    <span class="popup-span">Assignments</span>
-                    <div class="popup-divider"></div>
-                    <div class="pop-close">
-                        <i class="fa-solid fa-xmark"></i>
-                    </div>
-                </header>
-                <div class="popup-content">
-                    <div class="outer">
-                        <div class="card" style="--delay: 0">
-                            <div class="assignment-card-content">
-                                <div class="assignment-img"><img src="Assets/Images/modules-icon/PRF.png" alt=""></div>
-                                <p class="assignment-number">Assignment - 01</p>
-                            </div>
-                            <a href="#" target="_blank">Preview</a>
-                        </div>
-
-                        <div class="card" style="--delay: 1">
-                            <div class="assignment-card-content">
-                                <div class="assignment-img"><img src="Assets/Images/modules-icon/PRF.png" alt=""></div>
-                                <p class="assignment-number">Assignment - 02</p>
-                            </div>
-                            <a href="#" target="_blank">Preview</a>
-                        </div>
-
-                        <div class="card" style="--delay: 2">
-                            <div class="assignment-card-content">
-                                <div class="assignment-img"><img src="Assets/Images/modules-icon/PRF.png" alt=""></div>
-                                <p class="assignment-number">Assignment - 03</p>
-                            </div>
-                            <a href="#" target="_blank">Preview</a>
-                        </div>
-
-                        <div class="card" style="--delay: 3">
-                            <div class="assignment-card-content">
-                                <div class="assignment-img"><img src="Assets/Images/modules-icon/PRF.png" alt=""></div>
-                                <p class="assignment-number">Assignment - 04</p>
-                            </div>
-                            <a href="#" target="_blank">Preview</a>
-                        </div>
-
-                        <div class="card" style="--delay: 4">
-                            <div class="assignment-card-content">
-                                <div class="assignment-img"><img src="Assets/Images/modules-icon/PRF.png" alt=""></div>
-                                <p class="assignment-number">Assignment - 05</p>
-                            </div>
-                            <a href="#" target="_blank">Preview</a>
-                        </div>
-
-                        <div class="card" style="--delay: 5">
-                            <div class="assignment-card-content">
-                                <div class="assignment-img"><img src="Assets/Images/modules-icon/PRF.png" alt=""></div>
-                                <p class="assignment-number">Assignment - 06</p>
-                            </div>
-                            <a href="#" target="_blank">Preview</a>
-                        </div>
-
-                        <div class="card" style="--delay: 6">
-                            <div class="assignment-card-content">
-                                <div class="assignment-img"><img src="Assets/Images/modules-icon/PRF.png" alt=""></div>
-                                <p class="assignment-number">Assignment - 07</p>
-                            </div>
-                            <a href="#" target="_blank">Preview</a>
-                        </div>
-
-                        <div class="card" style="--delay: 7">
-                            <div class="assignment-card-content">
-                                <div class="assignment-img"><img src="Assets/Images/modules-icon/PRF.png" alt=""></div>
-                                <p class="assignment-number">Assignment - 08</p>
-                            </div>
-                            <a href="#" target="_blank">Preview</a>
-                        </div>
-
-                        <div class="card" style="--delay: 8">
-                            <div class="assignment-card-content">
-                                <div class="assignment-img"><img src="Assets/Images/modules-icon/PRF.png" alt=""></div>
-                                <p class="assignment-number">Assignment - 09</p>
-                            </div>
-                            <a href="#" target="_blank">Preview</a>
-                        </div>
-
-                        <div class="card" style="--delay: 9">
-                            <div class="assignment-card-content">
-                                <div class="assignment-img"><img src="Assets/Images/modules-icon/PRF.png" alt=""></div>
-                                <p class="assignment-number">Assignment - 10</p>
-                            </div>
-                            <a href="#" target="_blank">Preview</a>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-        <!-- Modal DBM -->
-        <div class="modal-overlay" id="modalOverlayDBM">
-            <div class="pop-up">
-                <header>
-                    <span class="popup-span">Assignments</span>
-                    <div class="popup-divider"></div>
-                    <div class="pop-close">
-                        <i class="fa-solid fa-xmark"></i>
-                    </div>
-                </header>
-                <div class="popup-content">
-                    <div class="outer">
-                        <div class="card" style="--delay: 0">
-                            <div class="assignment-card-content">
-                                <div class="assignment-img"><img src="Assets/Images/modules-icon/DBM.png" alt=""></div>
-                                <p class="assignment-number">Assignment - 01</p>
-                            </div>
-                            <a href="#" target="_blank">Preview</a>
-                        </div>
-
-                        <div class="card" style="--delay: 1">
-                            <div class="assignment-card-content">
-                                <div class="assignment-img"><img src="Assets/Images/modules-icon/DBM.png" alt=""></div>
-                                <p class="assignment-number">Assignment - 02</p>
-                            </div>
-                            <a href="#" target="_blank">Preview</a>
-                        </div>
-
-                        <div class="card" style="--delay: 2">
-                            <div class="assignment-card-content">
-                                <div class="assignment-img"><img src="Assets/Images/modules-icon/DBM.png" alt=""></div>
-                                <p class="assignment-number">Assignment - 03</p>
-                            </div>
-                            <a href="#" target="_blank">Preview</a>
-                        </div>
-
-                        <div class="card" style="--delay: 3">
-                            <div class="assignment-card-content">
-                                <div class="assignment-img"><img src="Assets/Images/modules-icon/DBM.png" alt=""></div>
-                                <p class="assignment-number">Assignment - 04</p>
-                            </div>
-                            <a href="#" target="_blank">Preview</a>
-                        </div>
-
-                        <div class="card" style="--delay: 4">
-                            <div class="assignment-card-content">
-                                <div class="assignment-img"><img src="Assets/Images/modules-icon/DBM.png" alt=""></div>
-                                <p class="assignment-number">Assignment - 05</p>
-                            </div>
-                            <a href="#" target="_blank">Preview</a>
-                        </div>
-
-                        <div class="card" style="--delay: 5">
-                            <div class="assignment-card-content">
-                                <div class="assignment-img"><img src="Assets/Images/modules-icon/DBM.png" alt=""></div>
-                                <p class="assignment-number">Assignment - 06</p>
-                            </div>
-                            <a href="#" target="_blank">Preview</a>
-                        </div>
-
-                        <div class="card" style="--delay: 6">
-                            <div class="assignment-card-content">
-                                <div class="assignment-img"><img src="Assets/Images/modules-icon/DBM.png" alt=""></div>
-                                <p class="assignment-number">Assignment - 07</p>
-                            </div>
-                            <a href="#" target="_blank">Preview</a>
-                        </div>
-
-                        <div class="card" style="--delay: 7">
-                            <div class="assignment-card-content">
-                                <div class="assignment-img"><img src="Assets/Images/modules-icon/DBM.png" alt=""></div>
-                                <p class="assignment-number">Assignment - 08</p>
-                            </div>
-                            <a href="#" target="_blank">Preview</a>
-                        </div>
-
-                        <div class="card" style="--delay: 8">
-                            <div class="assignment-card-content">
-                                <div class="assignment-img"><img src="Assets/Images/modules-icon/DBM.png" alt=""></div>
-                                <p class="assignment-number">Assignment - 09</p>
-                            </div>
-                            <a href="#" target="_blank">Preview</a>
-                        </div>
-
-                        <div class="card" style="--delay: 9">
-                            <div class="assignment-card-content">
-                                <div class="assignment-img"><img src="Assets/Images/modules-icon/DBM.png" alt=""></div>
-                                <p class="assignment-number">Assignment - 10</p>
-                            </div>
-                            <a href="#" target="_blank">Preview</a>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-        <!-- Modal OOP -->
-        <div class="modal-overlay" id="modalOverlayOOP">
-            <div class="pop-up">
-                <header>
-                    <span class="popup-span">Assignments</span>
-                    <div class="popup-divider"></div>
-                    <div class="pop-close">
-                        <i class="fa-solid fa-xmark"></i>
-                    </div>
-                </header>
-                <div class="popup-content">
-                    <div class="outer">
-                        <div class="card" style="--delay: 0">
-                            <div class="assignment-card-content">
-                                <div class="assignment-img"><img src="Assets/Images/modules-icon/OOP.png" alt=""></div>
-                                <p class="assignment-number">Assignment - 01</p>
-                            </div>
-                            <a href="#" target="_blank">Preview</a>
-                        </div>
-
-                        <div class="card" style="--delay: 1">
-                            <div class="assignment-card-content">
-                                <div class="assignment-img"><img src="Assets/Images/modules-icon/OOP.png" alt=""></div>
-                                <p class="assignment-number">Assignment - 02</p>
-                            </div>
-                            <a href="#" target="_blank">Preview</a>
-                        </div>
-
-                        <div class="card" style="--delay: 2">
-                            <div class="assignment-card-content">
-                                <div class="assignment-img"><img src="Assets/Images/modules-icon/OOP.png" alt=""></div>
-                                <p class="assignment-number">Assignment - 03</p>
-                            </div>
-                            <a href="#" target="_blank">Preview</a>
-                        </div>
-
-                        <div class="card" style="--delay: 3">
-                            <div class="assignment-card-content">
-                                <div class="assignment-img"><img src="Assets/Images/modules-icon/OOP.png" alt=""></div>
-                                <p class="assignment-number">Assignment - 04</p>
-                            </div>
-                            <a href="#" target="_blank">Preview</a>
-                        </div>
-
-                        <div class="card" style="--delay: 4">
-                            <div class="assignment-card-content">
-                                <div class="assignment-img"><img src="Assets/Images/modules-icon/OOP.png" alt=""></div>
-                                <p class="assignment-number">Assignment - 05</p>
-                            </div>
-                            <a href="#" target="_blank">Preview</a>
-                        </div>
-
-                        <div class="card" style="--delay: 5">
-                            <div class="assignment-card-content">
-                                <div class="assignment-img"><img src="Assets/Images/modules-icon/OOP.png" alt=""></div>
-                                <p class="assignment-number">Assignment - 06</p>
-                            </div>
-                            <a href="#" target="_blank">Preview</a>
-                        </div>
-
-                        <div class="card" style="--delay: 6">
-                            <div class="assignment-card-content">
-                                <div class="assignment-img"><img src="Assets/Images/modules-icon/OOP.png" alt=""></div>
-                                <p class="assignment-number">Assignment - 07</p>
-                            </div>
-                            <a href="#" target="_blank">Preview</a>
-                        </div>
-
-                        <div class="card" style="--delay: 7">
-                            <div class="assignment-card-content">
-                                <div class="assignment-img"><img src="Assets/Images/modules-icon/OOP.png" alt=""></div>
-                                <p class="assignment-number">Assignment - 08</p>
-                            </div>
-                            <a href="#" target="_blank">Preview</a>
-                        </div>
-
-                        <div class="card" style="--delay: 8">
-                            <div class="assignment-card-content">
-                                <div class="assignment-img"><img src="Assets/Images/modules-icon/OOP.png" alt=""></div>
-                                <p class="assignment-number">Assignment - 09</p>
-                            </div>
-                            <a href="#" target="_blank">Preview</a>
-                        </div>
-
-                        <div class="card" style="--delay: 9">
-                            <div class="assignment-card-content">
-                                <div class="assignment-img"><img src="Assets/Images/modules-icon/OOP.png" alt=""></div>
-                                <p class="assignment-number">Assignment - 10</p>
-                            </div>
-                            <a href="#" target="_blank">Preview</a>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
+      <section class="module-section">
+        <p class="sub-section-title">MY TESTS</p>
         <!-- Created by Zeenathul Ilma - https://github.com/Seenathul-Ilma -->
 
-        <!-- Modal SE -->
-        <div class="modal-overlay" id="modalOverlaySE">
-            <div class="pop-up">
-                <header>
-                    <span class="popup-span">Assignments</span>
-                    <div class="popup-divider"></div>
-                    <div class="pop-close">
-                        <i class="fa-solid fa-xmark"></i>
-                    </div>
-                </header>
-                <div class="popup-content">
-                    <div class="outer">
-                        <div class="card" style="--delay: 0">
-                            <div class="assignment-card-content">
-                                <div class="assignment-img"><img src="Assets/Images/modules-icon/SE.png" alt=""></div>
-                                <p class="assignment-number">Assignment - 01</p>
-                            </div>
-                            <a href="#" target="_blank">Preview</a>
-                        </div>
+        <div class="module-section">
+          <div class="module-grid">
+            <!-- IT -->
+            <button class="module-box openModalBtn" data-modal="modalOverlayIT">
+              <img
+                class="img"
+                src="Assets/Images/modules-icon/IT.png"
+                alt="IT"
+              />
+              <p>Internet Technologies</p>
+            </button>
 
-                        <div class="card" style="--delay: 1">
-                            <div class="assignment-card-content">
-                                <div class="assignment-img"><img src="Assets/Images/modules-icon/SE.png" alt=""></div>
-                                <p class="assignment-number">Assignment - 02</p>
-                            </div>
-                            <a href="#" target="_blank">Preview</a>
-                        </div>
+            <!-- PRF -->
+            <button
+              class="module-box openModalBtn"
+              data-modal="modalOverlayPRF"
+            >
+              <img
+                class="img"
+                src="Assets/Images/modules-icon/PRF.png"
+                alt="PRF"
+              />
+              <p>Programming Fundamentals</p>
+            </button>
 
-                        <div class="card" style="--delay: 2">
-                            <div class="assignment-card-content">
-                                <div class="assignment-img"><img src="Assets/Images/modules-icon/SE.png" alt=""></div>
-                                <p class="assignment-number">Assignment - 03</p>
-                            </div>
-                            <a href="#" target="_blank">Preview</a>
-                        </div>
+            <!-- DBM -->
+            <button
+              class="module-box openModalBtn"
+              data-modal="modalOverlayDBM"
+            >
+              <img
+                class="img"
+                src="Assets/Images/modules-icon/DBM.png"
+                alt="DBM"
+              />
+              <p>Database Management System</p>
+            </button>
 
-                        <div class="card" style="--delay: 3">
-                            <div class="assignment-card-content">
-                                <div class="assignment-img"><img src="Assets/Images/modules-icon/SE.png" alt=""></div>
-                                <p class="assignment-number">Assignment - 04</p>
-                            </div>
-                            <a href="#" target="_blank">Preview</a>
-                        </div>
+            <!-- OOP -->
+            <button
+              class="module-box openModalBtn"
+              data-modal="modalOverlayOOP"
+            >
+              <img
+                class="img"
+                src="Assets/Images/modules-icon/OOP.png"
+                alt="OOP"
+              />
+              <p>Object Oriented Programming</p>
+            </button>
 
-                        <div class="card" style="--delay: 4">
-                            <div class="assignment-card-content">
-                                <div class="assignment-img"><img src="Assets/Images/modules-icon/SE.png" alt=""></div>
-                                <p class="assignment-number">Assignment - 05</p>
-                            </div>
-                            <a href="#" target="_blank">Preview</a>
-                        </div>
-
-                        <div class="card" style="--delay: 5">
-                            <div class="assignment-card-content">
-                                <div class="assignment-img"><img src="Assets/Images/modules-icon/SE.png" alt=""></div>
-                                <p class="assignment-number">Assignment - 06</p>
-                            </div>
-                            <a href="#" target="_blank">Preview</a>
-                        </div>
-
-                        <div class="card" style="--delay: 6">
-                            <div class="assignment-card-content">
-                                <div class="assignment-img"><img src="Assets/Images/modules-icon/SE.png" alt=""></div>
-                                <p class="assignment-number">Assignment - 07</p>
-                            </div>
-                            <a href="#" target="_blank">Preview</a>
-                        </div>
-
-                        <div class="card" style="--delay: 7">
-                            <div class="assignment-card-content">
-                                <div class="assignment-img"><img src="Assets/Images/modules-icon/SE.png" alt=""></div>
-                                <p class="assignment-number">Assignment - 08</p>
-                            </div>
-                            <a href="#" target="_blank">Preview</a>
-                        </div>
-
-                        <div class="card" style="--delay: 8">
-                            <div class="assignment-card-content">
-                                <div class="assignment-img"><img src="Assets/Images/modules-icon/SE.png" alt=""></div>
-                                <p class="assignment-number">Assignment - 09</p>
-                            </div>
-                            <a href="#" target="_blank">Preview</a>
-                        </div>
-
-                        <div class="card" style="--delay: 9">
-                            <div class="assignment-card-content">
-                                <div class="assignment-img"><img src="Assets/Images/modules-icon/SE.png" alt=""></div>
-                                <p class="assignment-number">Assignment - 10</p>
-                            </div>
-                            <a href="#" target="_blank">Preview</a>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
+            <!-- SE -->
+            <button class="module-box openModalBtn" data-modal="modalOverlaySE">
+              <img
+                class="img"
+                src="Assets/Images/modules-icon/SE.png"
+                alt="SE"
+              />
+              <p>Software Engineering</p>
+            </button>
+          </div>
         </div>
+      </section>
+
+      <!-- Modal IT -->
+      <div class="modal-overlay" id="modalOverlayIT">
+        <div class="pop-up">
+          <!-- Created by Zeenathul Ilma - https://github.com/Seenathul-Ilma -->
+          <header>
+            <span class="popup-span">Assignments</span>
+            <div class="popup-divider"></div>
+            <div class="pop-close">
+              <i class="fa-solid fa-xmark"></i>
+            </div>
+          </header>
+          <div class="popup-content">
+            <div class="outer">
+              <div class="card" style="--delay: 0">
+                <div class="assignment-card-content">
+                  <div class="assignment-img">
+                    <img src="Assets/Images/modules-icon/IT.png" alt="" />
+                  </div>
+                  <p class="assignment-number">Assignment - 01</p>
+                </div>
+                <a
+                  href="https://github.com/Seenathul-Ilma/my-portfolio/blob/main/README.md"
+                  target="_blank"
+                  >Preview</a
+                >
+              </div>
+
+              <div class="card" style="--delay: 1">
+                <div class="assignment-card-content">
+                  <div class="assignment-img">
+                    <img src="Assets/Images/modules-icon/IT.png" alt="" />
+                  </div>
+                  <p class="assignment-number">Assignment - 02</p>
+                </div>
+                <a
+                  href="https://github.com/Seenathul-Ilma/my-portfolio.git"
+                  target="_blank"
+                  >Preview</a
+                >
+              </div>
+
+              <div class="card" style="--delay: 2">
+                <div class="assignment-card-content">
+                  <div class="assignment-img">
+                    <img src="Assets/Images/modules-icon/IT.png" alt="" />
+                  </div>
+                  <p class="assignment-number">Assignment - 03</p>
+                </div>
+                <a
+                  href="https://github.com/Seenathul-Ilma/IT_Assignment_03"
+                  target="_blank"
+                  >Preview</a
+                >
+              </div>
+
+              <!-- Created by Zeenathul Ilma - https://github.com/Seenathul-Ilma -->
+              <div class="card" style="--delay: 3">
+                <div class="assignment-card-content">
+                  <div class="assignment-img">
+                    <img src="Assets/Images/modules-icon/IT.png" alt="" />
+                  </div>
+                  <p class="assignment-number">Assignment - 04</p>
+                </div>
+                <a
+                  href="https://github.com/Seenathul-Ilma/IT_Assignment_04.git"
+                  target="_blank"
+                  >Preview</a
+                >
+              </div>
+
+              <div class="card" style="--delay: 4">
+                <div class="assignment-card-content">
+                  <div class="assignment-img">
+                    <img src="Assets/Images/modules-icon/IT.png" alt="" />
+                  </div>
+                  <p class="assignment-number">Assignment - 05</p>
+                </div>
+                <a
+                  href="https://github.com/Seenathul-Ilma/my-portfolio.git"
+                  target="_blank"
+                  >Preview</a
+                >
+              </div>
+
+              <div class="card" style="--delay: 5">
+                <div class="assignment-card-content">
+                  <div class="assignment-img">
+                    <img src="Assets/Images/modules-icon/IT.png" alt="" />
+                  </div>
+                  <p class="assignment-number">Assignment - 06</p>
+                </div>
+                <a
+                  href="https://github.com/Seenathul-Ilma/IT-POS-System-Bootstrap/blob/master/README.md"
+                  target="_blank"
+                  >Preview</a
+                >
+              </div>
+
+              <div class="card" style="--delay: 6">
+                <div class="assignment-card-content">
+                  <div class="assignment-img">
+                    <img src="Assets/Images/modules-icon/IT.png" alt="" />
+                  </div>
+                  <p class="assignment-number">Assignment - 07</p>
+                </div>
+                <a
+                  href="https://github.com/Seenathul-Ilma/IT-Assignment-07-SP-Application.git"
+                  target="_blank"
+                  >Preview</a
+                >
+              </div>
+
+              <div class="card" style="--delay: 7">
+                <div class="assignment-card-content">
+                  <div class="assignment-img">
+                    <img src="Assets/Images/modules-icon/IT.png" alt="" />
+                  </div>
+                  <p class="assignment-number">Assignment - 08</p>
+                </div>
+                <a
+                  href="https://github.com/Seenathul-Ilma/IT_Assignment_08.git"
+                  target="_blank"
+                  >Preview</a
+                >
+              </div>
+
+              <!-- Created by Zeenathul Ilma - https://github.com/Seenathul-Ilma -->
+              <div class="card" style="--delay: 8">
+                <div class="assignment-card-content">
+                  <div class="assignment-img">
+                    <img src="Assets/Images/modules-icon/IT.png" alt="" />
+                  </div>
+                  <p class="assignment-number">Assignment - 09</p>
+                </div>
+                <a
+                  href="https://github.com/Seenathul-Ilma/IT_Assignment_09.git"
+                  target="_blank"
+                  >Preview</a
+                >
+              </div>
+
+              <div class="card" style="--delay: 9">
+                <div class="assignment-card-content">
+                  <div class="assignment-img">
+                    <img src="Assets/Images/modules-icon/IT.png" alt="" />
+                  </div>
+                  <p class="assignment-number">Assignment - 10</p>
+                </div>
+                <a
+                  href="https://github.com/Seenathul-Ilma/IT-SPA-POS-IN-MVC"
+                  target="_blank"
+                  >Preview</a
+                >
+              </div>
+            </div>
+            <!-- Created by Zeenathul Ilma - https://github.com/Seenathul-Ilma -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal PRF-->
+      <div class="modal-overlay" id="modalOverlayPRF">
+        <div class="pop-up">
+          <header>
+            <span class="popup-span">Assignments</span>
+            <div class="popup-divider"></div>
+            <div class="pop-close">
+              <i class="fa-solid fa-xmark"></i>
+            </div>
+          </header>
+          <div class="popup-content">
+            <div class="outer">
+              <div class="card" style="--delay: 0">
+                <div class="assignment-card-content">
+                  <div class="assignment-img">
+                    <img src="Assets/Images/modules-icon/PRF.png" alt="" />
+                  </div>
+                  <p class="assignment-number">Assignment - 01</p>
+                </div>
+                <a href="#" target="_blank">Preview</a>
+              </div>
+
+              <div class="card" style="--delay: 1">
+                <div class="assignment-card-content">
+                  <div class="assignment-img">
+                    <img src="Assets/Images/modules-icon/PRF.png" alt="" />
+                  </div>
+                  <p class="assignment-number">Assignment - 02</p>
+                </div>
+                <a href="#" target="_blank">Preview</a>
+              </div>
+
+              <div class="card" style="--delay: 2">
+                <div class="assignment-card-content">
+                  <div class="assignment-img">
+                    <img src="Assets/Images/modules-icon/PRF.png" alt="" />
+                  </div>
+                  <p class="assignment-number">Assignment - 03</p>
+                </div>
+                <a href="#" target="_blank">Preview</a>
+              </div>
+
+              <div class="card" style="--delay: 3">
+                <div class="assignment-card-content">
+                  <div class="assignment-img">
+                    <img src="Assets/Images/modules-icon/PRF.png" alt="" />
+                  </div>
+                  <p class="assignment-number">Assignment - 04</p>
+                </div>
+                <a href="#" target="_blank">Preview</a>
+              </div>
+
+              <div class="card" style="--delay: 4">
+                <div class="assignment-card-content">
+                  <div class="assignment-img">
+                    <img src="Assets/Images/modules-icon/PRF.png" alt="" />
+                  </div>
+                  <p class="assignment-number">Assignment - 05</p>
+                </div>
+                <a href="#" target="_blank">Preview</a>
+              </div>
+
+              <div class="card" style="--delay: 5">
+                <div class="assignment-card-content">
+                  <div class="assignment-img">
+                    <img src="Assets/Images/modules-icon/PRF.png" alt="" />
+                  </div>
+                  <p class="assignment-number">Assignment - 06</p>
+                </div>
+                <a href="#" target="_blank">Preview</a>
+              </div>
+
+              <div class="card" style="--delay: 6">
+                <div class="assignment-card-content">
+                  <div class="assignment-img">
+                    <img src="Assets/Images/modules-icon/PRF.png" alt="" />
+                  </div>
+                  <p class="assignment-number">Assignment - 07</p>
+                </div>
+                <a href="#" target="_blank">Preview</a>
+              </div>
+
+              <div class="card" style="--delay: 7">
+                <div class="assignment-card-content">
+                  <div class="assignment-img">
+                    <img src="Assets/Images/modules-icon/PRF.png" alt="" />
+                  </div>
+                  <p class="assignment-number">Assignment - 08</p>
+                </div>
+                <a href="#" target="_blank">Preview</a>
+              </div>
+
+              <div class="card" style="--delay: 8">
+                <div class="assignment-card-content">
+                  <div class="assignment-img">
+                    <img src="Assets/Images/modules-icon/PRF.png" alt="" />
+                  </div>
+                  <p class="assignment-number">Assignment - 09</p>
+                </div>
+                <a href="#" target="_blank">Preview</a>
+              </div>
+
+              <div class="card" style="--delay: 9">
+                <div class="assignment-card-content">
+                  <div class="assignment-img">
+                    <img src="Assets/Images/modules-icon/PRF.png" alt="" />
+                  </div>
+                  <p class="assignment-number">Assignment - 10</p>
+                </div>
+                <a href="#" target="_blank">Preview</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal DBM -->
+      <div class="modal-overlay" id="modalOverlayDBM">
+        <div class="pop-up">
+          <header>
+            <span class="popup-span">Assignments</span>
+            <div class="popup-divider"></div>
+            <div class="pop-close">
+              <i class="fa-solid fa-xmark"></i>
+            </div>
+          </header>
+          <div class="popup-content">
+            <div class="outer">
+              <div class="card" style="--delay: 0">
+                <div class="assignment-card-content">
+                  <div class="assignment-img">
+                    <img src="Assets/Images/modules-icon/DBM.png" alt="" />
+                  </div>
+                  <p class="assignment-number">Assignment - 01</p>
+                </div>
+                <a href="#" target="_blank">Preview</a>
+              </div>
+
+              <div class="card" style="--delay: 1">
+                <div class="assignment-card-content">
+                  <div class="assignment-img">
+                    <img src="Assets/Images/modules-icon/DBM.png" alt="" />
+                  </div>
+                  <p class="assignment-number">Assignment - 02</p>
+                </div>
+                <a href="#" target="_blank">Preview</a>
+              </div>
+
+              <div class="card" style="--delay: 2">
+                <div class="assignment-card-content">
+                  <div class="assignment-img">
+                    <img src="Assets/Images/modules-icon/DBM.png" alt="" />
+                  </div>
+                  <p class="assignment-number">Assignment - 03</p>
+                </div>
+                <a href="#" target="_blank">Preview</a>
+              </div>
+
+              <div class="card" style="--delay: 3">
+                <div class="assignment-card-content">
+                  <div class="assignment-img">
+                    <img src="Assets/Images/modules-icon/DBM.png" alt="" />
+                  </div>
+                  <p class="assignment-number">Assignment - 04</p>
+                </div>
+                <a href="#" target="_blank">Preview</a>
+              </div>
+
+              <div class="card" style="--delay: 4">
+                <div class="assignment-card-content">
+                  <div class="assignment-img">
+                    <img src="Assets/Images/modules-icon/DBM.png" alt="" />
+                  </div>
+                  <p class="assignment-number">Assignment - 05</p>
+                </div>
+                <a href="#" target="_blank">Preview</a>
+              </div>
+
+              <div class="card" style="--delay: 5">
+                <div class="assignment-card-content">
+                  <div class="assignment-img">
+                    <img src="Assets/Images/modules-icon/DBM.png" alt="" />
+                  </div>
+                  <p class="assignment-number">Assignment - 06</p>
+                </div>
+                <a href="#" target="_blank">Preview</a>
+              </div>
+
+              <div class="card" style="--delay: 6">
+                <div class="assignment-card-content">
+                  <div class="assignment-img">
+                    <img src="Assets/Images/modules-icon/DBM.png" alt="" />
+                  </div>
+                  <p class="assignment-number">Assignment - 07</p>
+                </div>
+                <a href="#" target="_blank">Preview</a>
+              </div>
+
+              <div class="card" style="--delay: 7">
+                <div class="assignment-card-content">
+                  <div class="assignment-img">
+                    <img src="Assets/Images/modules-icon/DBM.png" alt="" />
+                  </div>
+                  <p class="assignment-number">Assignment - 08</p>
+                </div>
+                <a href="#" target="_blank">Preview</a>
+              </div>
+
+              <div class="card" style="--delay: 8">
+                <div class="assignment-card-content">
+                  <div class="assignment-img">
+                    <img src="Assets/Images/modules-icon/DBM.png" alt="" />
+                  </div>
+                  <p class="assignment-number">Assignment - 09</p>
+                </div>
+                <a href="#" target="_blank">Preview</a>
+              </div>
+
+              <div class="card" style="--delay: 9">
+                <div class="assignment-card-content">
+                  <div class="assignment-img">
+                    <img src="Assets/Images/modules-icon/DBM.png" alt="" />
+                  </div>
+                  <p class="assignment-number">Assignment - 10</p>
+                </div>
+                <a href="#" target="_blank">Preview</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal OOP -->
+      <div class="modal-overlay" id="modalOverlayOOP">
+        <div class="pop-up">
+          <header>
+            <span class="popup-span">Assignments</span>
+            <div class="popup-divider"></div>
+            <div class="pop-close">
+              <i class="fa-solid fa-xmark"></i>
+            </div>
+          </header>
+          <div class="popup-content">
+            <div class="outer">
+              <div class="card" style="--delay: 0">
+                <div class="assignment-card-content">
+                  <div class="assignment-img">
+                    <img src="Assets/Images/modules-icon/OOP.png" alt="" />
+                  </div>
+                  <p class="assignment-number">Assignment - 01</p>
+                </div>
+                <a href="#" target="_blank">Preview</a>
+              </div>
+
+              <div class="card" style="--delay: 1">
+                <div class="assignment-card-content">
+                  <div class="assignment-img">
+                    <img src="Assets/Images/modules-icon/OOP.png" alt="" />
+                  </div>
+                  <p class="assignment-number">Assignment - 02</p>
+                </div>
+                <a href="#" target="_blank">Preview</a>
+              </div>
+
+              <div class="card" style="--delay: 2">
+                <div class="assignment-card-content">
+                  <div class="assignment-img">
+                    <img src="Assets/Images/modules-icon/OOP.png" alt="" />
+                  </div>
+                  <p class="assignment-number">Assignment - 03</p>
+                </div>
+                <a href="#" target="_blank">Preview</a>
+              </div>
+
+              <div class="card" style="--delay: 3">
+                <div class="assignment-card-content">
+                  <div class="assignment-img">
+                    <img src="Assets/Images/modules-icon/OOP.png" alt="" />
+                  </div>
+                  <p class="assignment-number">Assignment - 04</p>
+                </div>
+                <a href="#" target="_blank">Preview</a>
+              </div>
+
+              <div class="card" style="--delay: 4">
+                <div class="assignment-card-content">
+                  <div class="assignment-img">
+                    <img src="Assets/Images/modules-icon/OOP.png" alt="" />
+                  </div>
+                  <p class="assignment-number">Assignment - 05</p>
+                </div>
+                <a href="#" target="_blank">Preview</a>
+              </div>
+
+              <div class="card" style="--delay: 5">
+                <div class="assignment-card-content">
+                  <div class="assignment-img">
+                    <img src="Assets/Images/modules-icon/OOP.png" alt="" />
+                  </div>
+                  <p class="assignment-number">Assignment - 06</p>
+                </div>
+                <a href="#" target="_blank">Preview</a>
+              </div>
+
+              <div class="card" style="--delay: 6">
+                <div class="assignment-card-content">
+                  <div class="assignment-img">
+                    <img src="Assets/Images/modules-icon/OOP.png" alt="" />
+                  </div>
+                  <p class="assignment-number">Assignment - 07</p>
+                </div>
+                <a href="#" target="_blank">Preview</a>
+              </div>
+
+              <div class="card" style="--delay: 7">
+                <div class="assignment-card-content">
+                  <div class="assignment-img">
+                    <img src="Assets/Images/modules-icon/OOP.png" alt="" />
+                  </div>
+                  <p class="assignment-number">Assignment - 08</p>
+                </div>
+                <a href="#" target="_blank">Preview</a>
+              </div>
+
+              <div class="card" style="--delay: 8">
+                <div class="assignment-card-content">
+                  <div class="assignment-img">
+                    <img src="Assets/Images/modules-icon/OOP.png" alt="" />
+                  </div>
+                  <p class="assignment-number">Assignment - 09</p>
+                </div>
+                <a href="#" target="_blank">Preview</a>
+              </div>
+
+              <div class="card" style="--delay: 9">
+                <div class="assignment-card-content">
+                  <div class="assignment-img">
+                    <img src="Assets/Images/modules-icon/OOP.png" alt="" />
+                  </div>
+                  <p class="assignment-number">Assignment - 10</p>
+                </div>
+                <a href="#" target="_blank">Preview</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Created by Zeenathul Ilma - https://github.com/Seenathul-Ilma -->
+
+      <!-- Modal SE -->
+      <div class="modal-overlay" id="modalOverlaySE">
+        <div class="pop-up">
+          <header>
+            <span class="popup-span">Assignments</span>
+            <div class="popup-divider"></div>
+            <div class="pop-close">
+              <i class="fa-solid fa-xmark"></i>
+            </div>
+          </header>
+          <div class="popup-content">
+            <div class="outer">
+              <div class="card" style="--delay: 0">
+                <div class="assignment-card-content">
+                  <div class="assignment-img">
+                    <img src="Assets/Images/modules-icon/SE.png" alt="" />
+                  </div>
+                  <p class="assignment-number">Assignment - 01</p>
+                </div>
+                <a href="#" target="_blank">Preview</a>
+              </div>
+
+              <div class="card" style="--delay: 1">
+                <div class="assignment-card-content">
+                  <div class="assignment-img">
+                    <img src="Assets/Images/modules-icon/SE.png" alt="" />
+                  </div>
+                  <p class="assignment-number">Assignment - 02</p>
+                </div>
+                <a href="#" target="_blank">Preview</a>
+              </div>
+
+              <div class="card" style="--delay: 2">
+                <div class="assignment-card-content">
+                  <div class="assignment-img">
+                    <img src="Assets/Images/modules-icon/SE.png" alt="" />
+                  </div>
+                  <p class="assignment-number">Assignment - 03</p>
+                </div>
+                <a href="#" target="_blank">Preview</a>
+              </div>
+
+              <div class="card" style="--delay: 3">
+                <div class="assignment-card-content">
+                  <div class="assignment-img">
+                    <img src="Assets/Images/modules-icon/SE.png" alt="" />
+                  </div>
+                  <p class="assignment-number">Assignment - 04</p>
+                </div>
+                <a href="#" target="_blank">Preview</a>
+              </div>
+
+              <div class="card" style="--delay: 4">
+                <div class="assignment-card-content">
+                  <div class="assignment-img">
+                    <img src="Assets/Images/modules-icon/SE.png" alt="" />
+                  </div>
+                  <p class="assignment-number">Assignment - 05</p>
+                </div>
+                <a href="#" target="_blank">Preview</a>
+              </div>
+
+              <div class="card" style="--delay: 5">
+                <div class="assignment-card-content">
+                  <div class="assignment-img">
+                    <img src="Assets/Images/modules-icon/SE.png" alt="" />
+                  </div>
+                  <p class="assignment-number">Assignment - 06</p>
+                </div>
+                <a href="#" target="_blank">Preview</a>
+              </div>
+
+              <div class="card" style="--delay: 6">
+                <div class="assignment-card-content">
+                  <div class="assignment-img">
+                    <img src="Assets/Images/modules-icon/SE.png" alt="" />
+                  </div>
+                  <p class="assignment-number">Assignment - 07</p>
+                </div>
+                <a href="#" target="_blank">Preview</a>
+              </div>
+
+              <div class="card" style="--delay: 7">
+                <div class="assignment-card-content">
+                  <div class="assignment-img">
+                    <img src="Assets/Images/modules-icon/SE.png" alt="" />
+                  </div>
+                  <p class="assignment-number">Assignment - 08</p>
+                </div>
+                <a href="#" target="_blank">Preview</a>
+              </div>
+
+              <div class="card" style="--delay: 8">
+                <div class="assignment-card-content">
+                  <div class="assignment-img">
+                    <img src="Assets/Images/modules-icon/SE.png" alt="" />
+                  </div>
+                  <p class="assignment-number">Assignment - 09</p>
+                </div>
+                <a href="#" target="_blank">Preview</a>
+              </div>
+
+              <div class="card" style="--delay: 9">
+                <div class="assignment-card-content">
+                  <div class="assignment-img">
+                    <img src="Assets/Images/modules-icon/SE.png" alt="" />
+                  </div>
+                  <p class="assignment-number">Assignment - 10</p>
+                </div>
+                <a href="#" target="_blank">Preview</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="mobile-divider"></div>
 
     <div class="service-small mobile-sections">
-        <section id="services" class="service-section">
-            <p class="sub-section-title">MY SERVICES</p>
+      <section id="services" class="service-section">
+        <p class="sub-section-title">MY SERVICES</p>
 
-            <div class="container">
-                <div class="service-container">
-
-                    <div class="service-box">
-                        <i class="ti ti-brush"></i>
-                        <h3>Web Design</h3>
-                        <p>Crafting clean, modern, and user-centric designs that reflect your brand and engage your audience.</p>
-                        <button class="more-about-btn service-more-detail-btn" data-modal="modalOverlayWebDesign">Read More</button>
-                    </div>
-
-                    <div class="service-box">
-                        <i class="ti ti-palette"></i>
-                        <h3>Graphic Design</h3>
-                        <p>Delivering compelling visuals, logos, and branding assets that communicate with clarity and impact.</p>
-                        <button class="more-about-btn service-more-detail-btn" data-modal="modalOverlayGraphicDesign">Read More</button>
-                    </div>
-
-                    <div class="service-box">
-                        <i class="ti ti-wand"></i>
-                        <h3>Web Development</h3>
-                        <p>Building fast, responsive, and scalable websites using the latest technologies and best practices.</p>
-                        <button class="more-about-btn service-more-detail-btn" data-modal="modalOverlayWebApp">Read More</button>
-                    </div>
-
-                    <div class="service-box">
-                        <i class="ti ti-code"></i>
-                        <h3>App Development</h3>
-                        <p>Creating seamless, intuitive mobile applications for both Android and iOS platforms.</p>
-                        <button class="more-about-btn service-more-detail-btn" data-modal="modalOverlayMobileApp">Read More</button>
-                    </div>
-
-                </div>
+        <div class="container">
+          <div class="service-container">
+            <div class="service-box">
+              <i class="ti ti-brush"></i>
+              <h3>Automation Workflows</h3>
+              <p>
+                Building intelligent, scalable automation workflows to
+                streamline business processes, reduce manual tasks, and improve
+                efficiency using modern AI and no-code tools.
+              </p>
+              <button
+                class="more-about-btn service-more-detail-btn"
+                data-modal="modalOverlayAutomation"
+              >
+                Read More
+              </button>
             </div>
 
-            <div class="service-modal-overlay" id="modalOverlayWebDesign">
-                <div class="service-pop-up">
-                    <div class="service-popup-content">
-                        <p class="service-p">I design visually stunning and highly intuitive websites that offer seamless user experiences. From wireframes to polished UI layouts, I focus on clean aesthetics, responsive design, and user engagement.</p>
-                        <!-- Created by Zeenathul Ilma - https://github.com/Seenathul-Ilma -->
-                        <ul class="service-ul">
-                            <li><span><i class="fa-solid fa-feather"></i> </span>Responsive, mobile-friendly layouts</li>
-                            <li><span><i class="fa-solid fa-feather"></i> </span>UX/UI-focused design approach</li>
-                            <li><span><i class="fa-solid fa-feather"></i> </span>Prototyping and mockup creation</li>
-                            <li><span><i class="fa-solid fa-feather"></i> </span>Custom design systems aligned with your brand</li>
-                        </ul>
-                        <div class="service-popup-btn-div">
-                            <button class="more-about-btn service-popup-btn-close">Not Now</button>
-                            <a href="#contact" class="more-about-btn service-popup-btn-connect service-popup-btn-close">Let's Talk</a>
-                        </div>
-                    </div>
-                </div>
+            <div class="service-box">
+              <i class="ti ti-brush"></i>
+              <h3>Web Design</h3>
+              <p>
+                Crafting clean, modern, and user-centric designs that reflect
+                your brand and engage your audience.
+              </p>
+              <button
+                class="more-about-btn service-more-detail-btn"
+                data-modal="modalOverlayWebDesign"
+              >
+                Read More
+              </button>
             </div>
 
-            <div class="service-modal-overlay" id="modalOverlayGraphicDesign">
-                <div class="service-pop-up">
-                    <div class="service-popup-content">
-                        <p class="service-p">Visual storytelling is at the heart of every brand. I create bold, memorable, and purposeful graphics to enhance your identity and connect with your audience.</p>
-                        <ul class="service-ul">
-                            <li><span><i class="fa-solid fa-feather"></i> </span>Logo & brand identity design</li>
-                            <li><span><i class="fa-solid fa-feather"></i> </span>Social media & marketing materials</li>
-                            <li><span><i class="fa-solid fa-feather"></i> </span>Custom illustrations and icons</li>
-                            <li><span><i class="fa-solid fa-feather"></i> </span>Business cards, posters, flyers</li>
-                        </ul>
-                        <!-- Created by Zeenathul Ilma - https://github.com/Seenathul-Ilma -->
-                        <div class="service-popup-btn-div">
-                            <button class="more-about-btn service-popup-btn-close">Not Now</button>
-                            <a href="#contact" class="more-about-btn service-popup-btn-connect service-popup-btn-close">Let's Talk</a>
-                        </div>
-                    </div>
-                </div>
+            <div class="service-box">
+              <i class="ti ti-palette"></i>
+              <h3>Graphic Design</h3>
+              <p>
+                Delivering compelling visuals, logos, and branding assets that
+                communicate with clarity and impact.
+              </p>
+              <button
+                class="more-about-btn service-more-detail-btn"
+                data-modal="modalOverlayGraphicDesign"
+              >
+                Read More
+              </button>
             </div>
 
-            <div class="service-modal-overlay" id="modalOverlayWebApp">
-                <div class="service-pop-up">
-                    <div class="service-popup-content">
-                        <p class="service-p">I develop fast, functional, and scalable websites that bring your vision to life. Whether it's a simple landing page or a complex web application, I ensure quality, performance, and maintainability.</p>
-                        <ul class="service-ul">
-                            <li><span><i class="fa-solid fa-feather"></i> </span>HTML, CSS, JavaScript, React, Java (Spring Boot), PHP</li>
-                            <li><span><i class="fa-solid fa-feather"></i> </span>CMS integrations (WordPress, etc.)</li>
-                            <li><span><i class="fa-solid fa-feather"></i> </span>API development & third-party integrations</li>
-                            <li><span><i class="fa-solid fa-feather"></i> </span>SEO optimization and performance tuning</li>
-                        </ul>
-                        <div class="service-popup-btn-div">
-                            <button class="more-about-btn service-popup-btn-close">Not Now</button>
-                            <a href="#contact" class="more-about-btn service-popup-btn-connect service-popup-btn-close">Let's Talk</a>
-                        </div>
-                    </div>
-                </div>
+            <div class="service-box">
+              <i class="ti ti-wand"></i>
+              <h3>Web Development</h3>
+              <p>
+                Building fast, responsive, and scalable websites using the
+                latest technologies and best practices.
+              </p>
+              <button
+                class="more-about-btn service-more-detail-btn"
+                data-modal="modalOverlayWebApp"
+              >
+                Read More
+              </button>
             </div>
 
-            <div class="service-modal-overlay" id="modalOverlayMobileApp">
-                <div class="service-pop-up">
-                    <div class="service-popup-content">
-                        <p class="service-p">I design and build intuitive mobile applications tailored to user needs and business goals — combining performance with clean design.</p>
-                        <ul class="service-ul">
-                            <li><span><i class="fa-solid fa-feather"></i> </span>Android & iOS app development</li>
-                            <li><span><i class="fa-solid fa-feather"></i> </span>Cross-platform solutions (Flutter, React Native)</li>
-                            <li><span><i class="fa-solid fa-feather"></i> </span>Backend integration and API connectivity</li>
-                            <li><span><i class="fa-solid fa-feather"></i> </span>Smooth, responsive UI/UX</li>
-                        </ul>
-                        <div class="service-popup-btn-div">
-                            <button class="more-about-btn service-popup-btn-close">Not Now</button>
-                            <a href="#contact" class="more-about-btn service-popup-btn-connect service-popup-btn-close">Let's Talk</a>
-                        </div>
-                        <!-- Created by Zeenathul Ilma - https://github.com/Seenathul-Ilma -->
-                    </div>
-                </div>
+            <div class="service-box">
+              <i class="ti ti-code"></i>
+              <h3>App Development</h3>
+              <p>
+                Creating seamless, intuitive mobile applications for both
+                Android and iOS platforms.
+              </p>
+              <button
+                class="more-about-btn service-more-detail-btn"
+                data-modal="modalOverlayMobileApp"
+              >
+                Read More
+              </button>
             </div>
+          </div>
+        </div>
 
-        </section>
+        <div class="service-modal-overlay" id="modalOverlayAutomation">
+          <div class="service-pop-up">
+            <div class="service-popup-content">
+              <p class="service-p">
+                I create smart automation solutions that save time, reduce
+                errors, and optimize workflows. From task automation to
+                AI-driven integrations, I focus on efficiency, reliability, and
+                impact.
+              </p>
+              <ul class="service-ul">
+                <li>
+                  <span><i class="fa-solid fa-feather"></i> </span>Automating
+                  workflows with Zapier, n8n, and Make.com
+                </li>
+                <li>
+                  <span><i class="fa-solid fa-feather"></i> </span>AI-powered
+                  integrations with LLMs and RAG systems
+                </li>
+                <li>
+                  <span><i class="fa-solid fa-feather"></i> </span>Custom API
+                  integrations and process optimization
+                </li>
+                <li>
+                  <span><i class="fa-solid fa-feather"></i> </span>Scalable
+                  solutions tailored to your business
+                </li>
+              </ul>
+              <div class="service-popup-btn-div">
+                <button class="more-about-btn service-popup-btn-close">
+                  Not Now
+                </button>
+                <a
+                  href="contact.html"
+                  class="more-about-btn service-popup-btn-connect service-popup-btn-close"
+                  >Let's Talk</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-modal-overlay" id="modalOverlayWebDesign">
+          <div class="service-pop-up">
+            <div class="service-popup-content">
+              <p class="service-p">
+                I design visually stunning and highly intuitive websites that
+                offer seamless user experiences. From wireframes to polished UI
+                layouts, I focus on clean aesthetics, responsive design, and
+                user engagement.
+              </p>
+              <!-- Created by Zeenathul Ilma - https://github.com/Seenathul-Ilma -->
+              <ul class="service-ul">
+                <li>
+                  <span><i class="fa-solid fa-feather"></i> </span>Responsive,
+                  mobile-friendly layouts
+                </li>
+                <li>
+                  <span><i class="fa-solid fa-feather"></i> </span>UX/UI-focused
+                  design approach
+                </li>
+                <li>
+                  <span><i class="fa-solid fa-feather"></i> </span>Prototyping
+                  and mockup creation
+                </li>
+                <li>
+                  <span><i class="fa-solid fa-feather"></i> </span>Custom design
+                  systems aligned with your brand
+                </li>
+              </ul>
+              <div class="service-popup-btn-div">
+                <button class="more-about-btn service-popup-btn-close">
+                  Not Now
+                </button>
+                <a
+                  href="#contact"
+                  class="more-about-btn service-popup-btn-connect service-popup-btn-close"
+                  >Let's Talk</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-modal-overlay" id="modalOverlayGraphicDesign">
+          <div class="service-pop-up">
+            <div class="service-popup-content">
+              <p class="service-p">
+                Visual storytelling is at the heart of every brand. I create
+                bold, memorable, and purposeful graphics to enhance your
+                identity and connect with your audience.
+              </p>
+              <ul class="service-ul">
+                <li>
+                  <span><i class="fa-solid fa-feather"></i> </span>Logo & brand
+                  identity design
+                </li>
+                <li>
+                  <span><i class="fa-solid fa-feather"></i> </span>Social media
+                  & marketing materials
+                </li>
+                <li>
+                  <span><i class="fa-solid fa-feather"></i> </span>Custom
+                  illustrations and icons
+                </li>
+                <li>
+                  <span><i class="fa-solid fa-feather"></i> </span>Business
+                  cards, posters, flyers
+                </li>
+              </ul>
+              <!-- Created by Zeenathul Ilma - https://github.com/Seenathul-Ilma -->
+              <div class="service-popup-btn-div">
+                <button class="more-about-btn service-popup-btn-close">
+                  Not Now
+                </button>
+                <a
+                  href="#contact"
+                  class="more-about-btn service-popup-btn-connect service-popup-btn-close"
+                  >Let's Talk</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-modal-overlay" id="modalOverlayWebApp">
+          <div class="service-pop-up">
+            <div class="service-popup-content">
+              <p class="service-p">
+                I develop fast, functional, and scalable websites that bring
+                your vision to life. Whether it's a simple landing page or a
+                complex web application, I ensure quality, performance, and
+                maintainability.
+              </p>
+              <ul class="service-ul">
+                <li>
+                  <span><i class="fa-solid fa-feather"></i> </span>HTML, CSS,
+                  JavaScript, React, Java (Spring Boot), PHP
+                </li>
+                <li>
+                  <span><i class="fa-solid fa-feather"></i> </span>CMS
+                  integrations (WordPress, etc.)
+                </li>
+                <li>
+                  <span><i class="fa-solid fa-feather"></i> </span>API
+                  development & third-party integrations
+                </li>
+                <li>
+                  <span><i class="fa-solid fa-feather"></i> </span>SEO
+                  optimization and performance tuning
+                </li>
+              </ul>
+              <div class="service-popup-btn-div">
+                <button class="more-about-btn service-popup-btn-close">
+                  Not Now
+                </button>
+                <a
+                  href="#contact"
+                  class="more-about-btn service-popup-btn-connect service-popup-btn-close"
+                  >Let's Talk</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-modal-overlay" id="modalOverlayMobileApp">
+          <div class="service-pop-up">
+            <div class="service-popup-content">
+              <p class="service-p">
+                I design and build intuitive mobile applications tailored to
+                user needs and business goals — combining performance with clean
+                design.
+              </p>
+              <ul class="service-ul">
+                <li>
+                  <span><i class="fa-solid fa-feather"></i> </span>Android & iOS
+                  app development
+                </li>
+                <li>
+                  <span><i class="fa-solid fa-feather"></i> </span
+                  >Cross-platform solutions (Flutter, React Native)
+                </li>
+                <li>
+                  <span><i class="fa-solid fa-feather"></i> </span>Backend
+                  integration and API connectivity
+                </li>
+                <li>
+                  <span><i class="fa-solid fa-feather"></i> </span>Smooth,
+                  responsive UI/UX
+                </li>
+              </ul>
+              <div class="service-popup-btn-div">
+                <button class="more-about-btn service-popup-btn-close">
+                  Not Now
+                </button>
+                <a
+                  href="#contact"
+                  class="more-about-btn service-popup-btn-connect service-popup-btn-close"
+                  >Let's Talk</a
+                >
+              </div>
+              <!-- Created by Zeenathul Ilma - https://github.com/Seenathul-Ilma -->
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
     <div class="mobile-divider"></div>
 
     <div class="contact-small mobile-sections">
-        <section id="contact" class="contact-section">
-            <p class="sub-section-title">CONTACT ME</p>
+      <section id="contact" class="contact-section">
+        <p class="sub-section-title">CONTACT ME</p>
 
-            <div class="container">
-                <div class="contact-container">
-                    <div class="left-side-detail">
-                        <div class="address contact-detail">
-                            <span><i class="ti ti-map-pin"></i></span>
-                            <div class="contact-detail-topic">Address</div>
-                            <div class="contact-detail-text">31/5z, Moor Street, Kalutara South</div>
-                        </div>
-                        <div class="phone contact-detail">
-                            <span><i class="ti ti-link"></i></span>
-                            <div class="contact-detail-topic">Portfolio</div>
-                            <div class="contact-detail-text">https://zeenathulilma.vercel.app/</div>
-                        </div>
-                        <!-- Created by Zeenathul Ilma - https://github.com/Seenathul-Ilma -->
-                        <div class="email contact-detail">
-                            <span><i class="ti ti-mail"></i></span>
-                            <div class="contact-detail-topic">Email</div>
-                            <div class="contact-detail-text">seenathulilma121243@gmail.com</div>
-                        </div>
-                    </div>
-                    <div class="right-side-detail">
-                        <p class="contact-text">Got an idea? Let's build it! Whether it’s a website, app, or innovative solution, I’m excited to chat. Let’s connect and make something awesome!</p>
-                        <form action="https://api.web3forms.com/submit" method="POST">
-
-                            <!-- Required Web3Forms access key -->
-                            <input type="hidden" name="access_key" value="4445bec1-bcbe-448a-8164-d0e3e3ba8c3e">
-
-                            <!-- Optional hidden fields -->
-                            <input type="hidden" name="subject" value="New Contact Message From Portfolio">
-                            <input type="hidden" name="from_name" value="Zeenathul Ilma | Portfolio">
-                            <input type="hidden" name="redirect" value="https://web3forms.com/success">
-                            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
-
-
-                            <div class="input-box">
-                                <input type="text" name="name" placeholder="Name" required>
-                            </div>
-                            <!-- Created by Zeenathul Ilma - https://github.com/Seenathul-Ilma -->
-                            <div class="input-box">
-                                <input type="email" name="email" placeholder="Email Address" required>
-                            </div>
-                            <div class="input-box">
-                                <input type="text" name="user_subject" placeholder="Subject" required>
-                            </div>
-                            <div class="input-box message-box">
-                                <textarea name="message" placeholder="Message" required></textarea>
-                            </div>
-                            <div class="send-message-button">
-                                <input type="submit" value="Send Now" >
-                            </div>
-                        </form>
-                    </div>
+        <div class="container">
+          <div class="contact-container">
+            <div class="left-side-detail">
+              <div class="address contact-detail">
+                <span><i class="ti ti-map-pin"></i></span>
+                <div class="contact-detail-topic">Address</div>
+                <div class="contact-detail-text">
+                  31/5z, Moor Street, Kalutara South
                 </div>
+              </div>
+              <div class="phone contact-detail">
+                <span><i class="ti ti-link"></i></span>
+                <div class="contact-detail-topic">Portfolio</div>
+                <div class="contact-detail-text">
+                  https://zeenathulilma.vercel.app/
+                </div>
+              </div>
+              <!-- Created by Zeenathul Ilma - https://github.com/Seenathul-Ilma -->
+              <div class="email contact-detail">
+                <span><i class="ti ti-mail"></i></span>
+                <div class="contact-detail-topic">Email</div>
+                <div class="contact-detail-text">
+                  seenathulilma121243@gmail.com
+                </div>
+              </div>
             </div>
+            <div class="right-side-detail">
+              <p class="contact-text">
+                Got an idea? Let's build it! Whether it’s a website, app, or
+                innovative solution, I’m excited to chat. Let’s connect and make
+                something awesome!
+              </p>
+              <form action="https://api.web3forms.com/submit" method="POST">
+                <!-- Required Web3Forms access key -->
+                <input
+                  type="hidden"
+                  name="access_key"
+                  value="4445bec1-bcbe-448a-8164-d0e3e3ba8c3e"
+                />
 
-        </section>
+                <!-- Optional hidden fields -->
+                <input
+                  type="hidden"
+                  name="subject"
+                  value="New Contact Message From Portfolio"
+                />
+                <input
+                  type="hidden"
+                  name="from_name"
+                  value="Zeenathul Ilma | Portfolio"
+                />
+                <input
+                  type="hidden"
+                  name="redirect"
+                  value="https://web3forms.com/success"
+                />
+                <input
+                  type="checkbox"
+                  name="botcheck"
+                  class="hidden"
+                  style="display: none"
+                />
+
+                <div class="input-box">
+                  <input type="text" name="name" placeholder="Name" required />
+                </div>
+                <!-- Created by Zeenathul Ilma - https://github.com/Seenathul-Ilma -->
+                <div class="input-box">
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Email Address"
+                    required
+                  />
+                </div>
+                <div class="input-box">
+                  <input
+                    type="text"
+                    name="user_subject"
+                    placeholder="Subject"
+                    required
+                  />
+                </div>
+                <div class="input-box message-box">
+                  <textarea
+                    name="message"
+                    placeholder="Message"
+                    required
+                  ></textarea>
+                </div>
+                <div class="send-message-button">
+                  <input type="submit" value="Send Now" />
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
 
     <div class="footer-small mobile-sections">
-        <div id="footer" class="footer-section">
-            <div class="container">
-                <div class="social-media-mobile">
-                    <a href="https://www.facebook.com/share/1BrnQz8aZo/" class="fb" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="https://github.com/Seenathul-Ilma" class="github" target="_blank"><i class="fa-brands fa-github"></i></a>
-                    <a href="https://www.instagram.com/mmz_ilma" class="insta" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://www.linkedin.com/in/zeenathul-ilma-musawwir-6547682a3/" class="linkedIn" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                </div>
-                <p class="mobile-footer-p">Copyright &copy; 2025 by Zeenathul Ilma | All Rights Reserved.</p>
-            </div>
-            <a href="#home" class="return-to-top-arrow hidden">
-                <span></span>
-                <span></span>
-                <span></span>
-            </a>
+      <div id="footer" class="footer-section">
+        <div class="container">
+          <div class="social-media-mobile">
+            <a
+              href="https://www.facebook.com/share/1BrnQz8aZo/"
+              class="fb"
+              target="_blank"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+            <a
+              href="https://github.com/Seenathul-Ilma"
+              class="github"
+              target="_blank"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/mmz_ilma"
+              class="insta"
+              target="_blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/zeenathul-ilma-musawwir-6547682a3/"
+              class="linkedIn"
+              target="_blank"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+          </div>
+          <p class="mobile-footer-p">
+            Copyright &copy; 2025 by Zeenathul Ilma | All Rights Reserved.
+          </p>
         </div>
+        <a href="#home" class="return-to-top-arrow hidden">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+      </div>
     </div>
-
 
     <!-- Created by Zeenathul Ilma - https://github.com/Seenathul-Ilma -->
     <div class="overlay-transition top-to-bottom">
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
     </div>
 
     <script src="javascript/loader.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js" integrity="sha512-BdHyGtczsUoFcEma+MfXc71KJLv/cd+sUsUaYYf2mXpfG/PtBjNXsPo78+rxWjscxUYN2Qr2+DbeGGiJx81ifg==" crossorigin="anonymous"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"
+      integrity="sha512-BdHyGtczsUoFcEma+MfXc71KJLv/cd+sUsUaYYf2mXpfG/PtBjNXsPo78+rxWjscxUYN2Qr2+DbeGGiJx81ifg=="
+      crossorigin="anonymous"
+    ></script>
     <script src="javascript/typing-animation.js"></script>
     <script src="javascript/pageTransition.js"></script>
     <script src="javascript/about.js"></script>
@@ -1257,5 +2176,5 @@
     <script src="https://unpkg.com/@tabler/core@latest/dist/js/tabler.min.js"></script>
     <script src="javascript/service-contact.js"></script>
     <script src="javascript/scroll-animation.js"></script>
-</body>
+  </body>
 </html>
