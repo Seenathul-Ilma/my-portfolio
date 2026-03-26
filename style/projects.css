@@ -98,7 +98,7 @@
     display: grid;
     grid-template-columns: 1fr;
     /* Two columns layout */
-    gap: 50px;
+    gap: 40px;
     /* Gap between columns and rows */
     margin: 40px 0;
     /* Add top and bottom space */
@@ -121,7 +121,7 @@
     /*width: 100%;
     max-width: 800px;
     height: 60px;*/
-    width: clamp(240px, 80%, 800px);
+    width: clamp(250px, 85%, 850px);
     /* Responsive width */
     /* height: clamp(50px, 8vh, 60px);   Responsive height */
     height: clamp(50px, 8vw, 60px);
@@ -166,7 +166,7 @@
 
 .module-box p {
     position: absolute;
-    font-size: clamp(12px, 2vw, 20px);
+    font-size: clamp(14px, 2.5vw, 20px);
     text-wrap: wrap;
     text-align: center;
     align-items: center;
